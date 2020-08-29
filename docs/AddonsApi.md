@@ -1,4 +1,4 @@
-# GmodStore.AddonsApi
+# GmodStoreApi.AddonsApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -18,13 +18,13 @@ Fetch a single addon
 ### Example
 
 ```javascript
-import GmodStore from 'gmod_store';
-let defaultClient = GmodStore.ApiClient.instance;
+import GmodStoreApi from 'gmod_store_api';
+let defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStore.AddonsApi();
+let apiInstance = new GmodStoreApi.AddonsApi();
 let addonId = 789; // Number | Id of the addon
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `Addon`
@@ -69,13 +69,13 @@ Fetch all the addons that you have access to
 ### Example
 
 ```javascript
-import GmodStore from 'gmod_store';
-let defaultClient = GmodStore.ApiClient.instance;
+import GmodStoreApi from 'gmod_store_api';
+let defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStore.AddonsApi();
+let apiInstance = new GmodStoreApi.AddonsApi();
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `Addon`
 };

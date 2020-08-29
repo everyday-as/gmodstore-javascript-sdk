@@ -1,4 +1,4 @@
-# GmodStore.AddonCoupon
+# GmodStoreApi.AddonCoupon
 
 ## Properties
 

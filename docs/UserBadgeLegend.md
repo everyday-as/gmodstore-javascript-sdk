@@ -1,4 +1,4 @@
-# GmodStore.UserBadgeLegend
+# GmodStoreApi.UserBadgeLegend
 
 ## Properties
 

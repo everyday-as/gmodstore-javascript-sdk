@@ -1,6 +1,6 @@
 /**
- * GmodStore
- * Welcome to the GmodStore API! You can use our API to access Gmodstore API endpoints, which can be used interact with Gmodstore programmatically.
+ * GmodStore API
+ * Welcome to the GmodStore API! You can use our API to access GmodStore API endpoints, which can be used interact with GmodStore programmatically.
  *
  * The version of the OpenAPI document: 1.0.1
  * 
@@ -78,14 +78,14 @@ import UsersApi from './api/UsersApi';
 
 
 /**
-* Welcome_to_the_GmodStore_API_You_can_use_our_API_to_access_Gmodstore_API_endpoints_which_can_be_used_interact_with_Gmodstore_programmatically_.<br>
+* Welcome_to_the_GmodStore_API_You_can_use_our_API_to_access_GmodStore_API_endpoints_which_can_be_used_interact_with_GmodStore_programmatically_.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var GmodStore = require('Everyday\GmodStore\Sdk/index'); // See note below*.
-* var xxxSvc = new GmodStore.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new GmodStore.Yyy(); // Construct a model instance.
+* var GmodStoreApi = require('Everyday\GmodStore\Sdk/index'); // See note below*.
+* var xxxSvc = new GmodStoreApi.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new GmodStoreApi.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -97,8 +97,8 @@ import UsersApi from './api/UsersApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new GmodStore.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new GmodStore.Yyy(); // Construct a model instance.
+* var xxxSvc = new GmodStoreApi.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new GmodStoreApi.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

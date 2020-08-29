@@ -1,4 +1,4 @@
-# GmodStore.UserBanListResponse
+# GmodStoreApi.UserBanListResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# GmodStore.UserBadge
+# GmodStoreApi.UserBadge
 
 ## Properties
 

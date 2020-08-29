@@ -1,4 +1,4 @@
-# GmodStore.AddonVersion
+# GmodStoreApi.AddonVersion
 
 ## Properties
 

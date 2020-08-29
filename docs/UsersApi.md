@@ -1,4 +1,4 @@
-# GmodStore.UsersApi
+# GmodStoreApi.UsersApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -18,13 +18,13 @@ Fetches the current user (API Key Owner)
 ### Example
 
 ```javascript
-import GmodStore from 'gmod_store';
-let defaultClient = GmodStore.ApiClient.instance;
+import GmodStoreApi from 'gmod_store_api';
+let defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStore.UsersApi();
+let apiInstance = new GmodStoreApi.UsersApi();
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `User`
 };
@@ -67,13 +67,13 @@ Fetch a single user
 ### Example
 
 ```javascript
-import GmodStore from 'gmod_store';
-let defaultClient = GmodStore.ApiClient.instance;
+import GmodStoreApi from 'gmod_store_api';
+let defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStore.UsersApi();
+let apiInstance = new GmodStoreApi.UsersApi();
 let userId = 789; // Number | Id of the user
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `User`

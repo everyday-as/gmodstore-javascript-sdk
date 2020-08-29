@@ -1,4 +1,4 @@
-# GmodStore.Money
+# GmodStoreApi.Money
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# GmodStore.User
+# GmodStoreApi.User
 
 ## Properties
 

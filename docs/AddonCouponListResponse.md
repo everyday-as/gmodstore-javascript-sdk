@@ -1,4 +1,4 @@
-# GmodStore.AddonCouponListResponse
+# GmodStoreApi.AddonCouponListResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# GmodStore.BadgeListResponse
+# GmodStoreApi.BadgeListResponse
 
 ## Properties
 

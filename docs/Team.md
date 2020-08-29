@@ -1,4 +1,4 @@
-# GmodStore.Team
+# GmodStoreApi.Team
 
 ## Properties
 

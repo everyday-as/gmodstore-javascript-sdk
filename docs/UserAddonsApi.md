@@ -1,4 +1,4 @@
-# GmodStore.UserAddonsApi
+# GmodStoreApi.UserAddonsApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -17,13 +17,13 @@ Fetch all the addons authored / co-authored by a user
 ### Example
 
 ```javascript
-import GmodStore from 'gmod_store';
-let defaultClient = GmodStore.ApiClient.instance;
+import GmodStoreApi from 'gmod_store_api';
+let defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStore.UserAddonsApi();
+let apiInstance = new GmodStoreApi.UserAddonsApi();
 let userId = 789; // Number | Id of the user
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `Addon`

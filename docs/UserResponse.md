@@ -1,4 +1,4 @@
-# GmodStore.UserResponse
+# GmodStoreApi.UserResponse
 
 ## Properties
 

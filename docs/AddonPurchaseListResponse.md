@@ -1,4 +1,4 @@
-# GmodStore.AddonPurchaseListResponse
+# GmodStoreApi.AddonPurchaseListResponse
 
 ## Properties
 

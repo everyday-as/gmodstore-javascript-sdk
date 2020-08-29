@@ -1,4 +1,4 @@
-# GmodStore.TeamUserListResponse
+# GmodStoreApi.TeamUserListResponse
 
 ## Properties
 

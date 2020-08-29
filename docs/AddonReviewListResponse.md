@@ -1,4 +1,4 @@
-# GmodStore.AddonReviewListResponse
+# GmodStoreApi.AddonReviewListResponse
 
 ## Properties
 

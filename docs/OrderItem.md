@@ -1,4 +1,4 @@
-# GmodStore.OrderItem
+# GmodStoreApi.OrderItem
 
 ## Properties
 

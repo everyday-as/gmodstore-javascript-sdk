@@ -1,4 +1,4 @@
-# GmodStore.AddonStatsApi
+# GmodStoreApi.AddonStatsApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -17,13 +17,13 @@ Fetch all the stats for an addon
 ### Example
 
 ```javascript
-import GmodStore from 'gmod_store';
-let defaultClient = GmodStore.ApiClient.instance;
+import GmodStoreApi from 'gmod_store_api';
+let defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStore.AddonStatsApi();
+let apiInstance = new GmodStoreApi.AddonStatsApi();
 let addonId = 789; // Number | Id of the addon
 apiInstance.getAddonStats(addonId, (error, data, response) => {
   if (error) {

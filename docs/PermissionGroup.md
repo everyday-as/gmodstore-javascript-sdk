@@ -1,4 +1,4 @@
-# GmodStore.PermissionGroup
+# GmodStoreApi.PermissionGroup
 
 ## Properties
 

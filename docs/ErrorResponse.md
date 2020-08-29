@@ -1,4 +1,4 @@
-# GmodStore.ErrorResponse
+# GmodStoreApi.ErrorResponse
 
 ## Properties
 

@@ -134,5 +134,3 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
-test/Everyday/GmodStore/Sdk/api/PermissionGroupsApi.spec.js
-test/Everyday/GmodStore/Sdk/model/PermissionGroupListResponse.spec.js

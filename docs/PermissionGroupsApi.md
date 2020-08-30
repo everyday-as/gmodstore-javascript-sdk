@@ -4,13 +4,13 @@ All URIs are relative to *https://api.gmodstore.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getPermissionGroups**](PermissionGroupsApi.md#getPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
+[**listPermissionGroups**](PermissionGroupsApi.md#listPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
 
 
 
-## getPermissionGroups
+## listPermissionGroups
 
-> PermissionGroupListResponse getPermissionGroups()
+> PermissionGroupListResponse listPermissionGroups()
 
 Fetches all available permission groups
 
@@ -24,7 +24,7 @@ let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodStoreApi.PermissionGroupsApi();
-apiInstance.getPermissionGroups((error, data, response) => {
+apiInstance.listPermissionGroups((error, data, response) => {
   if (error) {
     console.error(error);
   } else {

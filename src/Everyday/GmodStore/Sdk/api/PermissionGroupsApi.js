@@ -36,8 +36,8 @@ export default class PermissionGroupsApi {
 
 
     /**
-     * Callback function to receive the result of the getPermissionGroups operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi~getPermissionGroupsCallback
+     * Callback function to receive the result of the listPermissionGroups operation.
+     * @callback module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi~listPermissionGroupsCallback
      * @param {String} error Error message, if any.
      * @param {module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -45,10 +45,10 @@ export default class PermissionGroupsApi {
 
     /**
      * Fetches all available permission groups
-     * @param {module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi~getPermissionGroupsCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi~listPermissionGroupsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse}
      */
-    getPermissionGroups(callback) {
+    listPermissionGroups(callback) {
       let postBody = null;
 
       let pathParams = {

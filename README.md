@@ -112,6 +112,7 @@ Class | Method | HTTP request | Description
 *GmodStoreApi.AddonVersionsApi* | [**updateAddonVersion**](docs/AddonVersionsApi.md#updateAddonVersion) | **PUT** /addons/{addon_id}/versions/{version_id} | Update a version of an addon
 *GmodStoreApi.AddonsApi* | [**getAddon**](docs/AddonsApi.md#getAddon) | **GET** /addons/{addon_id} | Fetch a single addon
 *GmodStoreApi.AddonsApi* | [**listSelfAddons**](docs/AddonsApi.md#listSelfAddons) | **GET** /addons | Fetch all the addons that you have access to
+*GmodStoreApi.PermissionGroupsApi* | [**getPermissionGroups**](docs/PermissionGroupsApi.md#getPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
 *GmodStoreApi.TeamUsersApi* | [**listTeamUsers**](docs/TeamUsersApi.md#listTeamUsers) | **GET** /teams/{team_id}/users | Fetch all the users in the given team
 *GmodStoreApi.TeamsApi* | [**getTeam**](docs/TeamsApi.md#getTeam) | **GET** /teams/{team_id} | Fetch a single team
 *GmodStoreApi.UserAddonsApi* | [**listUserAddons**](docs/UserAddonsApi.md#listUserAddons) | **GET** /users/{user_id}/addons | Fetch all the addons authored / co-authored by a user
@@ -164,6 +165,7 @@ Class | Method | HTTP request | Description
  - [GmodStoreApi.NewAddonVersion](docs/NewAddonVersion.md)
  - [GmodStoreApi.OrderItem](docs/OrderItem.md)
  - [GmodStoreApi.PermissionGroup](docs/PermissionGroup.md)
+ - [GmodStoreApi.PermissionGroupListResponse](docs/PermissionGroupListResponse.md)
  - [GmodStoreApi.Team](docs/Team.md)
  - [GmodStoreApi.TeamListResponse](docs/TeamListResponse.md)
  - [GmodStoreApi.TeamResponse](docs/TeamResponse.md)

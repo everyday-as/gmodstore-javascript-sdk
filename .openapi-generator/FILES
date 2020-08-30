@@ -44,6 +44,8 @@ docs/NewAddonPurchase.md
 docs/NewAddonVersion.md
 docs/OrderItem.md
 docs/PermissionGroup.md
+docs/PermissionGroupListResponse.md
+docs/PermissionGroupsApi.md
 docs/Team.md
 docs/TeamListResponse.md
 docs/TeamResponse.md
@@ -73,6 +75,7 @@ src/Everyday/GmodStore/Sdk/api/AddonReviewsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonStatsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonVersionsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonsApi.js
+src/Everyday/GmodStore/Sdk/api/PermissionGroupsApi.js
 src/Everyday/GmodStore/Sdk/api/TeamUsersApi.js
 src/Everyday/GmodStore/Sdk/api/TeamsApi.js
 src/Everyday/GmodStore/Sdk/api/UserAddonsApi.js
@@ -119,6 +122,7 @@ src/Everyday/GmodStore/Sdk/model/NewAddonPurchase.js
 src/Everyday/GmodStore/Sdk/model/NewAddonVersion.js
 src/Everyday/GmodStore/Sdk/model/OrderItem.js
 src/Everyday/GmodStore/Sdk/model/PermissionGroup.js
+src/Everyday/GmodStore/Sdk/model/PermissionGroupListResponse.js
 src/Everyday/GmodStore/Sdk/model/Team.js
 src/Everyday/GmodStore/Sdk/model/TeamListResponse.js
 src/Everyday/GmodStore/Sdk/model/TeamResponse.js
@@ -130,3 +134,5 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
+test/Everyday/GmodStore/Sdk/api/PermissionGroupsApi.spec.js
+test/Everyday/GmodStore/Sdk/model/PermissionGroupListResponse.spec.js

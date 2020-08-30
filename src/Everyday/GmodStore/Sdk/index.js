@@ -50,6 +50,7 @@ import NewAddonPurchase from './model/NewAddonPurchase';
 import NewAddonVersion from './model/NewAddonVersion';
 import OrderItem from './model/OrderItem';
 import PermissionGroup from './model/PermissionGroup';
+import PermissionGroupListResponse from './model/PermissionGroupListResponse';
 import Team from './model/Team';
 import TeamListResponse from './model/TeamListResponse';
 import TeamResponse from './model/TeamResponse';
@@ -67,6 +68,7 @@ import AddonReviewsApi from './api/AddonReviewsApi';
 import AddonStatsApi from './api/AddonStatsApi';
 import AddonVersionsApi from './api/AddonVersionsApi';
 import AddonsApi from './api/AddonsApi';
+import PermissionGroupsApi from './api/PermissionGroupsApi';
 import TeamUsersApi from './api/TeamUsersApi';
 import TeamsApi from './api/TeamsApi';
 import UserAddonsApi from './api/UserAddonsApi';
@@ -338,6 +340,12 @@ export {
     PermissionGroup,
 
     /**
+     * The PermissionGroupListResponse model constructor.
+     * @property {module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse}
+     */
+    PermissionGroupListResponse,
+
+    /**
      * The Team model constructor.
      * @property {module:Everyday\GmodStore\Sdk/model/Team}
      */
@@ -438,6 +446,12 @@ export {
     * @property {module:Everyday\GmodStore\Sdk/api/AddonsApi}
     */
     AddonsApi,
+
+    /**
+    * The PermissionGroupsApi service constructor.
+    * @property {module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi}
+    */
+    PermissionGroupsApi,
 
     /**
     * The TeamUsersApi service constructor.

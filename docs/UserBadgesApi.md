@@ -76,7 +76,7 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodStoreApi.UserBadgesApi();
 let userId = 789; // Number | Id of the user
-let badgeId = 789; // Number | Id of the badge
+let badgeId = 56; // Number | Id of the badge
 apiInstance.deleteUserBadge(userId, badgeId, (error, data, response) => {
   if (error) {
     console.error(error);

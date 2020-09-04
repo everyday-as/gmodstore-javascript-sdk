@@ -95,7 +95,7 @@ export default class UserBadgesApi {
     /**
      * Destroy a users's badge
      * @param {Number} userId Id of the user
-     * @param {Number} badgeId Id of the badge
+     * @param {String} badgeId Id of the badge
      * @param {module:Everyday\GmodStore\Sdk/api/UserBadgesApi~deleteUserBadgeCallback} callback The callback function, accepting three arguments: error, data, response
      */
     deleteUserBadge(userId, badgeId, callback) {

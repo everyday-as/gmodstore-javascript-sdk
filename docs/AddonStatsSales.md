@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonStatsSales
+# GmodstoreSdk.AddonStatsSales
 
 ## Properties
 

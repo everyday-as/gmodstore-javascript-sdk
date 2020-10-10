@@ -1,6 +1,6 @@
-# gmod_store_api
+# gmodstore-sdk
 
-GmodStoreApi - JavaScript client for gmod_store_api
+GmodstoreSdk - JavaScript client for gmodstore-sdk
 
 
 Welcome to the GmodStore API! You can use our API to access GmodStore API endpoints, which can be used interact with GmodStore programmatically.
@@ -62,16 +62,16 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var GmodStoreApi = require('gmodstore-sdk');
+var GmodstoreSdk = require('gmodstore-sdk');
 
-var defaultClient = GmodStoreApi.ApiClient.instance;
+var defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 var bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-var api = new GmodStoreApi.AddonCouponsApi()
+var api = new GmodstoreSdk.AddonCouponsApi()
 var addonId = 789; // {Number} Id of the addon
-var addonCoupon = new GmodStoreApi.AddonCoupon(); // {AddonCoupon} 
+var addonCoupon = new GmodstoreSdk.AddonCoupon(); // {AddonCoupon} 
 var opts = {
   '_with': ["null"] // {[String]} The relations you want to fetch with the `AddonCoupon`
 };
@@ -93,90 +93,90 @@ All URIs are relative to *https://api.gmodstore.com/v2*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*GmodStoreApi.AddonCouponsApi* | [**createAddonCoupon**](docs/AddonCouponsApi.md#createAddonCoupon) | **POST** /addons/{addon_id}/coupons | Create an addon coupon
-*GmodStoreApi.AddonCouponsApi* | [**deleteAddonCoupon**](docs/AddonCouponsApi.md#deleteAddonCoupon) | **DELETE** /addons/{addon_id}/coupons/{coupon_id} | Destroy an addon&#39;s coupon
-*GmodStoreApi.AddonCouponsApi* | [**getAddonCoupon**](docs/AddonCouponsApi.md#getAddonCoupon) | **GET** /addons/{addon_id}/coupons/{coupon_id} | Fetch an addon&#39;s coupon
-*GmodStoreApi.AddonCouponsApi* | [**listAddonCoupons**](docs/AddonCouponsApi.md#listAddonCoupons) | **GET** /addons/{addon_id}/coupons | Fetch all the coupons for an addon
-*GmodStoreApi.AddonCouponsApi* | [**updateAddonCoupon**](docs/AddonCouponsApi.md#updateAddonCoupon) | **PUT** /addons/{addon_id}/coupons/{coupon_id} | Update an addon&#39;s coupon
-*GmodStoreApi.AddonPurchasesApi* | [**createAddonPurchase**](docs/AddonPurchasesApi.md#createAddonPurchase) | **POST** /addons/{addon_id}/purchases | Create a purchase for an addon
-*GmodStoreApi.AddonPurchasesApi* | [**getAddonPurchase**](docs/AddonPurchasesApi.md#getAddonPurchase) | **GET** /addons/{addon_id}/purchases/{user_id} | Get a purchase of an addon by user
-*GmodStoreApi.AddonPurchasesApi* | [**listAddonPurchases**](docs/AddonPurchasesApi.md#listAddonPurchases) | **GET** /addons/{addon_id}/purchases | Fetch all purchases of an addon
-*GmodStoreApi.AddonPurchasesApi* | [**updateAddonPurchase**](docs/AddonPurchasesApi.md#updateAddonPurchase) | **PUT** /addons/{addon_id}/purchases/{user_id} | Update a purchase for an addon
-*GmodStoreApi.AddonReviewsApi* | [**getAddonReview**](docs/AddonReviewsApi.md#getAddonReview) | **GET** /addons/{addon_id}/reviews/{review_id} | Fetch a review of an addon
-*GmodStoreApi.AddonReviewsApi* | [**listAddonReviews**](docs/AddonReviewsApi.md#listAddonReviews) | **GET** /addons/{addon_id}/reviews | Fetch all the reviews of an addon
-*GmodStoreApi.AddonStatsApi* | [**getAddonStats**](docs/AddonStatsApi.md#getAddonStats) | **GET** /addons/{addon_id}/stats | Fetch all the stats for an addon
-*GmodStoreApi.AddonVersionsApi* | [**createAddonVersion**](docs/AddonVersionsApi.md#createAddonVersion) | **POST** /addons/{addon_id}/versions | Create a new version for an addon
-*GmodStoreApi.AddonVersionsApi* | [**downloadAddonVersion**](docs/AddonVersionsApi.md#downloadAddonVersion) | **GET** /addons/{addon_id}/versions/{version_id}/download | Generate a download token for a specific version of an addon
-*GmodStoreApi.AddonVersionsApi* | [**getAddonVersion**](docs/AddonVersionsApi.md#getAddonVersion) | **GET** /addons/{addon_id}/versions/{version_id} | Fetch a specific version of an addon
-*GmodStoreApi.AddonVersionsApi* | [**listAddonVersions**](docs/AddonVersionsApi.md#listAddonVersions) | **GET** /addons/{addon_id}/versions | Fetch all the versions of an addon
-*GmodStoreApi.AddonVersionsApi* | [**updateAddonVersion**](docs/AddonVersionsApi.md#updateAddonVersion) | **PUT** /addons/{addon_id}/versions/{version_id} | Update a version of an addon
-*GmodStoreApi.AddonsApi* | [**getAddon**](docs/AddonsApi.md#getAddon) | **GET** /addons/{addon_id} | Fetch a single addon
-*GmodStoreApi.AddonsApi* | [**listSelfAddons**](docs/AddonsApi.md#listSelfAddons) | **GET** /addons | Fetch all the addons that you have access to
-*GmodStoreApi.PermissionGroupsApi* | [**listPermissionGroups**](docs/PermissionGroupsApi.md#listPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
-*GmodStoreApi.TeamUsersApi* | [**listTeamUsers**](docs/TeamUsersApi.md#listTeamUsers) | **GET** /teams/{team_id}/users | Fetch all the users in the given team
-*GmodStoreApi.TeamsApi* | [**getTeam**](docs/TeamsApi.md#getTeam) | **GET** /teams/{team_id} | Fetch a single team
-*GmodStoreApi.UserAddonsApi* | [**listUserAddons**](docs/UserAddonsApi.md#listUserAddons) | **GET** /users/{user_id}/addons | Fetch all the addons authored / co-authored by a user
-*GmodStoreApi.UserBadgesApi* | [**createUserBadge**](docs/UserBadgesApi.md#createUserBadge) | **POST** /users/{user_id}/badges | Give a user a badge
-*GmodStoreApi.UserBadgesApi* | [**deleteUserBadge**](docs/UserBadgesApi.md#deleteUserBadge) | **DELETE** /users/{user_id}/badges/{badge_id} | Destroy a users&#39;s badge
-*GmodStoreApi.UserBadgesApi* | [**listUserBadges**](docs/UserBadgesApi.md#listUserBadges) | **GET** /users/{user_id}/badges | Fetch all the badges a user has
-*GmodStoreApi.UserBansApi* | [**listUserBans**](docs/UserBansApi.md#listUserBans) | **GET** /users/{user_id}/bans | Fetch all active bans associated with this user
-*GmodStoreApi.UserPurchasesApi* | [**listUserPurchases**](docs/UserPurchasesApi.md#listUserPurchases) | **GET** /users/{user_id}/purchases | Fetch all purchases a user has made
-*GmodStoreApi.UserTeamsApi* | [**listUserTeams**](docs/UserTeamsApi.md#listUserTeams) | **GET** /users/{user_id}/teams | Fetch all the teams of a user
-*GmodStoreApi.UsersApi* | [**getSelfUser**](docs/UsersApi.md#getSelfUser) | **GET** /users/me | Fetches the current user (API Key Owner)
-*GmodStoreApi.UsersApi* | [**getUser**](docs/UsersApi.md#getUser) | **GET** /users/{user_id} | Fetch a single user
+*GmodstoreSdk.AddonCouponsApi* | [**createAddonCoupon**](docs/AddonCouponsApi.md#createAddonCoupon) | **POST** /addons/{addon_id}/coupons | Create an addon coupon
+*GmodstoreSdk.AddonCouponsApi* | [**deleteAddonCoupon**](docs/AddonCouponsApi.md#deleteAddonCoupon) | **DELETE** /addons/{addon_id}/coupons/{coupon_id} | Destroy an addon&#39;s coupon
+*GmodstoreSdk.AddonCouponsApi* | [**getAddonCoupon**](docs/AddonCouponsApi.md#getAddonCoupon) | **GET** /addons/{addon_id}/coupons/{coupon_id} | Fetch an addon&#39;s coupon
+*GmodstoreSdk.AddonCouponsApi* | [**listAddonCoupons**](docs/AddonCouponsApi.md#listAddonCoupons) | **GET** /addons/{addon_id}/coupons | Fetch all the coupons for an addon
+*GmodstoreSdk.AddonCouponsApi* | [**updateAddonCoupon**](docs/AddonCouponsApi.md#updateAddonCoupon) | **PUT** /addons/{addon_id}/coupons/{coupon_id} | Update an addon&#39;s coupon
+*GmodstoreSdk.AddonPurchasesApi* | [**createAddonPurchase**](docs/AddonPurchasesApi.md#createAddonPurchase) | **POST** /addons/{addon_id}/purchases | Create a purchase for an addon
+*GmodstoreSdk.AddonPurchasesApi* | [**getAddonPurchase**](docs/AddonPurchasesApi.md#getAddonPurchase) | **GET** /addons/{addon_id}/purchases/{user_id} | Get a purchase of an addon by user
+*GmodstoreSdk.AddonPurchasesApi* | [**listAddonPurchases**](docs/AddonPurchasesApi.md#listAddonPurchases) | **GET** /addons/{addon_id}/purchases | Fetch all purchases of an addon
+*GmodstoreSdk.AddonPurchasesApi* | [**updateAddonPurchase**](docs/AddonPurchasesApi.md#updateAddonPurchase) | **PUT** /addons/{addon_id}/purchases/{user_id} | Update a purchase for an addon
+*GmodstoreSdk.AddonReviewsApi* | [**getAddonReview**](docs/AddonReviewsApi.md#getAddonReview) | **GET** /addons/{addon_id}/reviews/{review_id} | Fetch a review of an addon
+*GmodstoreSdk.AddonReviewsApi* | [**listAddonReviews**](docs/AddonReviewsApi.md#listAddonReviews) | **GET** /addons/{addon_id}/reviews | Fetch all the reviews of an addon
+*GmodstoreSdk.AddonStatsApi* | [**getAddonStats**](docs/AddonStatsApi.md#getAddonStats) | **GET** /addons/{addon_id}/stats | Fetch all the stats for an addon
+*GmodstoreSdk.AddonVersionsApi* | [**createAddonVersion**](docs/AddonVersionsApi.md#createAddonVersion) | **POST** /addons/{addon_id}/versions | Create a new version for an addon
+*GmodstoreSdk.AddonVersionsApi* | [**downloadAddonVersion**](docs/AddonVersionsApi.md#downloadAddonVersion) | **GET** /addons/{addon_id}/versions/{version_id}/download | Generate a download token for a specific version of an addon
+*GmodstoreSdk.AddonVersionsApi* | [**getAddonVersion**](docs/AddonVersionsApi.md#getAddonVersion) | **GET** /addons/{addon_id}/versions/{version_id} | Fetch a specific version of an addon
+*GmodstoreSdk.AddonVersionsApi* | [**listAddonVersions**](docs/AddonVersionsApi.md#listAddonVersions) | **GET** /addons/{addon_id}/versions | Fetch all the versions of an addon
+*GmodstoreSdk.AddonVersionsApi* | [**updateAddonVersion**](docs/AddonVersionsApi.md#updateAddonVersion) | **PUT** /addons/{addon_id}/versions/{version_id} | Update a version of an addon
+*GmodstoreSdk.AddonsApi* | [**getAddon**](docs/AddonsApi.md#getAddon) | **GET** /addons/{addon_id} | Fetch a single addon
+*GmodstoreSdk.AddonsApi* | [**listSelfAddons**](docs/AddonsApi.md#listSelfAddons) | **GET** /addons | Fetch all the addons that you have access to
+*GmodstoreSdk.PermissionGroupsApi* | [**listPermissionGroups**](docs/PermissionGroupsApi.md#listPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
+*GmodstoreSdk.TeamUsersApi* | [**listTeamUsers**](docs/TeamUsersApi.md#listTeamUsers) | **GET** /teams/{team_id}/users | Fetch all the users in the given team
+*GmodstoreSdk.TeamsApi* | [**getTeam**](docs/TeamsApi.md#getTeam) | **GET** /teams/{team_id} | Fetch a single team
+*GmodstoreSdk.UserAddonsApi* | [**listUserAddons**](docs/UserAddonsApi.md#listUserAddons) | **GET** /users/{user_id}/addons | Fetch all the addons authored / co-authored by a user
+*GmodstoreSdk.UserBadgesApi* | [**createUserBadge**](docs/UserBadgesApi.md#createUserBadge) | **POST** /users/{user_id}/badges | Give a user a badge
+*GmodstoreSdk.UserBadgesApi* | [**deleteUserBadge**](docs/UserBadgesApi.md#deleteUserBadge) | **DELETE** /users/{user_id}/badges/{badge_id} | Destroy a users&#39;s badge
+*GmodstoreSdk.UserBadgesApi* | [**listUserBadges**](docs/UserBadgesApi.md#listUserBadges) | **GET** /users/{user_id}/badges | Fetch all the badges a user has
+*GmodstoreSdk.UserBansApi* | [**listUserBans**](docs/UserBansApi.md#listUserBans) | **GET** /users/{user_id}/bans | Fetch all active bans associated with this user
+*GmodstoreSdk.UserPurchasesApi* | [**listUserPurchases**](docs/UserPurchasesApi.md#listUserPurchases) | **GET** /users/{user_id}/purchases | Fetch all purchases a user has made
+*GmodstoreSdk.UserTeamsApi* | [**listUserTeams**](docs/UserTeamsApi.md#listUserTeams) | **GET** /users/{user_id}/teams | Fetch all the teams of a user
+*GmodstoreSdk.UsersApi* | [**getSelfUser**](docs/UsersApi.md#getSelfUser) | **GET** /users/me | Fetches the current user (API Key Owner)
+*GmodstoreSdk.UsersApi* | [**getUser**](docs/UsersApi.md#getUser) | **GET** /users/{user_id} | Fetch a single user
 
 
 ## Documentation for Models
 
- - [GmodStoreApi.Addon](docs/Addon.md)
- - [GmodStoreApi.AddonCoupon](docs/AddonCoupon.md)
- - [GmodStoreApi.AddonCouponListResponse](docs/AddonCouponListResponse.md)
- - [GmodStoreApi.AddonCouponResponse](docs/AddonCouponResponse.md)
- - [GmodStoreApi.AddonDownload](docs/AddonDownload.md)
- - [GmodStoreApi.AddonDownloadResponse](docs/AddonDownloadResponse.md)
- - [GmodStoreApi.AddonImages](docs/AddonImages.md)
- - [GmodStoreApi.AddonListResponse](docs/AddonListResponse.md)
- - [GmodStoreApi.AddonPrice](docs/AddonPrice.md)
- - [GmodStoreApi.AddonPurchase](docs/AddonPurchase.md)
- - [GmodStoreApi.AddonPurchaseListResponse](docs/AddonPurchaseListResponse.md)
- - [GmodStoreApi.AddonPurchaseResponse](docs/AddonPurchaseResponse.md)
- - [GmodStoreApi.AddonResponse](docs/AddonResponse.md)
- - [GmodStoreApi.AddonReview](docs/AddonReview.md)
- - [GmodStoreApi.AddonReviewListResponse](docs/AddonReviewListResponse.md)
- - [GmodStoreApi.AddonReviewResponse](docs/AddonReviewResponse.md)
- - [GmodStoreApi.AddonStats](docs/AddonStats.md)
- - [GmodStoreApi.AddonStatsListResponse](docs/AddonStatsListResponse.md)
- - [GmodStoreApi.AddonStatsRevenue](docs/AddonStatsRevenue.md)
- - [GmodStoreApi.AddonStatsRevenueCurrent](docs/AddonStatsRevenueCurrent.md)
- - [GmodStoreApi.AddonStatsSales](docs/AddonStatsSales.md)
- - [GmodStoreApi.AddonStatsSalesCurrent](docs/AddonStatsSalesCurrent.md)
- - [GmodStoreApi.AddonStatsViews](docs/AddonStatsViews.md)
- - [GmodStoreApi.AddonStatsViewsCurrent](docs/AddonStatsViewsCurrent.md)
- - [GmodStoreApi.AddonVersion](docs/AddonVersion.md)
- - [GmodStoreApi.AddonVersionListResponse](docs/AddonVersionListResponse.md)
- - [GmodStoreApi.AddonVersionReleaseType](docs/AddonVersionReleaseType.md)
- - [GmodStoreApi.AddonVersionResponse](docs/AddonVersionResponse.md)
- - [GmodStoreApi.BadgeListResponse](docs/BadgeListResponse.md)
- - [GmodStoreApi.BadgeResponse](docs/BadgeResponse.md)
- - [GmodStoreApi.Error](docs/Error.md)
- - [GmodStoreApi.ErrorResponse](docs/ErrorResponse.md)
- - [GmodStoreApi.Money](docs/Money.md)
- - [GmodStoreApi.NewAddonPurchase](docs/NewAddonPurchase.md)
- - [GmodStoreApi.NewAddonVersion](docs/NewAddonVersion.md)
- - [GmodStoreApi.OrderItem](docs/OrderItem.md)
- - [GmodStoreApi.PermissionGroup](docs/PermissionGroup.md)
- - [GmodStoreApi.PermissionGroupListResponse](docs/PermissionGroupListResponse.md)
- - [GmodStoreApi.Team](docs/Team.md)
- - [GmodStoreApi.TeamListResponse](docs/TeamListResponse.md)
- - [GmodStoreApi.TeamResponse](docs/TeamResponse.md)
- - [GmodStoreApi.TeamUser](docs/TeamUser.md)
- - [GmodStoreApi.TeamUserListResponse](docs/TeamUserListResponse.md)
- - [GmodStoreApi.User](docs/User.md)
- - [GmodStoreApi.UserBadge](docs/UserBadge.md)
- - [GmodStoreApi.UserBadgeLegend](docs/UserBadgeLegend.md)
- - [GmodStoreApi.UserBan](docs/UserBan.md)
- - [GmodStoreApi.UserBanListResponse](docs/UserBanListResponse.md)
- - [GmodStoreApi.UserResponse](docs/UserResponse.md)
+ - [GmodstoreSdk.Addon](docs/Addon.md)
+ - [GmodstoreSdk.AddonCoupon](docs/AddonCoupon.md)
+ - [GmodstoreSdk.AddonCouponListResponse](docs/AddonCouponListResponse.md)
+ - [GmodstoreSdk.AddonCouponResponse](docs/AddonCouponResponse.md)
+ - [GmodstoreSdk.AddonDownload](docs/AddonDownload.md)
+ - [GmodstoreSdk.AddonDownloadResponse](docs/AddonDownloadResponse.md)
+ - [GmodstoreSdk.AddonImages](docs/AddonImages.md)
+ - [GmodstoreSdk.AddonListResponse](docs/AddonListResponse.md)
+ - [GmodstoreSdk.AddonPrice](docs/AddonPrice.md)
+ - [GmodstoreSdk.AddonPurchase](docs/AddonPurchase.md)
+ - [GmodstoreSdk.AddonPurchaseListResponse](docs/AddonPurchaseListResponse.md)
+ - [GmodstoreSdk.AddonPurchaseResponse](docs/AddonPurchaseResponse.md)
+ - [GmodstoreSdk.AddonResponse](docs/AddonResponse.md)
+ - [GmodstoreSdk.AddonReview](docs/AddonReview.md)
+ - [GmodstoreSdk.AddonReviewListResponse](docs/AddonReviewListResponse.md)
+ - [GmodstoreSdk.AddonReviewResponse](docs/AddonReviewResponse.md)
+ - [GmodstoreSdk.AddonStats](docs/AddonStats.md)
+ - [GmodstoreSdk.AddonStatsListResponse](docs/AddonStatsListResponse.md)
+ - [GmodstoreSdk.AddonStatsRevenue](docs/AddonStatsRevenue.md)
+ - [GmodstoreSdk.AddonStatsRevenueCurrent](docs/AddonStatsRevenueCurrent.md)
+ - [GmodstoreSdk.AddonStatsSales](docs/AddonStatsSales.md)
+ - [GmodstoreSdk.AddonStatsSalesCurrent](docs/AddonStatsSalesCurrent.md)
+ - [GmodstoreSdk.AddonStatsViews](docs/AddonStatsViews.md)
+ - [GmodstoreSdk.AddonStatsViewsCurrent](docs/AddonStatsViewsCurrent.md)
+ - [GmodstoreSdk.AddonVersion](docs/AddonVersion.md)
+ - [GmodstoreSdk.AddonVersionListResponse](docs/AddonVersionListResponse.md)
+ - [GmodstoreSdk.AddonVersionReleaseType](docs/AddonVersionReleaseType.md)
+ - [GmodstoreSdk.AddonVersionResponse](docs/AddonVersionResponse.md)
+ - [GmodstoreSdk.BadgeListResponse](docs/BadgeListResponse.md)
+ - [GmodstoreSdk.BadgeResponse](docs/BadgeResponse.md)
+ - [GmodstoreSdk.Error](docs/Error.md)
+ - [GmodstoreSdk.ErrorResponse](docs/ErrorResponse.md)
+ - [GmodstoreSdk.Money](docs/Money.md)
+ - [GmodstoreSdk.NewAddonPurchase](docs/NewAddonPurchase.md)
+ - [GmodstoreSdk.NewAddonVersion](docs/NewAddonVersion.md)
+ - [GmodstoreSdk.OrderItem](docs/OrderItem.md)
+ - [GmodstoreSdk.PermissionGroup](docs/PermissionGroup.md)
+ - [GmodstoreSdk.PermissionGroupListResponse](docs/PermissionGroupListResponse.md)
+ - [GmodstoreSdk.Team](docs/Team.md)
+ - [GmodstoreSdk.TeamListResponse](docs/TeamListResponse.md)
+ - [GmodstoreSdk.TeamResponse](docs/TeamResponse.md)
+ - [GmodstoreSdk.TeamUser](docs/TeamUser.md)
+ - [GmodstoreSdk.TeamUserListResponse](docs/TeamUserListResponse.md)
+ - [GmodstoreSdk.User](docs/User.md)
+ - [GmodstoreSdk.UserBadge](docs/UserBadge.md)
+ - [GmodstoreSdk.UserBadgeLegend](docs/UserBadgeLegend.md)
+ - [GmodstoreSdk.UserBan](docs/UserBan.md)
+ - [GmodstoreSdk.UserBanListResponse](docs/UserBanListResponse.md)
+ - [GmodstoreSdk.UserResponse](docs/UserResponse.md)
 
 
 ## Documentation for Authorization

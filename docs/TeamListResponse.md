@@ -1,4 +1,4 @@
-# GmodStoreApi.TeamListResponse
+# GmodstoreSdk.TeamListResponse
 
 ## Properties
 

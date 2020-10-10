@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonPurchasesApi
+# GmodstoreSdk.AddonPurchasesApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -20,15 +20,15 @@ Create a purchase for an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonPurchasesApi();
+let apiInstance = new GmodstoreSdk.AddonPurchasesApi();
 let addonId = 789; // Number | Id of the addon
-let newAddonPurchase = new GmodStoreApi.NewAddonPurchase(); // NewAddonPurchase | 
+let newAddonPurchase = new GmodstoreSdk.NewAddonPurchase(); // NewAddonPurchase | 
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonPurchase`
 };
@@ -73,13 +73,13 @@ Get a purchase of an addon by user
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonPurchasesApi();
+let apiInstance = new GmodstoreSdk.AddonPurchasesApi();
 let addonId = 789; // Number | Id of the addon
 let userId = 789; // Number | Id of the user
 let opts = {
@@ -126,13 +126,13 @@ Fetch all purchases of an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonPurchasesApi();
+let apiInstance = new GmodstoreSdk.AddonPurchasesApi();
 let addonId = 789; // Number | Id of the addon
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonPurchase`
@@ -177,16 +177,16 @@ Update a purchase for an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonPurchasesApi();
+let apiInstance = new GmodstoreSdk.AddonPurchasesApi();
 let addonId = 789; // Number | Id of the addon
 let userId = 789; // Number | Id of the user
-let addonPurchase = new GmodStoreApi.AddonPurchase(); // AddonPurchase | 
+let addonPurchase = new GmodstoreSdk.AddonPurchase(); // AddonPurchase | 
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonPurchase`
 };

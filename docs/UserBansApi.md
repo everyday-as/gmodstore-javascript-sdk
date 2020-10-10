@@ -1,4 +1,4 @@
-# GmodStoreApi.UserBansApi
+# GmodstoreSdk.UserBansApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -17,13 +17,13 @@ Fetch all active bans associated with this user
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.UserBansApi();
+let apiInstance = new GmodstoreSdk.UserBansApi();
 let userId = 789; // Number | Id of the user
 apiInstance.listUserBans(userId, (error, data, response) => {
   if (error) {

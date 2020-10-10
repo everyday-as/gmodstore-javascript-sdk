@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonImages
+# GmodstoreSdk.AddonImages
 
 ## Properties
 

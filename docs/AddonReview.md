@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonReview
+# GmodstoreSdk.AddonReview
 
 ## Properties
 

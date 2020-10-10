@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonPurchase
+# GmodstoreSdk.AddonPurchase
 
 ## Properties
 

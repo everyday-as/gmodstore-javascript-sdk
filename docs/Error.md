@@ -1,4 +1,4 @@
-# GmodStoreApi.Error
+# GmodstoreSdk.Error
 
 ## Properties
 

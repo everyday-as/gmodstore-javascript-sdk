@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonPrice
+# GmodstoreSdk.AddonPrice
 
 ## Properties
 

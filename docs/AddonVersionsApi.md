@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonVersionsApi
+# GmodstoreSdk.AddonVersionsApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -21,15 +21,15 @@ Create a new version for an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonVersionsApi();
+let apiInstance = new GmodstoreSdk.AddonVersionsApi();
 let addonId = 789; // Number | Id of the addon
-let newAddonVersion = new GmodStoreApi.NewAddonVersion(); // NewAddonVersion | 
+let newAddonVersion = new GmodstoreSdk.NewAddonVersion(); // NewAddonVersion | 
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonVersion`
 };
@@ -74,13 +74,13 @@ Generate a download token for a specific version of an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonVersionsApi();
+let apiInstance = new GmodstoreSdk.AddonVersionsApi();
 let addonId = 789; // Number | Id of the addon
 let versionId = 789; // Number | Id of the version
 apiInstance.downloadAddonVersion(addonId, versionId, (error, data, response) => {
@@ -123,13 +123,13 @@ Fetch a specific version of an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonVersionsApi();
+let apiInstance = new GmodstoreSdk.AddonVersionsApi();
 let addonId = 789; // Number | Id of the addon
 let versionId = 789; // Number | Id of the version
 let opts = {
@@ -176,13 +176,13 @@ Fetch all the versions of an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonVersionsApi();
+let apiInstance = new GmodstoreSdk.AddonVersionsApi();
 let addonId = 789; // Number | Id of the addon
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonVersion`
@@ -227,16 +227,16 @@ Update a version of an addon
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.AddonVersionsApi();
+let apiInstance = new GmodstoreSdk.AddonVersionsApi();
 let addonId = 789; // Number | Id of the addon
 let versionId = 789; // Number | Id of the version
-let addonVersion = new GmodStoreApi.AddonVersion(); // AddonVersion | 
+let addonVersion = new GmodstoreSdk.AddonVersion(); // AddonVersion | 
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonVersion`
 };

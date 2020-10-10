@@ -85,9 +85,9 @@ import UsersApi from './api/UsersApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var GmodStoreApi = require('Everyday/GmodStore/Sdk/index'); // See note below*.
-* var xxxSvc = new GmodStoreApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new GmodStoreApi.Yyy(); // Construct a model instance.
+* var GmodstoreSdk = require('Everyday/GmodStore/Sdk/index'); // See note below*.
+* var xxxSvc = new GmodstoreSdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new GmodstoreSdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -99,8 +99,8 @@ import UsersApi from './api/UsersApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new GmodStoreApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new GmodStoreApi.Yyy(); // Construct a model instance.
+* var xxxSvc = new GmodstoreSdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new GmodstoreSdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

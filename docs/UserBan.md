@@ -1,4 +1,4 @@
-# GmodStoreApi.UserBan
+# GmodstoreSdk.UserBan
 
 ## Properties
 

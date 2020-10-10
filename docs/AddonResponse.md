@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonResponse
+# GmodstoreSdk.AddonResponse
 
 ## Properties
 

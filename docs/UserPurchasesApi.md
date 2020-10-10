@@ -1,4 +1,4 @@
-# GmodStoreApi.UserPurchasesApi
+# GmodstoreSdk.UserPurchasesApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
@@ -17,13 +17,13 @@ Fetch all purchases a user has made
 ### Example
 
 ```javascript
-import GmodStoreApi from 'gmod_store_api';
-let defaultClient = GmodStoreApi.ApiClient.instance;
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodStoreApi.UserPurchasesApi();
+let apiInstance = new GmodstoreSdk.UserPurchasesApi();
 let userId = 789; // Number | Id of the user
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `AddonPurchase`

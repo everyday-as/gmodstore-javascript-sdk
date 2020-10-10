@@ -1,4 +1,4 @@
-# GmodStoreApi.AddonVersionReleaseType
+# GmodstoreSdk.AddonVersionReleaseType
 
 ## Enum
 

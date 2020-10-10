@@ -1,4 +1,4 @@
-# GmodStoreApi.TeamUser
+# GmodstoreSdk.TeamUser
 
 ## Properties
 

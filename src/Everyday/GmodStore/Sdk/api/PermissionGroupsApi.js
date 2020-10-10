@@ -18,17 +18,17 @@ import PermissionGroupListResponse from '../model/PermissionGroupListResponse';
 
 /**
 * PermissionGroups service.
-* @module Everyday\GmodStore\Sdk/api/PermissionGroupsApi
+* @module Everyday/GmodStore/Sdk/api/PermissionGroupsApi
 * @version 1.1.0
 */
 export default class PermissionGroupsApi {
 
     /**
     * Constructs a new PermissionGroupsApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi
+    * @alias module:Everyday/GmodStore/Sdk/api/PermissionGroupsApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,16 +37,16 @@ export default class PermissionGroupsApi {
 
     /**
      * Callback function to receive the result of the listPermissionGroups operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi~listPermissionGroupsCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/PermissionGroupsApi~listPermissionGroupsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/PermissionGroupListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Fetches all available permission groups
-     * @param {module:Everyday\GmodStore\Sdk/api/PermissionGroupsApi~listPermissionGroupsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse}
+     * @param {module:Everyday/GmodStore/Sdk/api/PermissionGroupsApi~listPermissionGroupsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/PermissionGroupListResponse}
      */
     listPermissionGroups(callback) {
       let postBody = null;

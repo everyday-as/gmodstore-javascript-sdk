@@ -18,17 +18,17 @@ import UserResponse from '../model/UserResponse';
 
 /**
 * Users service.
-* @module Everyday\GmodStore\Sdk/api/UsersApi
+* @module Everyday/GmodStore/Sdk/api/UsersApi
 * @version 1.1.0
 */
 export default class UsersApi {
 
     /**
     * Constructs a new UsersApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/UsersApi
+    * @alias module:Everyday/GmodStore/Sdk/api/UsersApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,18 +37,18 @@ export default class UsersApi {
 
     /**
      * Callback function to receive the result of the getSelfUser operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UsersApi~getSelfUserCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UsersApi~getSelfUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Fetches the current user (API Key Owner)
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `User`
-     * @param {module:Everyday\GmodStore\Sdk/api/UsersApi~getSelfUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/UserResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `User`
+     * @param {module:Everyday/GmodStore/Sdk/api/UsersApi~getSelfUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/UserResponse}
      */
     getSelfUser(opts, callback) {
       opts = opts || {};
@@ -77,9 +77,9 @@ export default class UsersApi {
 
     /**
      * Callback function to receive the result of the getUser operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UsersApi~getUserCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UsersApi~getUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -87,9 +87,9 @@ export default class UsersApi {
      * Fetch a single user
      * @param {Number} userId Id of the user
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `User`
-     * @param {module:Everyday\GmodStore\Sdk/api/UsersApi~getUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/UserResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `User`
+     * @param {module:Everyday/GmodStore/Sdk/api/UsersApi~getUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/UserResponse}
      */
     getUser(userId, opts, callback) {
       opts = opts || {};

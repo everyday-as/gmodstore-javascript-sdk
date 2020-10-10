@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The UserBan model module.
- * @module Everyday\GmodStore\Sdk/model/UserBan
+ * @module Everyday/GmodStore/Sdk/model/UserBan
  * @version 1.1.0
  */
 class UserBan {
     /**
      * Constructs a new <code>UserBan</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/UserBan
+     * @alias module:Everyday/GmodStore/Sdk/model/UserBan
      */
     constructor() { 
         
@@ -40,8 +40,8 @@ class UserBan {
      * Constructs a <code>UserBan</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserBan} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/UserBan} The populated <code>UserBan</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserBan} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/UserBan} The populated <code>UserBan</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -88,7 +88,7 @@ UserBan.prototype['reason'] = undefined;
 UserBan.prototype['unban_reason'] = undefined;
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/UserBan.PropertiesEnum>} properties
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/UserBan.PropertiesEnum>} properties
  */
 UserBan.prototype['properties'] = undefined;
 

@@ -20,17 +20,17 @@ import ErrorResponse from '../model/ErrorResponse';
 
 /**
 * AddonCoupons service.
-* @module Everyday\GmodStore\Sdk/api/AddonCouponsApi
+* @module Everyday/GmodStore/Sdk/api/AddonCouponsApi
 * @version 1.1.0
 */
 export default class AddonCouponsApi {
 
     /**
     * Constructs a new AddonCouponsApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/AddonCouponsApi
+    * @alias module:Everyday/GmodStore/Sdk/api/AddonCouponsApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -39,20 +39,20 @@ export default class AddonCouponsApi {
 
     /**
      * Callback function to receive the result of the createAddonCoupon operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~createAddonCouponCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~createAddonCouponCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCouponResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCouponResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create an addon coupon
      * @param {Number} addonId Id of the addon
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCoupon} addonCoupon 
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCoupon} addonCoupon 
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~createAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonCouponResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~createAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonCouponResponse}
      */
     createAddonCoupon(addonId, addonCoupon, opts, callback) {
       opts = opts || {};
@@ -90,7 +90,7 @@ export default class AddonCouponsApi {
 
     /**
      * Callback function to receive the result of the deleteAddonCoupon operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~deleteAddonCouponCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~deleteAddonCouponCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -100,7 +100,7 @@ export default class AddonCouponsApi {
      * Destroy an addon's coupon
      * @param {Number} addonId Id of the addon
      * @param {Number} couponId Id of the coupon
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~deleteAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~deleteAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
      */
     deleteAddonCoupon(addonId, couponId, callback) {
       let postBody = null;
@@ -137,9 +137,9 @@ export default class AddonCouponsApi {
 
     /**
      * Callback function to receive the result of the getAddonCoupon operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~getAddonCouponCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~getAddonCouponCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCouponResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCouponResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -148,9 +148,9 @@ export default class AddonCouponsApi {
      * @param {Number} addonId Id of the addon
      * @param {Number} couponId Id of the coupon
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~getAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonCouponResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~getAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonCouponResponse}
      */
     getAddonCoupon(addonId, couponId, opts, callback) {
       opts = opts || {};
@@ -189,9 +189,9 @@ export default class AddonCouponsApi {
 
     /**
      * Callback function to receive the result of the listAddonCoupons operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~listAddonCouponsCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~listAddonCouponsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCouponListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -199,9 +199,9 @@ export default class AddonCouponsApi {
      * Fetch all the coupons for an addon
      * @param {Number} addonId Id of the addon
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~listAddonCouponsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonCouponListResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~listAddonCouponsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse}
      */
     listAddonCoupons(addonId, opts, callback) {
       opts = opts || {};
@@ -235,9 +235,9 @@ export default class AddonCouponsApi {
 
     /**
      * Callback function to receive the result of the updateAddonCoupon operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~updateAddonCouponCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~updateAddonCouponCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCouponResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCouponResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -245,11 +245,11 @@ export default class AddonCouponsApi {
      * Update an addon's coupon
      * @param {Number} addonId Id of the addon
      * @param {Number} couponId Id of the coupon
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCoupon} addonCoupon 
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCoupon} addonCoupon 
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonCouponsApi~updateAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonCouponResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonCoupon`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonCouponsApi~updateAddonCouponCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonCouponResponse}
      */
     updateAddonCoupon(addonId, couponId, addonCoupon, opts, callback) {
       opts = opts || {};

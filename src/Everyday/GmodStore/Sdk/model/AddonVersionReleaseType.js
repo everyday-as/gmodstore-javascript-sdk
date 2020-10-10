@@ -58,7 +58,7 @@ export default class AddonVersionReleaseType {
     /**
     * Returns a <code>AddonVersionReleaseType</code> enum value from a Javascript object name.
     * @param {Object} data The plain JavaScript object containing the name of the enum value.
-    * @return {module:Everyday\GmodStore\Sdk/model/AddonVersionReleaseType} The enum <code>AddonVersionReleaseType</code> value.
+    * @return {module:Everyday/GmodStore/Sdk/model/AddonVersionReleaseType} The enum <code>AddonVersionReleaseType</code> value.
     */
     static constructFromObject(object) {
         return object;

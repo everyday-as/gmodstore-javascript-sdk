@@ -16,13 +16,13 @@ import Money from './Money';
 
 /**
  * The AddonStatsRevenueCurrent model module.
- * @module Everyday\GmodStore\Sdk/model/AddonStatsRevenueCurrent
+ * @module Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent
  * @version 1.1.0
  */
 class AddonStatsRevenueCurrent {
     /**
      * Constructs a new <code>AddonStatsRevenueCurrent</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonStatsRevenueCurrent
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonStatsRevenueCurrent {
      * Constructs a <code>AddonStatsRevenueCurrent</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonStatsRevenueCurrent} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonStatsRevenueCurrent} The populated <code>AddonStatsRevenueCurrent</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent} The populated <code>AddonStatsRevenueCurrent</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -62,12 +62,12 @@ class AddonStatsRevenueCurrent {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Money} day
+ * @member {module:Everyday/GmodStore/Sdk/model/Money} day
  */
 AddonStatsRevenueCurrent.prototype['day'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Money} month
+ * @member {module:Everyday/GmodStore/Sdk/model/Money} month
  */
 AddonStatsRevenueCurrent.prototype['month'] = undefined;
 

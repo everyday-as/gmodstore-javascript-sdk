@@ -18,17 +18,17 @@ import ErrorResponse from '../model/ErrorResponse';
 
 /**
 * UserPurchases service.
-* @module Everyday\GmodStore\Sdk/api/UserPurchasesApi
+* @module Everyday/GmodStore/Sdk/api/UserPurchasesApi
 * @version 1.1.0
 */
 export default class UserPurchasesApi {
 
     /**
     * Constructs a new UserPurchasesApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/UserPurchasesApi
+    * @alias module:Everyday/GmodStore/Sdk/api/UserPurchasesApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,9 +37,9 @@ export default class UserPurchasesApi {
 
     /**
      * Callback function to receive the result of the listUserPurchases operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UserPurchasesApi~listUserPurchasesCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UserPurchasesApi~listUserPurchasesCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchaseListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -47,9 +47,9 @@ export default class UserPurchasesApi {
      * Fetch all purchases a user has made
      * @param {Number} userId Id of the user
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
-     * @param {module:Everyday\GmodStore\Sdk/api/UserPurchasesApi~listUserPurchasesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonPurchaseListResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
+     * @param {module:Everyday/GmodStore/Sdk/api/UserPurchasesApi~listUserPurchasesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse}
      */
     listUserPurchases(userId, opts, callback) {
       opts = opts || {};

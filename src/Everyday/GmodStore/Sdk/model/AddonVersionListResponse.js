@@ -16,13 +16,13 @@ import AddonVersion from './AddonVersion';
 
 /**
  * The AddonVersionListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/AddonVersionListResponse
+ * @module Everyday/GmodStore/Sdk/model/AddonVersionListResponse
  * @version 1.1.0
  */
 class AddonVersionListResponse {
     /**
      * Constructs a new <code>AddonVersionListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonVersionListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonVersionListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonVersionListResponse {
      * Constructs a <code>AddonVersionListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonVersionListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonVersionListResponse} The populated <code>AddonVersionListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonVersionListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonVersionListResponse} The populated <code>AddonVersionListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class AddonVersionListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/AddonVersion>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/AddonVersion>} data
  */
 AddonVersionListResponse.prototype['data'] = undefined;
 

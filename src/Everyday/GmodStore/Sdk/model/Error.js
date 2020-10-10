@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The Error model module.
- * @module Everyday\GmodStore\Sdk/model/Error
+ * @module Everyday/GmodStore/Sdk/model/Error
  * @version 1.1.0
  */
 class Error {
     /**
      * Constructs a new <code>Error</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/Error
+     * @alias module:Everyday/GmodStore/Sdk/model/Error
      */
     constructor() { 
         
@@ -40,8 +40,8 @@ class Error {
      * Constructs a <code>Error</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/Error} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/Error} The populated <code>Error</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/Error} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/Error} The populated <code>Error</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

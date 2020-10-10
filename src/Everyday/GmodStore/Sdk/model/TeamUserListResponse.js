@@ -16,13 +16,13 @@ import TeamUser from './TeamUser';
 
 /**
  * The TeamUserListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/TeamUserListResponse
+ * @module Everyday/GmodStore/Sdk/model/TeamUserListResponse
  * @version 1.1.0
  */
 class TeamUserListResponse {
     /**
      * Constructs a new <code>TeamUserListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/TeamUserListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/TeamUserListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class TeamUserListResponse {
      * Constructs a <code>TeamUserListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/TeamUserListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/TeamUserListResponse} The populated <code>TeamUserListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamUserListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/TeamUserListResponse} The populated <code>TeamUserListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class TeamUserListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/TeamUser>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/TeamUser>} data
  */
 TeamUserListResponse.prototype['data'] = undefined;
 

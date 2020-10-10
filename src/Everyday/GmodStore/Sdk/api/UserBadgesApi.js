@@ -20,17 +20,17 @@ import UserBadge from '../model/UserBadge';
 
 /**
 * UserBadges service.
-* @module Everyday\GmodStore\Sdk/api/UserBadgesApi
+* @module Everyday/GmodStore/Sdk/api/UserBadgesApi
 * @version 1.1.0
 */
 export default class UserBadgesApi {
 
     /**
     * Constructs a new UserBadgesApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/UserBadgesApi
+    * @alias module:Everyday/GmodStore/Sdk/api/UserBadgesApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -39,18 +39,18 @@ export default class UserBadgesApi {
 
     /**
      * Callback function to receive the result of the createUserBadge operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UserBadgesApi~createUserBadgeCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UserBadgesApi~createUserBadgeCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/BadgeResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/BadgeResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Give a user a badge
      * @param {Number} userId Id of the user
-     * @param {module:Everyday\GmodStore\Sdk/model/UserBadge} userBadge 
-     * @param {module:Everyday\GmodStore\Sdk/api/UserBadgesApi~createUserBadgeCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/BadgeResponse}
+     * @param {module:Everyday/GmodStore/Sdk/model/UserBadge} userBadge 
+     * @param {module:Everyday/GmodStore/Sdk/api/UserBadgesApi~createUserBadgeCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/BadgeResponse}
      */
     createUserBadge(userId, userBadge, callback) {
       let postBody = userBadge;
@@ -86,7 +86,7 @@ export default class UserBadgesApi {
 
     /**
      * Callback function to receive the result of the deleteUserBadge operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UserBadgesApi~deleteUserBadgeCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UserBadgesApi~deleteUserBadgeCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -96,7 +96,7 @@ export default class UserBadgesApi {
      * Destroy a users's badge
      * @param {Number} userId Id of the user
      * @param {String} badgeId Id of the badge
-     * @param {module:Everyday\GmodStore\Sdk/api/UserBadgesApi~deleteUserBadgeCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:Everyday/GmodStore/Sdk/api/UserBadgesApi~deleteUserBadgeCallback} callback The callback function, accepting three arguments: error, data, response
      */
     deleteUserBadge(userId, badgeId, callback) {
       let postBody = null;
@@ -133,17 +133,17 @@ export default class UserBadgesApi {
 
     /**
      * Callback function to receive the result of the listUserBadges operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UserBadgesApi~listUserBadgesCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UserBadgesApi~listUserBadgesCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/BadgeListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/BadgeListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Fetch all the badges a user has
      * @param {Number} userId Id of the user
-     * @param {module:Everyday\GmodStore\Sdk/api/UserBadgesApi~listUserBadgesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/BadgeListResponse}
+     * @param {module:Everyday/GmodStore/Sdk/api/UserBadgesApi~listUserBadgesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/BadgeListResponse}
      */
     listUserBadges(userId, callback) {
       let postBody = null;

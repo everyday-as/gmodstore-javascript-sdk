@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The UserBadge model module.
- * @module Everyday\GmodStore\Sdk/model/UserBadge
+ * @module Everyday/GmodStore/Sdk/model/UserBadge
  * @version 1.1.0
  */
 class UserBadge {
     /**
      * Constructs a new <code>UserBadge</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/UserBadge
+     * @alias module:Everyday/GmodStore/Sdk/model/UserBadge
      * @param badge {String} 
      */
     constructor(badge) { 
@@ -42,8 +42,8 @@ class UserBadge {
      * Constructs a <code>UserBadge</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserBadge} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/UserBadge} The populated <code>UserBadge</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserBadge} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/UserBadge} The populated <code>UserBadge</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

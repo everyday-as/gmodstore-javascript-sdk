@@ -16,13 +16,13 @@ import Team from './Team';
 
 /**
  * The TeamResponse model module.
- * @module Everyday\GmodStore\Sdk/model/TeamResponse
+ * @module Everyday/GmodStore/Sdk/model/TeamResponse
  * @version 1.1.0
  */
 class TeamResponse {
     /**
      * Constructs a new <code>TeamResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/TeamResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/TeamResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class TeamResponse {
      * Constructs a <code>TeamResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/TeamResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/TeamResponse} The populated <code>TeamResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/TeamResponse} The populated <code>TeamResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class TeamResponse {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Team} data
+ * @member {module:Everyday/GmodStore/Sdk/model/Team} data
  */
 TeamResponse.prototype['data'] = undefined;
 

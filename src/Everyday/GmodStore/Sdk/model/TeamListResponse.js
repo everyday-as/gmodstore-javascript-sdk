@@ -16,13 +16,13 @@ import Team from './Team';
 
 /**
  * The TeamListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/TeamListResponse
+ * @module Everyday/GmodStore/Sdk/model/TeamListResponse
  * @version 1.1.0
  */
 class TeamListResponse {
     /**
      * Constructs a new <code>TeamListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/TeamListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/TeamListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class TeamListResponse {
      * Constructs a <code>TeamListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/TeamListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/TeamListResponse} The populated <code>TeamListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/TeamListResponse} The populated <code>TeamListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class TeamListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/Team>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/Team>} data
  */
 TeamListResponse.prototype['data'] = undefined;
 

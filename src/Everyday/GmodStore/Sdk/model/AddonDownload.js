@@ -15,14 +15,14 @@ import ApiClient from '../ApiClient';
 
 /**
  * The AddonDownload model module.
- * @module Everyday\GmodStore\Sdk/model/AddonDownload
+ * @module Everyday/GmodStore/Sdk/model/AddonDownload
  * @version 1.1.0
  */
 class AddonDownload {
     /**
      * Constructs a new <code>AddonDownload</code>.
      * **NOTE:** The url is valid for a single use within 24 hours **ONLY**!
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonDownload
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonDownload
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonDownload {
      * Constructs a <code>AddonDownload</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonDownload} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonDownload} The populated <code>AddonDownload</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonDownload} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonDownload} The populated <code>AddonDownload</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

@@ -16,13 +16,13 @@ import AddonPurchase from './AddonPurchase';
 
 /**
  * The AddonPurchaseResponse model module.
- * @module Everyday\GmodStore\Sdk/model/AddonPurchaseResponse
+ * @module Everyday/GmodStore/Sdk/model/AddonPurchaseResponse
  * @version 1.1.0
  */
 class AddonPurchaseResponse {
     /**
      * Constructs a new <code>AddonPurchaseResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonPurchaseResponse {
      * Constructs a <code>AddonPurchaseResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse} The populated <code>AddonPurchaseResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse} The populated <code>AddonPurchaseResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class AddonPurchaseResponse {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonPurchase} data
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonPurchase} data
  */
 AddonPurchaseResponse.prototype['data'] = undefined;
 

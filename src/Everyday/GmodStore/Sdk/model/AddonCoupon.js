@@ -16,13 +16,13 @@ import Addon from './Addon';
 
 /**
  * The AddonCoupon model module.
- * @module Everyday\GmodStore\Sdk/model/AddonCoupon
+ * @module Everyday/GmodStore/Sdk/model/AddonCoupon
  * @version 1.1.0
  */
 class AddonCoupon {
     /**
      * Constructs a new <code>AddonCoupon</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonCoupon
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonCoupon
      * @param id {Number} 
      * @param code {String} 
      * @param percent {Number} 
@@ -51,8 +51,8 @@ class AddonCoupon {
      * Constructs a <code>AddonCoupon</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCoupon} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonCoupon} The populated <code>AddonCoupon</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCoupon} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonCoupon} The populated <code>AddonCoupon</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -126,7 +126,7 @@ AddonCoupon.prototype['created_at'] = undefined;
 AddonCoupon.prototype['updated_at'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Addon} addon
+ * @member {module:Everyday/GmodStore/Sdk/model/Addon} addon
  */
 AddonCoupon.prototype['addon'] = undefined;
 

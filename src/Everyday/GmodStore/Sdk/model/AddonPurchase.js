@@ -18,13 +18,13 @@ import User from './User';
 
 /**
  * The AddonPurchase model module.
- * @module Everyday\GmodStore\Sdk/model/AddonPurchase
+ * @module Everyday/GmodStore/Sdk/model/AddonPurchase
  * @version 1.1.0
  */
 class AddonPurchase {
     /**
      * Constructs a new <code>AddonPurchase</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonPurchase
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonPurchase
      * @param revoked {Boolean} 
      */
     constructor(revoked) { 
@@ -45,8 +45,8 @@ class AddonPurchase {
      * Constructs a <code>AddonPurchase</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchase} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonPurchase} The populated <code>AddonPurchase</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchase} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonPurchase} The populated <code>AddonPurchase</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -93,17 +93,17 @@ AddonPurchase.prototype['created_at'] = undefined;
 AddonPurchase.prototype['updated_at'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Addon} addon
+ * @member {module:Everyday/GmodStore/Sdk/model/Addon} addon
  */
 AddonPurchase.prototype['addon'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/OrderItem} order_item
+ * @member {module:Everyday/GmodStore/Sdk/model/OrderItem} order_item
  */
 AddonPurchase.prototype['order_item'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/User} user
+ * @member {module:Everyday/GmodStore/Sdk/model/User} user
  */
 AddonPurchase.prototype['user'] = undefined;
 

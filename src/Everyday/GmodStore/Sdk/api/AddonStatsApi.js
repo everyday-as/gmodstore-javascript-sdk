@@ -18,17 +18,17 @@ import ErrorResponse from '../model/ErrorResponse';
 
 /**
 * AddonStats service.
-* @module Everyday\GmodStore\Sdk/api/AddonStatsApi
+* @module Everyday/GmodStore/Sdk/api/AddonStatsApi
 * @version 1.1.0
 */
 export default class AddonStatsApi {
 
     /**
     * Constructs a new AddonStatsApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/AddonStatsApi
+    * @alias module:Everyday/GmodStore/Sdk/api/AddonStatsApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,17 +37,17 @@ export default class AddonStatsApi {
 
     /**
      * Callback function to receive the result of the getAddonStats operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonStatsApi~getAddonStatsCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonStatsApi~getAddonStatsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonStatsListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Fetch all the stats for an addon
      * @param {Number} addonId Id of the addon
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonStatsApi~getAddonStatsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonStatsListResponse}
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonStatsApi~getAddonStatsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonStatsListResponse}
      */
     getAddonStats(addonId, callback) {
       let postBody = null;

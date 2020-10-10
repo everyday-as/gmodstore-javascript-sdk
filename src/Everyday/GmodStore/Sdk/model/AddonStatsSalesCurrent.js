@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The AddonStatsSalesCurrent model module.
- * @module Everyday\GmodStore\Sdk/model/AddonStatsSalesCurrent
+ * @module Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent
  * @version 1.1.0
  */
 class AddonStatsSalesCurrent {
     /**
      * Constructs a new <code>AddonStatsSalesCurrent</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonStatsSalesCurrent
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent
      */
     constructor() { 
         
@@ -40,8 +40,8 @@ class AddonStatsSalesCurrent {
      * Constructs a <code>AddonStatsSalesCurrent</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonStatsSalesCurrent} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonStatsSalesCurrent} The populated <code>AddonStatsSalesCurrent</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent} The populated <code>AddonStatsSalesCurrent</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

@@ -18,17 +18,17 @@ import TeamResponse from '../model/TeamResponse';
 
 /**
 * Teams service.
-* @module Everyday\GmodStore\Sdk/api/TeamsApi
+* @module Everyday/GmodStore/Sdk/api/TeamsApi
 * @version 1.1.0
 */
 export default class TeamsApi {
 
     /**
     * Constructs a new TeamsApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/TeamsApi
+    * @alias module:Everyday/GmodStore/Sdk/api/TeamsApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,9 +37,9 @@ export default class TeamsApi {
 
     /**
      * Callback function to receive the result of the getTeam operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/TeamsApi~getTeamCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/TeamsApi~getTeamCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/TeamResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -47,9 +47,9 @@ export default class TeamsApi {
      * Fetch a single team
      * @param {Number} teamId Id of the team
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `Team`
-     * @param {module:Everyday\GmodStore\Sdk/api/TeamsApi~getTeamCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/TeamResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `Team`
+     * @param {module:Everyday/GmodStore/Sdk/api/TeamsApi~getTeamCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/TeamResponse}
      */
     getTeam(teamId, opts, callback) {
       opts = opts || {};

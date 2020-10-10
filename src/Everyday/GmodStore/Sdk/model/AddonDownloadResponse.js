@@ -16,13 +16,13 @@ import AddonDownload from './AddonDownload';
 
 /**
  * The AddonDownloadResponse model module.
- * @module Everyday\GmodStore\Sdk/model/AddonDownloadResponse
+ * @module Everyday/GmodStore/Sdk/model/AddonDownloadResponse
  * @version 1.1.0
  */
 class AddonDownloadResponse {
     /**
      * Constructs a new <code>AddonDownloadResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonDownloadResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonDownloadResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonDownloadResponse {
      * Constructs a <code>AddonDownloadResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonDownloadResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonDownloadResponse} The populated <code>AddonDownloadResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonDownloadResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonDownloadResponse} The populated <code>AddonDownloadResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class AddonDownloadResponse {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonDownload} data
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonDownload} data
  */
 AddonDownloadResponse.prototype['data'] = undefined;
 

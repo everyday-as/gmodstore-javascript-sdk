@@ -16,13 +16,13 @@ import Error from './Error';
 
 /**
  * The ErrorResponse model module.
- * @module Everyday\GmodStore\Sdk/model/ErrorResponse
+ * @module Everyday/GmodStore/Sdk/model/ErrorResponse
  * @version 1.1.0
  */
 class ErrorResponse {
     /**
      * Constructs a new <code>ErrorResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/ErrorResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/ErrorResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class ErrorResponse {
      * Constructs a <code>ErrorResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/ErrorResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/ErrorResponse} The populated <code>ErrorResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/ErrorResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/ErrorResponse} The populated <code>ErrorResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class ErrorResponse {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Error} data
+ * @member {module:Everyday/GmodStore/Sdk/model/Error} data
  */
 ErrorResponse.prototype['data'] = undefined;
 

@@ -16,13 +16,13 @@ import AddonCoupon from './AddonCoupon';
 
 /**
  * The AddonCouponListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/AddonCouponListResponse
+ * @module Everyday/GmodStore/Sdk/model/AddonCouponListResponse
  * @version 1.1.0
  */
 class AddonCouponListResponse {
     /**
      * Constructs a new <code>AddonCouponListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonCouponListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonCouponListResponse {
      * Constructs a <code>AddonCouponListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonCouponListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonCouponListResponse} The populated <code>AddonCouponListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse} The populated <code>AddonCouponListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class AddonCouponListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/AddonCoupon>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/AddonCoupon>} data
  */
 AddonCouponListResponse.prototype['data'] = undefined;
 

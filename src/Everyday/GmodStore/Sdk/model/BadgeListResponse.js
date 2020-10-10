@@ -16,13 +16,13 @@ import UserBadgeLegend from './UserBadgeLegend';
 
 /**
  * The BadgeListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/BadgeListResponse
+ * @module Everyday/GmodStore/Sdk/model/BadgeListResponse
  * @version 1.1.0
  */
 class BadgeListResponse {
     /**
      * Constructs a new <code>BadgeListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/BadgeListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/BadgeListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class BadgeListResponse {
      * Constructs a <code>BadgeListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/BadgeListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/BadgeListResponse} The populated <code>BadgeListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/BadgeListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/BadgeListResponse} The populated <code>BadgeListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class BadgeListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/UserBadgeLegend>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/UserBadgeLegend>} data
  */
 BadgeListResponse.prototype['data'] = undefined;
 

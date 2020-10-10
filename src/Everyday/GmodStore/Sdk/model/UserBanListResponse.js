@@ -16,13 +16,13 @@ import UserBan from './UserBan';
 
 /**
  * The UserBanListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/UserBanListResponse
+ * @module Everyday/GmodStore/Sdk/model/UserBanListResponse
  * @version 1.1.0
  */
 class UserBanListResponse {
     /**
      * Constructs a new <code>UserBanListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/UserBanListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/UserBanListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class UserBanListResponse {
      * Constructs a <code>UserBanListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserBanListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/UserBanListResponse} The populated <code>UserBanListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserBanListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/UserBanListResponse} The populated <code>UserBanListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class UserBanListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/UserBan>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/UserBan>} data
  */
 UserBanListResponse.prototype['data'] = undefined;
 

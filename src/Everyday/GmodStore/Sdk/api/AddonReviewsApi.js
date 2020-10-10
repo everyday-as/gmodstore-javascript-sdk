@@ -19,17 +19,17 @@ import ErrorResponse from '../model/ErrorResponse';
 
 /**
 * AddonReviews service.
-* @module Everyday\GmodStore\Sdk/api/AddonReviewsApi
+* @module Everyday/GmodStore/Sdk/api/AddonReviewsApi
 * @version 1.1.0
 */
 export default class AddonReviewsApi {
 
     /**
     * Constructs a new AddonReviewsApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/AddonReviewsApi
+    * @alias module:Everyday/GmodStore/Sdk/api/AddonReviewsApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -38,9 +38,9 @@ export default class AddonReviewsApi {
 
     /**
      * Callback function to receive the result of the getAddonReview operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonReviewsApi~getAddonReviewCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonReviewsApi~getAddonReviewCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonReviewResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonReviewResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -49,9 +49,9 @@ export default class AddonReviewsApi {
      * @param {Number} addonId Id of the addon
      * @param {Number} reviewId Id of the review
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonReview`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonReviewsApi~getAddonReviewCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonReviewResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonReview`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonReviewsApi~getAddonReviewCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonReviewResponse}
      */
     getAddonReview(addonId, reviewId, opts, callback) {
       opts = opts || {};
@@ -90,9 +90,9 @@ export default class AddonReviewsApi {
 
     /**
      * Callback function to receive the result of the listAddonReviews operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonReviewsApi~listAddonReviewsCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonReviewsApi~listAddonReviewsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonReviewListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonReviewListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -100,9 +100,9 @@ export default class AddonReviewsApi {
      * Fetch all the reviews of an addon
      * @param {Number} addonId Id of the addon
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonReview`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonReviewsApi~listAddonReviewsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonReviewListResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonReview`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonReviewsApi~listAddonReviewsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonReviewListResponse}
      */
     listAddonReviews(addonId, opts, callback) {
       opts = opts || {};

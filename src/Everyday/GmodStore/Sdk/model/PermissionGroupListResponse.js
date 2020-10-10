@@ -16,13 +16,13 @@ import PermissionGroup from './PermissionGroup';
 
 /**
  * The PermissionGroupListResponse model module.
- * @module Everyday\GmodStore\Sdk/model/PermissionGroupListResponse
+ * @module Everyday/GmodStore/Sdk/model/PermissionGroupListResponse
  * @version 1.1.0
  */
 class PermissionGroupListResponse {
     /**
      * Constructs a new <code>PermissionGroupListResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/PermissionGroupListResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class PermissionGroupListResponse {
      * Constructs a <code>PermissionGroupListResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/PermissionGroupListResponse} The populated <code>PermissionGroupListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/PermissionGroupListResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/PermissionGroupListResponse} The populated <code>PermissionGroupListResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class PermissionGroupListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/PermissionGroup>} data
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/PermissionGroup>} data
  */
 PermissionGroupListResponse.prototype['data'] = undefined;
 

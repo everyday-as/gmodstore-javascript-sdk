@@ -16,13 +16,13 @@ import AddonVersionReleaseType from './AddonVersionReleaseType';
 
 /**
  * The NewAddonVersion model module.
- * @module Everyday\GmodStore\Sdk/model/NewAddonVersion
+ * @module Everyday/GmodStore/Sdk/model/NewAddonVersion
  * @version 1.1.0
  */
 class NewAddonVersion {
     /**
      * Constructs a new <code>NewAddonVersion</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/NewAddonVersion
+     * @alias module:Everyday/GmodStore/Sdk/model/NewAddonVersion
      * @param name {String} 
      * @param changelog {String} You can pass in markdown here
      * @param file {File} 
@@ -47,8 +47,8 @@ class NewAddonVersion {
      * Constructs a <code>NewAddonVersion</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/NewAddonVersion} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/NewAddonVersion} The populated <code>NewAddonVersion</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/NewAddonVersion} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/NewAddonVersion} The populated <code>NewAddonVersion</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -90,7 +90,7 @@ NewAddonVersion.prototype['changelog'] = undefined;
 NewAddonVersion.prototype['file'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonVersionReleaseType} release_type
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonVersionReleaseType} release_type
  */
 NewAddonVersion.prototype['release_type'] = undefined;
 

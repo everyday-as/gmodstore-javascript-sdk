@@ -16,13 +16,13 @@ import PermissionGroup from './PermissionGroup';
 
 /**
  * The User model module.
- * @module Everyday\GmodStore\Sdk/model/User
+ * @module Everyday/GmodStore/Sdk/model/User
  * @version 1.1.0
  */
 class User {
     /**
      * Constructs a new <code>User</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/User
+     * @alias module:Everyday/GmodStore/Sdk/model/User
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class User {
      * Constructs a <code>User</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/User} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/User} The populated <code>User</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/User} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/User} The populated <code>User</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -118,12 +118,12 @@ User.prototype['reputation'] = undefined;
 User.prototype['team_reputation'] = undefined;
 
 /**
- * @member {Array.<module:Everyday\GmodStore\Sdk/model/User.BanPropertiesEnum>} ban_properties
+ * @member {Array.<module:Everyday/GmodStore/Sdk/model/User.BanPropertiesEnum>} ban_properties
  */
 User.prototype['ban_properties'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/PermissionGroup} group
+ * @member {module:Everyday/GmodStore/Sdk/model/PermissionGroup} group
  */
 User.prototype['group'] = undefined;
 

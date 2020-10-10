@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The AddonImages model module.
- * @module Everyday\GmodStore\Sdk/model/AddonImages
+ * @module Everyday/GmodStore/Sdk/model/AddonImages
  * @version 1.1.0
  */
 class AddonImages {
     /**
      * Constructs a new <code>AddonImages</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonImages
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonImages
      */
     constructor() { 
         
@@ -40,8 +40,8 @@ class AddonImages {
      * Constructs a <code>AddonImages</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonImages} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonImages} The populated <code>AddonImages</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonImages} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonImages} The populated <code>AddonImages</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

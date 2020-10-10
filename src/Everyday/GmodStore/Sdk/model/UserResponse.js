@@ -16,13 +16,13 @@ import User from './User';
 
 /**
  * The UserResponse model module.
- * @module Everyday\GmodStore\Sdk/model/UserResponse
+ * @module Everyday/GmodStore/Sdk/model/UserResponse
  * @version 1.1.0
  */
 class UserResponse {
     /**
      * Constructs a new <code>UserResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/UserResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/UserResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class UserResponse {
      * Constructs a <code>UserResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/UserResponse} The populated <code>UserResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/UserResponse} The populated <code>UserResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class UserResponse {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/User} data
+ * @member {module:Everyday/GmodStore/Sdk/model/User} data
  */
 UserResponse.prototype['data'] = undefined;
 

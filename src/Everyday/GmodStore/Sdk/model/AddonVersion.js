@@ -17,13 +17,13 @@ import AddonVersionReleaseType from './AddonVersionReleaseType';
 
 /**
  * The AddonVersion model module.
- * @module Everyday\GmodStore\Sdk/model/AddonVersion
+ * @module Everyday/GmodStore/Sdk/model/AddonVersion
  * @version 1.1.0
  */
 class AddonVersion {
     /**
      * Constructs a new <code>AddonVersion</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonVersion
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonVersion
      * @param name {String} 
      * @param changelog {String} You can pass in markdown here
      */
@@ -46,8 +46,8 @@ class AddonVersion {
      * Constructs a <code>AddonVersion</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonVersion} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonVersion} The populated <code>AddonVersion</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonVersion} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonVersion} The populated <code>AddonVersion</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -114,7 +114,7 @@ AddonVersion.prototype['file_hash'] = undefined;
 AddonVersion.prototype['file_size'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonVersionReleaseType} release_type
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonVersionReleaseType} release_type
  */
 AddonVersion.prototype['release_type'] = undefined;
 
@@ -129,7 +129,7 @@ AddonVersion.prototype['created_at'] = undefined;
 AddonVersion.prototype['updated_at'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Addon} addon
+ * @member {module:Everyday/GmodStore/Sdk/model/Addon} addon
  */
 AddonVersion.prototype['addon'] = undefined;
 

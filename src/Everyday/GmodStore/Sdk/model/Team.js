@@ -16,13 +16,13 @@ import TeamUser from './TeamUser';
 
 /**
  * The Team model module.
- * @module Everyday\GmodStore\Sdk/model/Team
+ * @module Everyday/GmodStore/Sdk/model/Team
  * @version 1.1.0
  */
 class Team {
     /**
      * Constructs a new <code>Team</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/Team
+     * @alias module:Everyday/GmodStore/Sdk/model/Team
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class Team {
      * Constructs a <code>Team</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/Team} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/Team} The populated <code>Team</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/Team} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/Team} The populated <code>Team</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -91,7 +91,7 @@ Team.prototype['created_at'] = undefined;
 Team.prototype['updated_at'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/TeamUser} primaryAuthor
+ * @member {module:Everyday/GmodStore/Sdk/model/TeamUser} primaryAuthor
  */
 Team.prototype['primaryAuthor'] = undefined;
 

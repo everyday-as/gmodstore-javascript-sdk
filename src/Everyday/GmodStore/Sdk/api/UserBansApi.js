@@ -18,17 +18,17 @@ import UserBanListResponse from '../model/UserBanListResponse';
 
 /**
 * UserBans service.
-* @module Everyday\GmodStore\Sdk/api/UserBansApi
+* @module Everyday/GmodStore/Sdk/api/UserBansApi
 * @version 1.1.0
 */
 export default class UserBansApi {
 
     /**
     * Constructs a new UserBansApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/UserBansApi
+    * @alias module:Everyday/GmodStore/Sdk/api/UserBansApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,17 +37,17 @@ export default class UserBansApi {
 
     /**
      * Callback function to receive the result of the listUserBans operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/UserBansApi~listUserBansCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/UserBansApi~listUserBansCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/UserBanListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserBanListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Fetch all active bans associated with this user
      * @param {Number} userId Id of the user
-     * @param {module:Everyday\GmodStore\Sdk/api/UserBansApi~listUserBansCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/UserBanListResponse}
+     * @param {module:Everyday/GmodStore/Sdk/api/UserBansApi~listUserBansCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/UserBanListResponse}
      */
     listUserBans(userId, callback) {
       let postBody = null;

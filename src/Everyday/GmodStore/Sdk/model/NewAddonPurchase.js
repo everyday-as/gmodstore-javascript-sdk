@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The NewAddonPurchase model module.
- * @module Everyday\GmodStore\Sdk/model/NewAddonPurchase
+ * @module Everyday/GmodStore/Sdk/model/NewAddonPurchase
  * @version 1.1.0
  */
 class NewAddonPurchase {
     /**
      * Constructs a new <code>NewAddonPurchase</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/NewAddonPurchase
+     * @alias module:Everyday/GmodStore/Sdk/model/NewAddonPurchase
      * @param userId {Number} 
      */
     constructor(userId) { 
@@ -42,8 +42,8 @@ class NewAddonPurchase {
      * Constructs a <code>NewAddonPurchase</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/NewAddonPurchase} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/NewAddonPurchase} The populated <code>NewAddonPurchase</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/NewAddonPurchase} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/NewAddonPurchase} The populated <code>NewAddonPurchase</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

@@ -15,13 +15,13 @@ import ApiClient from '../ApiClient';
 
 /**
  * The PermissionGroup model module.
- * @module Everyday\GmodStore\Sdk/model/PermissionGroup
+ * @module Everyday/GmodStore/Sdk/model/PermissionGroup
  * @version 1.1.0
  */
 class PermissionGroup {
     /**
      * Constructs a new <code>PermissionGroup</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/PermissionGroup
+     * @alias module:Everyday/GmodStore/Sdk/model/PermissionGroup
      */
     constructor() { 
         
@@ -40,8 +40,8 @@ class PermissionGroup {
      * Constructs a <code>PermissionGroup</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/PermissionGroup} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/PermissionGroup} The populated <code>PermissionGroup</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/PermissionGroup} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/PermissionGroup} The populated <code>PermissionGroup</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {

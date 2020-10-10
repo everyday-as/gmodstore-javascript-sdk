@@ -16,13 +16,13 @@ import Money from './Money';
 
 /**
  * The AddonPrice model module.
- * @module Everyday\GmodStore\Sdk/model/AddonPrice
+ * @module Everyday/GmodStore/Sdk/model/AddonPrice
  * @version 1.1.0
  */
 class AddonPrice {
     /**
      * Constructs a new <code>AddonPrice</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonPrice
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonPrice
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonPrice {
      * Constructs a <code>AddonPrice</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPrice} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonPrice} The populated <code>AddonPrice</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPrice} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonPrice} The populated <code>AddonPrice</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -62,12 +62,12 @@ class AddonPrice {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Money} original
+ * @member {module:Everyday/GmodStore/Sdk/model/Money} original
  */
 AddonPrice.prototype['original'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Money} purchase
+ * @member {module:Everyday/GmodStore/Sdk/model/Money} purchase
  */
 AddonPrice.prototype['purchase'] = undefined;
 

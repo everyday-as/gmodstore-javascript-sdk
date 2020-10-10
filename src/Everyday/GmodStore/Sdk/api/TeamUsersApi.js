@@ -18,17 +18,17 @@ import TeamUserListResponse from '../model/TeamUserListResponse';
 
 /**
 * TeamUsers service.
-* @module Everyday\GmodStore\Sdk/api/TeamUsersApi
+* @module Everyday/GmodStore/Sdk/api/TeamUsersApi
 * @version 1.1.0
 */
 export default class TeamUsersApi {
 
     /**
     * Constructs a new TeamUsersApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/TeamUsersApi
+    * @alias module:Everyday/GmodStore/Sdk/api/TeamUsersApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -37,9 +37,9 @@ export default class TeamUsersApi {
 
     /**
      * Callback function to receive the result of the listTeamUsers operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/TeamUsersApi~listTeamUsersCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/TeamUsersApi~listTeamUsersCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/TeamUserListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamUserListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -47,9 +47,9 @@ export default class TeamUsersApi {
      * Fetch all the users in the given team
      * @param {Number} teamId Id of the team
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `TeamUser`
-     * @param {module:Everyday\GmodStore\Sdk/api/TeamUsersApi~listTeamUsersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/TeamUserListResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `TeamUser`
+     * @param {module:Everyday/GmodStore/Sdk/api/TeamUsersApi~listTeamUsersCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/TeamUserListResponse}
      */
     listTeamUsers(teamId, opts, callback) {
       opts = opts || {};

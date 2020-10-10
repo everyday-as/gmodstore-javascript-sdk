@@ -16,13 +16,13 @@ import Money from './Money';
 
 /**
  * The OrderItem model module.
- * @module Everyday\GmodStore\Sdk/model/OrderItem
+ * @module Everyday/GmodStore/Sdk/model/OrderItem
  * @version 1.1.0
  */
 class OrderItem {
     /**
      * Constructs a new <code>OrderItem</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/OrderItem
+     * @alias module:Everyday/GmodStore/Sdk/model/OrderItem
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class OrderItem {
      * Constructs a <code>OrderItem</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/OrderItem} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/OrderItem} The populated <code>OrderItem</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/OrderItem} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/OrderItem} The populated <code>OrderItem</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -70,7 +70,7 @@ class OrderItem {
 OrderItem.prototype['id'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Money} price
+ * @member {module:Everyday/GmodStore/Sdk/model/Money} price
  */
 OrderItem.prototype['price'] = undefined;
 

@@ -16,13 +16,13 @@ import Addon from './Addon';
 
 /**
  * The AddonResponse model module.
- * @module Everyday\GmodStore\Sdk/model/AddonResponse
+ * @module Everyday/GmodStore/Sdk/model/AddonResponse
  * @version 1.1.0
  */
 class AddonResponse {
     /**
      * Constructs a new <code>AddonResponse</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonResponse
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonResponse
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonResponse {
      * Constructs a <code>AddonResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonResponse} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonResponse} The populated <code>AddonResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonResponse} The populated <code>AddonResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class AddonResponse {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Addon} data
+ * @member {module:Everyday/GmodStore/Sdk/model/Addon} data
  */
 AddonResponse.prototype['data'] = undefined;
 

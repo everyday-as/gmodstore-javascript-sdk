@@ -16,13 +16,13 @@ import AddonStatsSalesCurrent from './AddonStatsSalesCurrent';
 
 /**
  * The AddonStatsSales model module.
- * @module Everyday\GmodStore\Sdk/model/AddonStatsSales
+ * @module Everyday/GmodStore/Sdk/model/AddonStatsSales
  * @version 1.1.0
  */
 class AddonStatsSales {
     /**
      * Constructs a new <code>AddonStatsSales</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonStatsSales
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonStatsSales
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class AddonStatsSales {
      * Constructs a <code>AddonStatsSales</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonStatsSales} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonStatsSales} The populated <code>AddonStatsSales</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsSales} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonStatsSales} The populated <code>AddonStatsSales</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -59,7 +59,7 @@ class AddonStatsSales {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonStatsSalesCurrent} current
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent} current
  */
 AddonStatsSales.prototype['current'] = undefined;
 

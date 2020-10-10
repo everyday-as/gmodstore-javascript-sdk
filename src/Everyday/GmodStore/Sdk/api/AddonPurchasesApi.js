@@ -21,17 +21,17 @@ import NewAddonPurchase from '../model/NewAddonPurchase';
 
 /**
 * AddonPurchases service.
-* @module Everyday\GmodStore\Sdk/api/AddonPurchasesApi
+* @module Everyday/GmodStore/Sdk/api/AddonPurchasesApi
 * @version 1.1.0
 */
 export default class AddonPurchasesApi {
 
     /**
     * Constructs a new AddonPurchasesApi. 
-    * @alias module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi
+    * @alias module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi
     * @class
-    * @param {module:Everyday\GmodStore\Sdk/ApiClient} [apiClient] Optional API client implementation to use,
-    * default to {@link module:Everyday\GmodStore\Sdk/ApiClient#instance} if unspecified.
+    * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
+    * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
     */
     constructor(apiClient) {
         this.apiClient = apiClient || ApiClient.instance;
@@ -40,20 +40,20 @@ export default class AddonPurchasesApi {
 
     /**
      * Callback function to receive the result of the createAddonPurchase operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~createAddonPurchaseCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~createAddonPurchaseCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a purchase for an addon
      * @param {Number} addonId Id of the addon
-     * @param {module:Everyday\GmodStore\Sdk/model/NewAddonPurchase} newAddonPurchase 
+     * @param {module:Everyday/GmodStore/Sdk/model/NewAddonPurchase} newAddonPurchase 
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~createAddonPurchaseCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~createAddonPurchaseCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse}
      */
     createAddonPurchase(addonId, newAddonPurchase, opts, callback) {
       opts = opts || {};
@@ -91,9 +91,9 @@ export default class AddonPurchasesApi {
 
     /**
      * Callback function to receive the result of the getAddonPurchase operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~getAddonPurchaseCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~getAddonPurchaseCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -102,9 +102,9 @@ export default class AddonPurchasesApi {
      * @param {Number} addonId Id of the addon
      * @param {Number} userId Id of the user
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~getAddonPurchaseCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~getAddonPurchaseCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse}
      */
     getAddonPurchase(addonId, userId, opts, callback) {
       opts = opts || {};
@@ -143,9 +143,9 @@ export default class AddonPurchasesApi {
 
     /**
      * Callback function to receive the result of the listAddonPurchases operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~listAddonPurchasesCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~listAddonPurchasesCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchaseListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -153,9 +153,9 @@ export default class AddonPurchasesApi {
      * Fetch all purchases of an addon
      * @param {Number} addonId Id of the addon
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~listAddonPurchasesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonPurchaseListResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~listAddonPurchasesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse}
      */
     listAddonPurchases(addonId, opts, callback) {
       opts = opts || {};
@@ -189,9 +189,9 @@ export default class AddonPurchasesApi {
 
     /**
      * Callback function to receive the result of the updateAddonPurchase operation.
-     * @callback module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~updateAddonPurchaseCallback
+     * @callback module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~updateAddonPurchaseCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -199,11 +199,11 @@ export default class AddonPurchasesApi {
      * Update a purchase for an addon
      * @param {Number} addonId Id of the addon
      * @param {Number} userId Id of the user
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonPurchase} addonPurchase 
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonPurchase} addonPurchase 
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday\GmodStore\Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
-     * @param {module:Everyday\GmodStore\Sdk/api/AddonPurchasesApi~updateAddonPurchaseCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday\GmodStore\Sdk/model/AddonPurchaseResponse}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `AddonPurchase`
+     * @param {module:Everyday/GmodStore/Sdk/api/AddonPurchasesApi~updateAddonPurchaseCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonPurchaseResponse}
      */
     updateAddonPurchase(addonId, userId, addonPurchase, opts, callback) {
       opts = opts || {};

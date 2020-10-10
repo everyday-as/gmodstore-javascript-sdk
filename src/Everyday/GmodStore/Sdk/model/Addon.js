@@ -19,13 +19,13 @@ import Team from './Team';
 
 /**
  * The Addon model module.
- * @module Everyday\GmodStore\Sdk/model/Addon
+ * @module Everyday/GmodStore/Sdk/model/Addon
  * @version 1.1.0
  */
 class Addon {
     /**
      * Constructs a new <code>Addon</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/Addon
+     * @alias module:Everyday/GmodStore/Sdk/model/Addon
      */
     constructor() { 
         
@@ -44,8 +44,8 @@ class Addon {
      * Constructs a <code>Addon</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/Addon} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/Addon} The populated <code>Addon</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/Addon} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/Addon} The populated <code>Addon</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -131,12 +131,12 @@ Addon.prototype['description'] = undefined;
 Addon.prototype['requirements'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonPrice} price
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonPrice} price
  */
 Addon.prototype['price'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonImages} images
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonImages} images
  */
 Addon.prototype['images'] = undefined;
 
@@ -161,12 +161,12 @@ Addon.prototype['created_at'] = undefined;
 Addon.prototype['updated_at'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonVersion} latest_version
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonVersion} latest_version
  */
 Addon.prototype['latest_version'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Team} team
+ * @member {module:Everyday/GmodStore/Sdk/model/Team} team
  */
 Addon.prototype['team'] = undefined;
 

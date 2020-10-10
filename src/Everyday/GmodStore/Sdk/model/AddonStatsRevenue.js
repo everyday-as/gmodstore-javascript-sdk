@@ -17,13 +17,13 @@ import Money from './Money';
 
 /**
  * The AddonStatsRevenue model module.
- * @module Everyday\GmodStore\Sdk/model/AddonStatsRevenue
+ * @module Everyday/GmodStore/Sdk/model/AddonStatsRevenue
  * @version 1.1.0
  */
 class AddonStatsRevenue {
     /**
      * Constructs a new <code>AddonStatsRevenue</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/AddonStatsRevenue
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonStatsRevenue
      */
     constructor() { 
         
@@ -42,8 +42,8 @@ class AddonStatsRevenue {
      * Constructs a <code>AddonStatsRevenue</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/AddonStatsRevenue} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/AddonStatsRevenue} The populated <code>AddonStatsRevenue</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsRevenue} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonStatsRevenue} The populated <code>AddonStatsRevenue</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -66,17 +66,17 @@ class AddonStatsRevenue {
 }
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonStatsRevenueCurrent} current
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent} current
  */
 AddonStatsRevenue.prototype['current'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/AddonStatsRevenueCurrent} previous
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent} previous
  */
 AddonStatsRevenue.prototype['previous'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/Money} total
+ * @member {module:Everyday/GmodStore/Sdk/model/Money} total
  */
 AddonStatsRevenue.prototype['total'] = undefined;
 

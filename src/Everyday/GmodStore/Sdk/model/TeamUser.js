@@ -16,13 +16,13 @@ import User from './User';
 
 /**
  * The TeamUser model module.
- * @module Everyday\GmodStore\Sdk/model/TeamUser
+ * @module Everyday/GmodStore/Sdk/model/TeamUser
  * @version 1.1.0
  */
 class TeamUser {
     /**
      * Constructs a new <code>TeamUser</code>.
-     * @alias module:Everyday\GmodStore\Sdk/model/TeamUser
+     * @alias module:Everyday/GmodStore/Sdk/model/TeamUser
      */
     constructor() { 
         
@@ -41,8 +41,8 @@ class TeamUser {
      * Constructs a <code>TeamUser</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday\GmodStore\Sdk/model/TeamUser} obj Optional instance to populate.
-     * @return {module:Everyday\GmodStore\Sdk/model/TeamUser} The populated <code>TeamUser</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamUser} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/TeamUser} The populated <code>TeamUser</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
@@ -75,7 +75,7 @@ TeamUser.prototype['team_id'] = undefined;
 TeamUser.prototype['primary'] = undefined;
 
 /**
- * @member {module:Everyday\GmodStore\Sdk/model/User} user
+ * @member {module:Everyday/GmodStore/Sdk/model/User} user
  */
 TeamUser.prototype['user'] = undefined;
 

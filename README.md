@@ -20,13 +20,13 @@ For more information, please visit [https://docs.gmodstore.com](https://docs.gmo
 Install it via npm by running:
 
 ```shell
-npm install GmodStore SDK --save
+npm install gmodstore-sdk --save
 ```
 
 Install it via yarn by running:
 
 ```shell
-yarn add GmodStore SDK
+yarn add gmodstore-sdk
 ```
 
 ### For browser
@@ -62,7 +62,7 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var GmodStoreApi = require('GmodStore SDK');
+var GmodStoreApi = require('gmodstore-sdk');
 
 var defaultClient = GmodStoreApi.ApiClient.instance;
 // Configure Bearer (API Key) access token for authorization: bearerAuth

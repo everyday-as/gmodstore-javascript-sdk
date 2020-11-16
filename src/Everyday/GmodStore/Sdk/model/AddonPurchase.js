@@ -59,7 +59,7 @@ class AddonPurchase {
                 obj['created_at'] = ApiClient.convertToType(data['created_at'], 'Date');
             }
             if (data.hasOwnProperty('updated_at')) {
-                obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'Number');
+                obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'Date');
             }
             if (data.hasOwnProperty('addon')) {
                 obj['addon'] = Addon.constructFromObject(data['addon']);
@@ -88,7 +88,7 @@ AddonPurchase.prototype['revoked'] = undefined;
 AddonPurchase.prototype['created_at'] = undefined;
 
 /**
- * @member {Number} updated_at
+ * @member {Date} updated_at
  */
 AddonPurchase.prototype['updated_at'] = undefined;
 

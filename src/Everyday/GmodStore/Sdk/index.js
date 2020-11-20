@@ -69,6 +69,7 @@ import AddonStatsApi from './api/AddonStatsApi';
 import AddonVersionsApi from './api/AddonVersionsApi';
 import AddonsApi from './api/AddonsApi';
 import PermissionGroupsApi from './api/PermissionGroupsApi';
+import TeamAddonsApi from './api/TeamAddonsApi';
 import TeamUsersApi from './api/TeamUsersApi';
 import TeamsApi from './api/TeamsApi';
 import UserAddonsApi from './api/UserAddonsApi';
@@ -452,6 +453,12 @@ export {
     * @property {module:Everyday/GmodStore/Sdk/api/PermissionGroupsApi}
     */
     PermissionGroupsApi,
+
+    /**
+    * The TeamAddonsApi service constructor.
+    * @property {module:Everyday/GmodStore/Sdk/api/TeamAddonsApi}
+    */
+    TeamAddonsApi,
 
     /**
     * The TeamUsersApi service constructor.

@@ -112,6 +112,7 @@ Class | Method | HTTP request | Description
 *GmodstoreSdk.AddonVersionsApi* | [**updateAddonVersion**](docs/AddonVersionsApi.md#updateAddonVersion) | **PUT** /addons/{addon_id}/versions/{version_id} | Update a version of an addon
 *GmodstoreSdk.AddonsApi* | [**getAddon**](docs/AddonsApi.md#getAddon) | **GET** /addons/{addon_id} | Fetch a single addon
 *GmodstoreSdk.AddonsApi* | [**listSelfAddons**](docs/AddonsApi.md#listSelfAddons) | **GET** /addons | Fetch all the addons that you have access to
+*GmodstoreSdk.AdventCalendarApi* | [**getAdventCalendarStats**](docs/AdventCalendarApi.md#getAdventCalendarStats) | **GET** /events/advent-calendar/stats | Fetch statistics relating to the advent calendar event
 *GmodstoreSdk.PermissionGroupsApi* | [**listPermissionGroups**](docs/PermissionGroupsApi.md#listPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
 *GmodstoreSdk.TeamAddonsApi* | [**listTeamAddons**](docs/TeamAddonsApi.md#listTeamAddons) | **GET** /teams/{team_id}/addons | Fetch all the addons in the given team
 *GmodstoreSdk.TeamUsersApi* | [**listTeamUsers**](docs/TeamUsersApi.md#listTeamUsers) | **GET** /teams/{team_id}/users | Fetch all the users in the given team
@@ -157,6 +158,8 @@ Class | Method | HTTP request | Description
  - [GmodstoreSdk.AddonVersionListResponse](docs/AddonVersionListResponse.md)
  - [GmodstoreSdk.AddonVersionReleaseType](docs/AddonVersionReleaseType.md)
  - [GmodstoreSdk.AddonVersionResponse](docs/AddonVersionResponse.md)
+ - [GmodstoreSdk.AdventCalendarStats](docs/AdventCalendarStats.md)
+ - [GmodstoreSdk.AdventCalendarStatsResponse](docs/AdventCalendarStatsResponse.md)
  - [GmodstoreSdk.BadgeListResponse](docs/BadgeListResponse.md)
  - [GmodstoreSdk.BadgeResponse](docs/BadgeResponse.md)
  - [GmodstoreSdk.Error](docs/Error.md)

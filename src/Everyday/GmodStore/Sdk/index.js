@@ -41,6 +41,8 @@ import AddonVersion from './model/AddonVersion';
 import AddonVersionListResponse from './model/AddonVersionListResponse';
 import AddonVersionReleaseType from './model/AddonVersionReleaseType';
 import AddonVersionResponse from './model/AddonVersionResponse';
+import AdventCalendarStats from './model/AdventCalendarStats';
+import AdventCalendarStatsResponse from './model/AdventCalendarStatsResponse';
 import BadgeListResponse from './model/BadgeListResponse';
 import BadgeResponse from './model/BadgeResponse';
 import Error from './model/Error';
@@ -68,6 +70,7 @@ import AddonReviewsApi from './api/AddonReviewsApi';
 import AddonStatsApi from './api/AddonStatsApi';
 import AddonVersionsApi from './api/AddonVersionsApi';
 import AddonsApi from './api/AddonsApi';
+import AdventCalendarApi from './api/AdventCalendarApi';
 import PermissionGroupsApi from './api/PermissionGroupsApi';
 import TeamAddonsApi from './api/TeamAddonsApi';
 import TeamUsersApi from './api/TeamUsersApi';
@@ -287,6 +290,18 @@ export {
     AddonVersionResponse,
 
     /**
+     * The AdventCalendarStats model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/AdventCalendarStats}
+     */
+    AdventCalendarStats,
+
+    /**
+     * The AdventCalendarStatsResponse model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/AdventCalendarStatsResponse}
+     */
+    AdventCalendarStatsResponse,
+
+    /**
      * The BadgeListResponse model constructor.
      * @property {module:Everyday/GmodStore/Sdk/model/BadgeListResponse}
      */
@@ -447,6 +462,12 @@ export {
     * @property {module:Everyday/GmodStore/Sdk/api/AddonsApi}
     */
     AddonsApi,
+
+    /**
+    * The AdventCalendarApi service constructor.
+    * @property {module:Everyday/GmodStore/Sdk/api/AdventCalendarApi}
+    */
+    AdventCalendarApi,
 
     /**
     * The PermissionGroupsApi service constructor.

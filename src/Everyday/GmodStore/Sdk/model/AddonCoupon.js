@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import Addon from './Addon';
+import User from './User';
 
 /**
  * The AddonCoupon model module.
@@ -73,6 +74,9 @@ class AddonCoupon {
             if (data.hasOwnProperty('expires_at')) {
                 obj['expires_at'] = ApiClient.convertToType(data['expires_at'], 'Date');
             }
+            if (data.hasOwnProperty('bound_user_id')) {
+                obj['bound_user_id'] = ApiClient.convertToType(data['bound_user_id'], 'Number');
+            }
             if (data.hasOwnProperty('created_at')) {
                 obj['created_at'] = ApiClient.convertToType(data['created_at'], 'Date');
             }
@@ -81,6 +85,9 @@ class AddonCoupon {
             }
             if (data.hasOwnProperty('addon')) {
                 obj['addon'] = Addon.constructFromObject(data['addon']);
+            }
+            if (data.hasOwnProperty('bound_user')) {
+                obj['bound_user'] = User.constructFromObject(data['bound_user']);
             }
         }
         return obj;
@@ -116,6 +123,11 @@ AddonCoupon.prototype['max_uses'] = undefined;
 AddonCoupon.prototype['expires_at'] = undefined;
 
 /**
+ * @member {Number} bound_user_id
+ */
+AddonCoupon.prototype['bound_user_id'] = undefined;
+
+/**
  * @member {Date} created_at
  */
 AddonCoupon.prototype['created_at'] = undefined;
@@ -129,6 +141,11 @@ AddonCoupon.prototype['updated_at'] = undefined;
  * @member {module:Everyday/GmodStore/Sdk/model/Addon} addon
  */
 AddonCoupon.prototype['addon'] = undefined;
+
+/**
+ * @member {module:Everyday/GmodStore/Sdk/model/User} bound_user
+ */
+AddonCoupon.prototype['bound_user'] = undefined;
 
 
 

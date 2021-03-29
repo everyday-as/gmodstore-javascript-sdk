@@ -54,6 +54,9 @@ class TeamUser {
             if (data.hasOwnProperty('primary')) {
                 obj['primary'] = ApiClient.convertToType(data['primary'], 'Boolean');
             }
+            if (data.hasOwnProperty('percentage')) {
+                obj['percentage'] = ApiClient.convertToType(data['percentage'], 'Number');
+            }
             if (data.hasOwnProperty('user')) {
                 obj['user'] = User.constructFromObject(data['user']);
             }
@@ -73,6 +76,11 @@ TeamUser.prototype['team_id'] = undefined;
  * @member {Boolean} primary
  */
 TeamUser.prototype['primary'] = undefined;
+
+/**
+ * @member {Number} percentage
+ */
+TeamUser.prototype['percentage'] = undefined;
 
 /**
  * @member {module:Everyday/GmodStore/Sdk/model/User} user

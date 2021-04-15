@@ -10,6 +10,7 @@ docs/AddonDownload.md
 docs/AddonDownloadResponse.md
 docs/AddonImages.md
 docs/AddonListResponse.md
+docs/AddonListResponse1.md
 docs/AddonPrice.md
 docs/AddonPurchase.md
 docs/AddonPurchaseListResponse.md
@@ -38,6 +39,8 @@ docs/AddonsApi.md
 docs/AdventCalendarApi.md
 docs/AdventCalendarStats.md
 docs/AdventCalendarStatsResponse.md
+docs/ApiKey.md
+docs/ApiKeyApi.md
 docs/BadgeListResponse.md
 docs/BadgeResponse.md
 docs/Error.md
@@ -80,6 +83,7 @@ src/Everyday/GmodStore/Sdk/api/AddonStatsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonVersionsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonsApi.js
 src/Everyday/GmodStore/Sdk/api/AdventCalendarApi.js
+src/Everyday/GmodStore/Sdk/api/ApiKeyApi.js
 src/Everyday/GmodStore/Sdk/api/PermissionGroupsApi.js
 src/Everyday/GmodStore/Sdk/api/TeamAddonsApi.js
 src/Everyday/GmodStore/Sdk/api/TeamUsersApi.js
@@ -99,6 +103,7 @@ src/Everyday/GmodStore/Sdk/model/AddonDownload.js
 src/Everyday/GmodStore/Sdk/model/AddonDownloadResponse.js
 src/Everyday/GmodStore/Sdk/model/AddonImages.js
 src/Everyday/GmodStore/Sdk/model/AddonListResponse.js
+src/Everyday/GmodStore/Sdk/model/AddonListResponse1.js
 src/Everyday/GmodStore/Sdk/model/AddonPrice.js
 src/Everyday/GmodStore/Sdk/model/AddonPurchase.js
 src/Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse.js
@@ -121,6 +126,7 @@ src/Everyday/GmodStore/Sdk/model/AddonVersionReleaseType.js
 src/Everyday/GmodStore/Sdk/model/AddonVersionResponse.js
 src/Everyday/GmodStore/Sdk/model/AdventCalendarStats.js
 src/Everyday/GmodStore/Sdk/model/AdventCalendarStatsResponse.js
+src/Everyday/GmodStore/Sdk/model/ApiKey.js
 src/Everyday/GmodStore/Sdk/model/BadgeListResponse.js
 src/Everyday/GmodStore/Sdk/model/BadgeResponse.js
 src/Everyday/GmodStore/Sdk/model/Error.js
@@ -142,3 +148,6 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
+test/Everyday/GmodStore/Sdk/api/ApiKeyApi.spec.js
+test/Everyday/GmodStore/Sdk/model/AddonListResponse1.spec.js
+test/Everyday/GmodStore/Sdk/model/ApiKey.spec.js

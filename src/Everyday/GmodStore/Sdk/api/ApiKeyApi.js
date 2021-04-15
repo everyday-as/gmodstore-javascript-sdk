@@ -13,19 +13,19 @@
 
 
 import ApiClient from "../ApiClient";
-import AddonListResponse1 from '../model/AddonListResponse1';
+import AddonListResponse from '../model/AddonListResponse';
 import ErrorResponse from '../model/ErrorResponse';
 
 /**
-* UserAddons service.
-* @module Everyday/GmodStore/Sdk/api/UserAddonsApi
+* ApiKey service.
+* @module Everyday/GmodStore/Sdk/api/ApiKeyApi
 * @version 1.1.0
 */
-export default class UserAddonsApi {
+export default class ApiKeyApi {
 
     /**
-    * Constructs a new UserAddonsApi. 
-    * @alias module:Everyday/GmodStore/Sdk/api/UserAddonsApi
+    * Constructs a new ApiKeyApi. 
+    * @alias module:Everyday/GmodStore/Sdk/api/ApiKeyApi
     * @class
     * @param {module:Everyday/GmodStore/Sdk/ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:Everyday/GmodStore/Sdk/ApiClient#instance} if unspecified.
@@ -36,31 +36,25 @@ export default class UserAddonsApi {
 
 
     /**
-     * Callback function to receive the result of the listUserAddons operation.
-     * @callback module:Everyday/GmodStore/Sdk/api/UserAddonsApi~listUserAddonsCallback
+     * Callback function to receive the result of the getCurrentApiKey operation.
+     * @callback module:Everyday/GmodStore/Sdk/api/ApiKeyApi~getCurrentApiKeyCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday/GmodStore/Sdk/model/AddonListResponse1} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Fetch all the addons authored / co-authored by a user
-     * @param {Number} userId Id of the user
+     * Get meta information about the current API key
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `Addon`
-     * @param {module:Everyday/GmodStore/Sdk/api/UserAddonsApi~listUserAddonsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonListResponse1}
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `User`
+     * @param {module:Everyday/GmodStore/Sdk/api/ApiKeyApi~getCurrentApiKeyCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonListResponse}
      */
-    listUserAddons(userId, opts, callback) {
+    getCurrentApiKey(opts, callback) {
       opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'userId' is set
-      if (userId === undefined || userId === null) {
-        throw new Error("Missing the required parameter 'userId' when calling listUserAddons");
-      }
 
       let pathParams = {
-        'user_id': userId
       };
       let queryParams = {
         'with': this.apiClient.buildCollectionParam(opts['_with'], 'csv')
@@ -73,9 +67,9 @@ export default class UserAddonsApi {
       let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = AddonListResponse1;
+      let returnType = AddonListResponse;
       return this.apiClient.callApi(
-        '/users/{user_id}/addons', 'GET',
+        '/me', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

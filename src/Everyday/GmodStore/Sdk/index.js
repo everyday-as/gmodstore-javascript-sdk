@@ -21,6 +21,7 @@ import AddonDownload from './model/AddonDownload';
 import AddonDownloadResponse from './model/AddonDownloadResponse';
 import AddonImages from './model/AddonImages';
 import AddonListResponse from './model/AddonListResponse';
+import AddonListResponse1 from './model/AddonListResponse1';
 import AddonPrice from './model/AddonPrice';
 import AddonPurchase from './model/AddonPurchase';
 import AddonPurchaseListResponse from './model/AddonPurchaseListResponse';
@@ -43,6 +44,7 @@ import AddonVersionReleaseType from './model/AddonVersionReleaseType';
 import AddonVersionResponse from './model/AddonVersionResponse';
 import AdventCalendarStats from './model/AdventCalendarStats';
 import AdventCalendarStatsResponse from './model/AdventCalendarStatsResponse';
+import ApiKey from './model/ApiKey';
 import BadgeListResponse from './model/BadgeListResponse';
 import BadgeResponse from './model/BadgeResponse';
 import Error from './model/Error';
@@ -71,6 +73,7 @@ import AddonStatsApi from './api/AddonStatsApi';
 import AddonVersionsApi from './api/AddonVersionsApi';
 import AddonsApi from './api/AddonsApi';
 import AdventCalendarApi from './api/AdventCalendarApi';
+import ApiKeyApi from './api/ApiKeyApi';
 import PermissionGroupsApi from './api/PermissionGroupsApi';
 import TeamAddonsApi from './api/TeamAddonsApi';
 import TeamUsersApi from './api/TeamUsersApi';
@@ -168,6 +171,12 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/AddonListResponse}
      */
     AddonListResponse,
+
+    /**
+     * The AddonListResponse1 model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/AddonListResponse1}
+     */
+    AddonListResponse1,
 
     /**
      * The AddonPrice model constructor.
@@ -300,6 +309,12 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/AdventCalendarStatsResponse}
      */
     AdventCalendarStatsResponse,
+
+    /**
+     * The ApiKey model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/ApiKey}
+     */
+    ApiKey,
 
     /**
      * The BadgeListResponse model constructor.
@@ -468,6 +483,12 @@ export {
     * @property {module:Everyday/GmodStore/Sdk/api/AdventCalendarApi}
     */
     AdventCalendarApi,
+
+    /**
+    * The ApiKeyApi service constructor.
+    * @property {module:Everyday/GmodStore/Sdk/api/ApiKeyApi}
+    */
+    ApiKeyApi,
 
     /**
     * The PermissionGroupsApi service constructor.

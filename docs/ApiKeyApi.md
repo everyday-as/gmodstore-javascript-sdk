@@ -1,18 +1,18 @@
-# GmodstoreSdk.UserAddonsApi
+# GmodstoreSdk.ApiKeyApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listUserAddons**](UserAddonsApi.md#listUserAddons) | **GET** /users/{user_id}/addons | Fetch all the addons authored / co-authored by a user
+[**getCurrentApiKey**](ApiKeyApi.md#getCurrentApiKey) | **GET** /me | Get meta information about the current API key
 
 
 
-## listUserAddons
+## getCurrentApiKey
 
-> AddonListResponse1 listUserAddons(userId, opts)
+> AddonListResponse getCurrentApiKey(opts)
 
-Fetch all the addons authored / co-authored by a user
+Get meta information about the current API key
 
 ### Example
 
@@ -23,12 +23,11 @@ let defaultClient = GmodstoreSdk.ApiClient.instance;
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodstoreSdk.UserAddonsApi();
-let userId = 789; // Number | Id of the user
+let apiInstance = new GmodstoreSdk.ApiKeyApi();
 let opts = {
-  '_with': ["null"] // [String] | The relations you want to fetch with the `Addon`
+  '_with': ["null"] // [String] | The relations you want to fetch with the `User`
 };
-apiInstance.listUserAddons(userId, opts, (error, data, response) => {
+apiInstance.getCurrentApiKey(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -42,12 +41,11 @@ apiInstance.listUserAddons(userId, opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**| Id of the user | 
- **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;Addon&#x60; | [optional] 
+ **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;User&#x60; | [optional] 
 
 ### Return type
 
-[**AddonListResponse1**](AddonListResponse1.md)
+[**AddonListResponse**](AddonListResponse.md)
 
 ### Authorization
 

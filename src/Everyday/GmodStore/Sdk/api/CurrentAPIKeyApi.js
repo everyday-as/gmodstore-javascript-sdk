@@ -46,7 +46,7 @@ export default class CurrentAPIKeyApi {
     /**
      * Get meta information about the current API key
      * @param {Object} opts Optional parameters
-     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `User`
+     * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `ApiKey`
      * @param {module:Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi~getCurrentApiKeyCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonListResponse}
      */

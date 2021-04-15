@@ -25,7 +25,7 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.CurrentAPIKeyApi();
 let opts = {
-  '_with': ["null"] // [String] | The relations you want to fetch with the `User`
+  '_with': ["null"] // [String] | The relations you want to fetch with the `ApiKey`
 };
 apiInstance.getCurrentApiKey(opts, (error, data, response) => {
   if (error) {
@@ -41,7 +41,7 @@ apiInstance.getCurrentApiKey(opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;User&#x60; | [optional] 
+ **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;ApiKey&#x60; | [optional] 
 
 ### Return type
 

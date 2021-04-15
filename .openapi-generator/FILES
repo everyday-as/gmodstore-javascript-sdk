@@ -40,9 +40,9 @@ docs/AdventCalendarApi.md
 docs/AdventCalendarStats.md
 docs/AdventCalendarStatsResponse.md
 docs/ApiKey.md
-docs/ApiKeyApi.md
 docs/BadgeListResponse.md
 docs/BadgeResponse.md
+docs/CurrentAPIKeyApi.md
 docs/Error.md
 docs/ErrorResponse.md
 docs/Money.md
@@ -83,7 +83,7 @@ src/Everyday/GmodStore/Sdk/api/AddonStatsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonVersionsApi.js
 src/Everyday/GmodStore/Sdk/api/AddonsApi.js
 src/Everyday/GmodStore/Sdk/api/AdventCalendarApi.js
-src/Everyday/GmodStore/Sdk/api/ApiKeyApi.js
+src/Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi.js
 src/Everyday/GmodStore/Sdk/api/PermissionGroupsApi.js
 src/Everyday/GmodStore/Sdk/api/TeamAddonsApi.js
 src/Everyday/GmodStore/Sdk/api/TeamUsersApi.js
@@ -148,6 +148,4 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
-test/Everyday/GmodStore/Sdk/api/ApiKeyApi.spec.js
-test/Everyday/GmodStore/Sdk/model/AddonListResponse1.spec.js
-test/Everyday/GmodStore/Sdk/model/ApiKey.spec.js
+test/Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi.spec.js

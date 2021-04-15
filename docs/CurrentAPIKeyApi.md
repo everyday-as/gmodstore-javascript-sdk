@@ -1,10 +1,10 @@
-# GmodstoreSdk.ApiKeyApi
+# GmodstoreSdk.CurrentAPIKeyApi
 
 All URIs are relative to *https://api.gmodstore.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCurrentApiKey**](ApiKeyApi.md#getCurrentApiKey) | **GET** /me | Get meta information about the current API key
+[**getCurrentApiKey**](CurrentAPIKeyApi.md#getCurrentApiKey) | **GET** /me | Get meta information about the current API key
 
 
 
@@ -23,7 +23,7 @@ let defaultClient = GmodstoreSdk.ApiClient.instance;
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new GmodstoreSdk.ApiKeyApi();
+let apiInstance = new GmodstoreSdk.CurrentAPIKeyApi();
 let opts = {
   '_with': ["null"] // [String] | The relations you want to fetch with the `User`
 };

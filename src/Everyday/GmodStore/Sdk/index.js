@@ -73,7 +73,7 @@ import AddonStatsApi from './api/AddonStatsApi';
 import AddonVersionsApi from './api/AddonVersionsApi';
 import AddonsApi from './api/AddonsApi';
 import AdventCalendarApi from './api/AdventCalendarApi';
-import ApiKeyApi from './api/ApiKeyApi';
+import CurrentAPIKeyApi from './api/CurrentAPIKeyApi';
 import PermissionGroupsApi from './api/PermissionGroupsApi';
 import TeamAddonsApi from './api/TeamAddonsApi';
 import TeamUsersApi from './api/TeamUsersApi';
@@ -485,10 +485,10 @@ export {
     AdventCalendarApi,
 
     /**
-    * The ApiKeyApi service constructor.
-    * @property {module:Everyday/GmodStore/Sdk/api/ApiKeyApi}
+    * The CurrentAPIKeyApi service constructor.
+    * @property {module:Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi}
     */
-    ApiKeyApi,
+    CurrentAPIKeyApi,
 
     /**
     * The PermissionGroupsApi service constructor.

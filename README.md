@@ -113,7 +113,7 @@ Class | Method | HTTP request | Description
 *GmodstoreSdk.AddonsApi* | [**getAddon**](docs/AddonsApi.md#getAddon) | **GET** /addons/{addon_id} | Fetch a single addon
 *GmodstoreSdk.AddonsApi* | [**listSelfAddons**](docs/AddonsApi.md#listSelfAddons) | **GET** /addons | Fetch all the addons that you have access to
 *GmodstoreSdk.AdventCalendarApi* | [**getAdventCalendarStats**](docs/AdventCalendarApi.md#getAdventCalendarStats) | **GET** /events/advent-calendar/stats | Fetch statistics relating to the advent calendar event
-*GmodstoreSdk.ApiKeyApi* | [**getCurrentApiKey**](docs/ApiKeyApi.md#getCurrentApiKey) | **GET** /me | Get meta information about the current API key
+*GmodstoreSdk.CurrentAPIKeyApi* | [**getCurrentApiKey**](docs/CurrentAPIKeyApi.md#getCurrentApiKey) | **GET** /me | Get meta information about the current API key
 *GmodstoreSdk.PermissionGroupsApi* | [**listPermissionGroups**](docs/PermissionGroupsApi.md#listPermissionGroups) | **GET** /permission-groups | Fetches all available permission groups
 *GmodstoreSdk.TeamAddonsApi* | [**listTeamAddons**](docs/TeamAddonsApi.md#listTeamAddons) | **GET** /teams/{team_id}/addons | Fetch all the addons in the given team
 *GmodstoreSdk.TeamUsersApi* | [**listTeamUsers**](docs/TeamUsersApi.md#listTeamUsers) | **GET** /teams/{team_id}/users | Fetch all the users in the given team

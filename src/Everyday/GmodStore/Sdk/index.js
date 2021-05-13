@@ -51,7 +51,6 @@ import Error from './model/Error';
 import ErrorResponse from './model/ErrorResponse';
 import Money from './model/Money';
 import NewAddonPurchase from './model/NewAddonPurchase';
-import NewAddonVersion from './model/NewAddonVersion';
 import OrderItem from './model/OrderItem';
 import PermissionGroup from './model/PermissionGroup';
 import PermissionGroupListResponse from './model/PermissionGroupListResponse';
@@ -351,12 +350,6 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/NewAddonPurchase}
      */
     NewAddonPurchase,
-
-    /**
-     * The NewAddonVersion model constructor.
-     * @property {module:Everyday/GmodStore/Sdk/model/NewAddonVersion}
-     */
-    NewAddonVersion,
 
     /**
      * The OrderItem model constructor.

@@ -1,4 +1,5 @@
 .babelrc
+.gitignore
 .travis.yml
 README.md
 docs/Addon.md
@@ -47,7 +48,6 @@ docs/Error.md
 docs/ErrorResponse.md
 docs/Money.md
 docs/NewAddonPurchase.md
-docs/NewAddonVersion.md
 docs/OrderItem.md
 docs/PermissionGroup.md
 docs/PermissionGroupListResponse.md
@@ -133,7 +133,6 @@ src/Everyday/GmodStore/Sdk/model/Error.js
 src/Everyday/GmodStore/Sdk/model/ErrorResponse.js
 src/Everyday/GmodStore/Sdk/model/Money.js
 src/Everyday/GmodStore/Sdk/model/NewAddonPurchase.js
-src/Everyday/GmodStore/Sdk/model/NewAddonVersion.js
 src/Everyday/GmodStore/Sdk/model/OrderItem.js
 src/Everyday/GmodStore/Sdk/model/PermissionGroup.js
 src/Everyday/GmodStore/Sdk/model/PermissionGroupListResponse.js

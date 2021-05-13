@@ -169,7 +169,6 @@ Class | Method | HTTP request | Description
  - [GmodstoreSdk.ErrorResponse](docs/ErrorResponse.md)
  - [GmodstoreSdk.Money](docs/Money.md)
  - [GmodstoreSdk.NewAddonPurchase](docs/NewAddonPurchase.md)
- - [GmodstoreSdk.NewAddonVersion](docs/NewAddonVersion.md)
  - [GmodstoreSdk.OrderItem](docs/OrderItem.md)
  - [GmodstoreSdk.PermissionGroup](docs/PermissionGroup.md)
  - [GmodstoreSdk.PermissionGroupListResponse](docs/PermissionGroupListResponse.md)

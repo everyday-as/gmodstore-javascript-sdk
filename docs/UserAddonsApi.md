@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## listUserAddons
 
-> AddonListResponse1 listUserAddons(userId, opts)
+> AddonListResponse listUserAddons(userId, opts)
 
 Fetch all the addons authored / co-authored by a user
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AddonListResponse1**](AddonListResponse1.md)
+[**AddonListResponse**](AddonListResponse.md)
 
 ### Authorization
 

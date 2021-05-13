@@ -1,9 +1,9 @@
-# GmodstoreSdk.AddonListResponse1
+# GmodstoreSdk.ApiKeyResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[Addon]**](Addon.md) |  | [optional] 
+**data** | [**ApiKey**](ApiKey.md) |  | [optional] 
 
 

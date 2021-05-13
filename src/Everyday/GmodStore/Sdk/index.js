@@ -21,7 +21,6 @@ import AddonDownload from './model/AddonDownload';
 import AddonDownloadResponse from './model/AddonDownloadResponse';
 import AddonImages from './model/AddonImages';
 import AddonListResponse from './model/AddonListResponse';
-import AddonListResponse1 from './model/AddonListResponse1';
 import AddonPrice from './model/AddonPrice';
 import AddonPurchase from './model/AddonPurchase';
 import AddonPurchaseListResponse from './model/AddonPurchaseListResponse';
@@ -45,6 +44,7 @@ import AddonVersionResponse from './model/AddonVersionResponse';
 import AdventCalendarStats from './model/AdventCalendarStats';
 import AdventCalendarStatsResponse from './model/AdventCalendarStatsResponse';
 import ApiKey from './model/ApiKey';
+import ApiKeyResponse from './model/ApiKeyResponse';
 import BadgeListResponse from './model/BadgeListResponse';
 import BadgeResponse from './model/BadgeResponse';
 import Error from './model/Error';
@@ -170,12 +170,6 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/AddonListResponse}
      */
     AddonListResponse,
-
-    /**
-     * The AddonListResponse1 model constructor.
-     * @property {module:Everyday/GmodStore/Sdk/model/AddonListResponse1}
-     */
-    AddonListResponse1,
 
     /**
      * The AddonPrice model constructor.
@@ -314,6 +308,12 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/ApiKey}
      */
     ApiKey,
+
+    /**
+     * The ApiKeyResponse model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/ApiKeyResponse}
+     */
+    ApiKeyResponse,
 
     /**
      * The BadgeListResponse model constructor.

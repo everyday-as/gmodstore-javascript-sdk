@@ -11,7 +11,6 @@ docs/AddonDownload.md
 docs/AddonDownloadResponse.md
 docs/AddonImages.md
 docs/AddonListResponse.md
-docs/AddonListResponse1.md
 docs/AddonPrice.md
 docs/AddonPurchase.md
 docs/AddonPurchaseListResponse.md
@@ -41,6 +40,7 @@ docs/AdventCalendarApi.md
 docs/AdventCalendarStats.md
 docs/AdventCalendarStatsResponse.md
 docs/ApiKey.md
+docs/ApiKeyResponse.md
 docs/BadgeListResponse.md
 docs/BadgeResponse.md
 docs/CurrentAPIKeyApi.md
@@ -103,7 +103,6 @@ src/Everyday/GmodStore/Sdk/model/AddonDownload.js
 src/Everyday/GmodStore/Sdk/model/AddonDownloadResponse.js
 src/Everyday/GmodStore/Sdk/model/AddonImages.js
 src/Everyday/GmodStore/Sdk/model/AddonListResponse.js
-src/Everyday/GmodStore/Sdk/model/AddonListResponse1.js
 src/Everyday/GmodStore/Sdk/model/AddonPrice.js
 src/Everyday/GmodStore/Sdk/model/AddonPurchase.js
 src/Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse.js
@@ -127,6 +126,7 @@ src/Everyday/GmodStore/Sdk/model/AddonVersionResponse.js
 src/Everyday/GmodStore/Sdk/model/AdventCalendarStats.js
 src/Everyday/GmodStore/Sdk/model/AdventCalendarStatsResponse.js
 src/Everyday/GmodStore/Sdk/model/ApiKey.js
+src/Everyday/GmodStore/Sdk/model/ApiKeyResponse.js
 src/Everyday/GmodStore/Sdk/model/BadgeListResponse.js
 src/Everyday/GmodStore/Sdk/model/BadgeResponse.js
 src/Everyday/GmodStore/Sdk/model/Error.js
@@ -147,3 +147,4 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
+test/Everyday/GmodStore/Sdk/model/ApiKeyResponse.spec.js

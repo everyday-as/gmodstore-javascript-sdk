@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ## listSelfAddons
 
-> AddonListResponse1 listSelfAddons(opts)
+> AddonListResponse listSelfAddons(opts)
 
 Fetch all the addons that you have access to
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AddonListResponse1**](AddonListResponse1.md)
+[**AddonListResponse**](AddonListResponse.md)
 
 ### Authorization
 

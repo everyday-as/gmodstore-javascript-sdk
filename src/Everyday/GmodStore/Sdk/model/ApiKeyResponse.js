@@ -12,21 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import Addon from './Addon';
+import ApiKey from './ApiKey';
 
 /**
- * The AddonListResponse model module.
- * @module Everyday/GmodStore/Sdk/model/AddonListResponse
+ * The ApiKeyResponse model module.
+ * @module Everyday/GmodStore/Sdk/model/ApiKeyResponse
  * @version 1.1.0
  */
-class AddonListResponse {
+class ApiKeyResponse {
     /**
-     * Constructs a new <code>AddonListResponse</code>.
-     * @alias module:Everyday/GmodStore/Sdk/model/AddonListResponse
+     * Constructs a new <code>ApiKeyResponse</code>.
+     * @alias module:Everyday/GmodStore/Sdk/model/ApiKeyResponse
      */
     constructor() { 
         
-        AddonListResponse.initialize(this);
+        ApiKeyResponse.initialize(this);
     }
 
     /**
@@ -38,18 +38,18 @@ class AddonListResponse {
     }
 
     /**
-     * Constructs a <code>AddonListResponse</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>ApiKeyResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday/GmodStore/Sdk/model/AddonListResponse} obj Optional instance to populate.
-     * @return {module:Everyday/GmodStore/Sdk/model/AddonListResponse} The populated <code>AddonListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/ApiKeyResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/ApiKeyResponse} The populated <code>ApiKeyResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new AddonListResponse();
+            obj = obj || new ApiKeyResponse();
 
             if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [Addon]);
+                obj['data'] = ApiKey.constructFromObject(data['data']);
             }
         }
         return obj;
@@ -59,14 +59,14 @@ class AddonListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday/GmodStore/Sdk/model/Addon>} data
+ * @member {module:Everyday/GmodStore/Sdk/model/ApiKey} data
  */
-AddonListResponse.prototype['data'] = undefined;
+ApiKeyResponse.prototype['data'] = undefined;
 
 
 
 
 
 
-export default AddonListResponse;
+export default ApiKeyResponse;
 

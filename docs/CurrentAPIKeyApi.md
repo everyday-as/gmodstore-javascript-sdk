@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getCurrentApiKey
 
-> AddonListResponse getCurrentApiKey(opts)
+> ApiKeyResponse getCurrentApiKey(opts)
 
 Get meta information about the current API key
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AddonListResponse**](AddonListResponse.md)
+[**ApiKeyResponse**](ApiKeyResponse.md)
 
 ### Authorization
 

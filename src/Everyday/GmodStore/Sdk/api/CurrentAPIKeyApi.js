@@ -13,7 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
-import AddonListResponse from '../model/AddonListResponse';
+import ApiKeyResponse from '../model/ApiKeyResponse';
 import ErrorResponse from '../model/ErrorResponse';
 
 /**
@@ -39,7 +39,7 @@ export default class CurrentAPIKeyApi {
      * Callback function to receive the result of the getCurrentApiKey operation.
      * @callback module:Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi~getCurrentApiKeyCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday/GmodStore/Sdk/model/AddonListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/ApiKeyResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -48,7 +48,7 @@ export default class CurrentAPIKeyApi {
      * @param {Object} opts Optional parameters
      * @param {Array.<module:Everyday/GmodStore/Sdk/model/String>} opts._with The relations you want to fetch with the `ApiKey`
      * @param {module:Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi~getCurrentApiKeyCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonListResponse}
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/ApiKeyResponse}
      */
     getCurrentApiKey(opts, callback) {
       opts = opts || {};
@@ -67,7 +67,7 @@ export default class CurrentAPIKeyApi {
       let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = AddonListResponse;
+      let returnType = ApiKeyResponse;
       return this.apiClient.callApi(
         '/me', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

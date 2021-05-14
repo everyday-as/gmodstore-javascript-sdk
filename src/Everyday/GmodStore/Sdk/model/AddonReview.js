@@ -18,7 +18,7 @@ import User from './User';
 /**
  * The AddonReview model module.
  * @module Everyday/GmodStore/Sdk/model/AddonReview
- * @version 1.1.0
+ * @version 1.2.0
  */
 class AddonReview {
     /**

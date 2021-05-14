@@ -17,7 +17,7 @@ import UserBadgeLegend from './UserBadgeLegend';
 /**
  * The BadgeResponse model module.
  * @module Everyday/GmodStore/Sdk/model/BadgeResponse
- * @version 1.1.0
+ * @version 1.2.0
  */
 class BadgeResponse {
     /**

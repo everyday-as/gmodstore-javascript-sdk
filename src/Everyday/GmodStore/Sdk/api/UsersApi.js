@@ -19,7 +19,7 @@ import UserResponse from '../model/UserResponse';
 /**
 * Users service.
 * @module Everyday/GmodStore/Sdk/api/UsersApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class UsersApi {
 

@@ -17,7 +17,7 @@ import AddonDownload from './AddonDownload';
 /**
  * The AddonDownloadResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AddonDownloadResponse
- * @version 1.1.0
+ * @version 1.2.0
  */
 class AddonDownloadResponse {
     /**

@@ -19,7 +19,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * CurrentAPIKey service.
 * @module Everyday/GmodStore/Sdk/api/CurrentAPIKeyApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class CurrentAPIKeyApi {
 

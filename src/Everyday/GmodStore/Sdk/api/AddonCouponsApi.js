@@ -21,7 +21,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * AddonCoupons service.
 * @module Everyday/GmodStore/Sdk/api/AddonCouponsApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class AddonCouponsApi {
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewAddonPurchase model module.
  * @module Everyday/GmodStore/Sdk/model/NewAddonPurchase
- * @version 1.1.0
+ * @version 1.2.0
  */
 class NewAddonPurchase {
     /**

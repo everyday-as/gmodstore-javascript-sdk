@@ -19,7 +19,7 @@ import PermissionGroupListResponse from '../model/PermissionGroupListResponse';
 /**
 * PermissionGroups service.
 * @module Everyday/GmodStore/Sdk/api/PermissionGroupsApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class PermissionGroupsApi {
 

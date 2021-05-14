@@ -17,7 +17,7 @@ import TeamUser from './TeamUser';
 /**
  * The Team model module.
  * @module Everyday/GmodStore/Sdk/model/Team
- * @version 1.1.0
+ * @version 1.2.0
  */
 class Team {
     /**

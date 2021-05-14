@@ -17,7 +17,7 @@ import AddonPurchase from './AddonPurchase';
 /**
  * The AddonPurchaseListResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AddonPurchaseListResponse
- * @version 1.1.0
+ * @version 1.2.0
  */
 class AddonPurchaseListResponse {
     /**

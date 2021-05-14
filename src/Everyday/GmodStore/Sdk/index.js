@@ -114,7 +114,7 @@ import UsersApi from './api/UsersApi';
 * </pre>
 * </p>
 * @module Everyday/GmodStore/Sdk/index
-* @version 1.1.0
+* @version 1.2.0
 */
 export {
     /**

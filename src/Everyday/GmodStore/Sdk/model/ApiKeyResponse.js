@@ -17,7 +17,7 @@ import ApiKey from './ApiKey';
 /**
  * The ApiKeyResponse model module.
  * @module Everyday/GmodStore/Sdk/model/ApiKeyResponse
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ApiKeyResponse {
     /**

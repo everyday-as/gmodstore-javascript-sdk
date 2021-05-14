@@ -14,6 +14,7 @@
 import ApiClient from '../ApiClient';
 import AddonImages from './AddonImages';
 import AddonPrice from './AddonPrice';
+import AddonStats from './AddonStats';
 import AddonVersion from './AddonVersion';
 import Team from './Team';
 
@@ -75,6 +76,27 @@ class Addon {
             if (data.hasOwnProperty('images')) {
                 obj['images'] = AddonImages.constructFromObject(data['images']);
             }
+            if (data.hasOwnProperty('views')) {
+                obj['views'] = ApiClient.convertToType(data['views'], 'Number');
+            }
+            if (data.hasOwnProperty('rating_avg')) {
+                obj['rating_avg'] = ApiClient.convertToType(data['rating_avg'], 'String');
+            }
+            if (data.hasOwnProperty('rating_count')) {
+                obj['rating_count'] = ApiClient.convertToType(data['rating_count'], 'Number');
+            }
+            if (data.hasOwnProperty('purchases_count')) {
+                obj['purchases_count'] = ApiClient.convertToType(data['purchases_count'], 'Number');
+            }
+            if (data.hasOwnProperty('dependent_addon')) {
+                obj['dependent_addon'] = ApiClient.convertToType(data['dependent_addon'], 'Number');
+            }
+            if (data.hasOwnProperty('has_drm')) {
+                obj['has_drm'] = ApiClient.convertToType(data['has_drm'], 'Boolean');
+            }
+            if (data.hasOwnProperty('requires_chromium')) {
+                obj['requires_chromium'] = ApiClient.convertToType(data['requires_chromium'], 'Boolean');
+            }
             if (data.hasOwnProperty('slug')) {
                 obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
             }
@@ -92,6 +114,9 @@ class Addon {
             }
             if (data.hasOwnProperty('team')) {
                 obj['team'] = Team.constructFromObject(data['team']);
+            }
+            if (data.hasOwnProperty('stats')) {
+                obj['stats'] = AddonStats.constructFromObject(data['stats']);
             }
         }
         return obj;
@@ -141,6 +166,41 @@ Addon.prototype['price'] = undefined;
 Addon.prototype['images'] = undefined;
 
 /**
+ * @member {Number} views
+ */
+Addon.prototype['views'] = undefined;
+
+/**
+ * @member {String} rating_avg
+ */
+Addon.prototype['rating_avg'] = undefined;
+
+/**
+ * @member {Number} rating_count
+ */
+Addon.prototype['rating_count'] = undefined;
+
+/**
+ * @member {Number} purchases_count
+ */
+Addon.prototype['purchases_count'] = undefined;
+
+/**
+ * @member {Number} dependent_addon
+ */
+Addon.prototype['dependent_addon'] = undefined;
+
+/**
+ * @member {Boolean} has_drm
+ */
+Addon.prototype['has_drm'] = undefined;
+
+/**
+ * @member {Boolean} requires_chromium
+ */
+Addon.prototype['requires_chromium'] = undefined;
+
+/**
  * @member {String} slug
  */
 Addon.prototype['slug'] = undefined;
@@ -169,6 +229,11 @@ Addon.prototype['latest_version'] = undefined;
  * @member {module:Everyday/GmodStore/Sdk/model/Team} team
  */
 Addon.prototype['team'] = undefined;
+
+/**
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonStats} stats
+ */
+Addon.prototype['stats'] = undefined;
 
 
 

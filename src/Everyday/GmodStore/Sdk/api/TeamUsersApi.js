@@ -19,7 +19,7 @@ import TeamUserListResponse from '../model/TeamUserListResponse';
 /**
 * TeamUsers service.
 * @module Everyday/GmodStore/Sdk/api/TeamUsersApi
-* @version 1.2.1
+* @version 1.2.2
 */
 export default class TeamUsersApi {
 

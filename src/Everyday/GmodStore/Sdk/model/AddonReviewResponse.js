@@ -17,7 +17,7 @@ import AddonReview from './AddonReview';
 /**
  * The AddonReviewResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AddonReviewResponse
- * @version 1.2.1
+ * @version 1.2.2
  */
 class AddonReviewResponse {
     /**

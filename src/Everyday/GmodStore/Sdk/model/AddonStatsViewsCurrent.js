@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddonStatsViewsCurrent model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsViewsCurrent
- * @version 1.2.1
+ * @version 1.2.2
  */
 class AddonStatsViewsCurrent {
     /**

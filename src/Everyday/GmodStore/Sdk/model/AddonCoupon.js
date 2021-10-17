@@ -18,7 +18,7 @@ import User from './User';
 /**
  * The AddonCoupon model module.
  * @module Everyday/GmodStore/Sdk/model/AddonCoupon
- * @version 1.2.1
+ * @version 1.2.2
  */
 class AddonCoupon {
     /**

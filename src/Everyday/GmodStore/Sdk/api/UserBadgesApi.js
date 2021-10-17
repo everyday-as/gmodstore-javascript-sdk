@@ -21,7 +21,7 @@ import UserBadge from '../model/UserBadge';
 /**
 * UserBadges service.
 * @module Everyday/GmodStore/Sdk/api/UserBadgesApi
-* @version 1.2.1
+* @version 1.2.2
 */
 export default class UserBadgesApi {
 

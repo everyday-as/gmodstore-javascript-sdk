@@ -17,7 +17,7 @@ import PermissionGroup from './PermissionGroup';
 /**
  * The PermissionGroupListResponse model module.
  * @module Everyday/GmodStore/Sdk/model/PermissionGroupListResponse
- * @version 1.2.1
+ * @version 1.2.2
  */
 class PermissionGroupListResponse {
     /**

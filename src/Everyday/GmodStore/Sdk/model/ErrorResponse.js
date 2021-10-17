@@ -17,7 +17,7 @@ import Error from './Error';
 /**
  * The ErrorResponse model module.
  * @module Everyday/GmodStore/Sdk/model/ErrorResponse
- * @version 1.2.1
+ * @version 1.2.2
  */
 class ErrorResponse {
     /**

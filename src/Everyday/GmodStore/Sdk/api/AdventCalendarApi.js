@@ -19,7 +19,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * AdventCalendar service.
 * @module Everyday/GmodStore/Sdk/api/AdventCalendarApi
-* @version 1.2.1
+* @version 1.2.2
 */
 export default class AdventCalendarApi {
 

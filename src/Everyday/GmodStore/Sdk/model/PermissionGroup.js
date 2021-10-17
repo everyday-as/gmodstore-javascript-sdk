@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PermissionGroup model module.
  * @module Everyday/GmodStore/Sdk/model/PermissionGroup
- * @version 1.2.1
+ * @version 1.2.2
  */
 class PermissionGroup {
     /**

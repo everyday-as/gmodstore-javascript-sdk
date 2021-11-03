@@ -55,6 +55,8 @@ import OrderItem from './model/OrderItem';
 import PermissionGroup from './model/PermissionGroup';
 import PermissionGroupListResponse from './model/PermissionGroupListResponse';
 import Team from './model/Team';
+import TeamAddon from './model/TeamAddon';
+import TeamAddonListResponse from './model/TeamAddonListResponse';
 import TeamListResponse from './model/TeamListResponse';
 import TeamResponse from './model/TeamResponse';
 import TeamUser from './model/TeamUser';
@@ -374,6 +376,18 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/Team}
      */
     Team,
+
+    /**
+     * The TeamAddon model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/TeamAddon}
+     */
+    TeamAddon,
+
+    /**
+     * The TeamAddonListResponse model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/TeamAddonListResponse}
+     */
+    TeamAddonListResponse,
 
     /**
      * The TeamListResponse model constructor.

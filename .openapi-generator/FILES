@@ -53,6 +53,8 @@ docs/PermissionGroup.md
 docs/PermissionGroupListResponse.md
 docs/PermissionGroupsApi.md
 docs/Team.md
+docs/TeamAddon.md
+docs/TeamAddonListResponse.md
 docs/TeamAddonsApi.md
 docs/TeamListResponse.md
 docs/TeamResponse.md
@@ -137,6 +139,8 @@ src/Everyday/GmodStore/Sdk/model/OrderItem.js
 src/Everyday/GmodStore/Sdk/model/PermissionGroup.js
 src/Everyday/GmodStore/Sdk/model/PermissionGroupListResponse.js
 src/Everyday/GmodStore/Sdk/model/Team.js
+src/Everyday/GmodStore/Sdk/model/TeamAddon.js
+src/Everyday/GmodStore/Sdk/model/TeamAddonListResponse.js
 src/Everyday/GmodStore/Sdk/model/TeamListResponse.js
 src/Everyday/GmodStore/Sdk/model/TeamResponse.js
 src/Everyday/GmodStore/Sdk/model/TeamUser.js
@@ -147,3 +151,5 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
+test/Everyday/GmodStore/Sdk/model/TeamAddon.spec.js
+test/Everyday/GmodStore/Sdk/model/TeamAddonListResponse.spec.js

@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import ErrorResponse from '../model/ErrorResponse';
-import TeamUserListResponse from '../model/TeamUserListResponse';
+import TeamAddonListResponse from '../model/TeamAddonListResponse';
 
 /**
 * TeamAddons service.
@@ -39,7 +39,7 @@ export default class TeamAddonsApi {
      * Callback function to receive the result of the listTeamAddons operation.
      * @callback module:Everyday/GmodStore/Sdk/api/TeamAddonsApi~listTeamAddonsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday/GmodStore/Sdk/model/TeamUserListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/TeamAddonListResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -47,7 +47,7 @@ export default class TeamAddonsApi {
      * Fetch all the addons in the given team
      * @param {Number} teamId Id of the team
      * @param {module:Everyday/GmodStore/Sdk/api/TeamAddonsApi~listTeamAddonsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/TeamUserListResponse}
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/TeamAddonListResponse}
      */
     listTeamAddons(teamId, callback) {
       let postBody = null;
@@ -69,7 +69,7 @@ export default class TeamAddonsApi {
       let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = TeamUserListResponse;
+      let returnType = TeamAddonListResponse;
       return this.apiClient.callApi(
         '/teams/{team_id}/addons', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

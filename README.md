@@ -173,6 +173,8 @@ Class | Method | HTTP request | Description
  - [GmodstoreSdk.PermissionGroup](docs/PermissionGroup.md)
  - [GmodstoreSdk.PermissionGroupListResponse](docs/PermissionGroupListResponse.md)
  - [GmodstoreSdk.Team](docs/Team.md)
+ - [GmodstoreSdk.TeamAddon](docs/TeamAddon.md)
+ - [GmodstoreSdk.TeamAddonListResponse](docs/TeamAddonListResponse.md)
  - [GmodstoreSdk.TeamListResponse](docs/TeamListResponse.md)
  - [GmodstoreSdk.TeamResponse](docs/TeamResponse.md)
  - [GmodstoreSdk.TeamUser](docs/TeamUser.md)

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## listTeamAddons
 
-> TeamUserListResponse listTeamAddons(teamId)
+> TeamAddonListResponse listTeamAddons(teamId)
 
 Fetch all the addons in the given team
 
@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TeamUserListResponse**](TeamUserListResponse.md)
+[**TeamAddonListResponse**](TeamAddonListResponse.md)
 
 ### Authorization
 

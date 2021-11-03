@@ -17,7 +17,7 @@ import PermissionGroup from './PermissionGroup';
 /**
  * The User model module.
  * @module Everyday/GmodStore/Sdk/model/User
- * @version 1.2.2
+ * @version 1.2.3
  */
 class User {
     /**

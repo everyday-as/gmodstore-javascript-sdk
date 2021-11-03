@@ -17,7 +17,7 @@ import User from './User';
 /**
  * The UserResponse model module.
  * @module Everyday/GmodStore/Sdk/model/UserResponse
- * @version 1.2.2
+ * @version 1.2.3
  */
 class UserResponse {
     /**

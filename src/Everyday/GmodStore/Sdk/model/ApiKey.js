@@ -17,7 +17,7 @@ import User from './User';
 /**
  * The ApiKey model module.
  * @module Everyday/GmodStore/Sdk/model/ApiKey
- * @version 1.2.2
+ * @version 1.2.3
  */
 class ApiKey {
     /**

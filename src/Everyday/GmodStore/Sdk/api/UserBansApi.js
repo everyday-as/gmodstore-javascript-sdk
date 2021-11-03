@@ -19,7 +19,7 @@ import UserBanListResponse from '../model/UserBanListResponse';
 /**
 * UserBans service.
 * @module Everyday/GmodStore/Sdk/api/UserBansApi
-* @version 1.2.2
+* @version 1.2.3
 */
 export default class UserBansApi {
 

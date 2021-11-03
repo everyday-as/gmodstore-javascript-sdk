@@ -19,7 +19,7 @@ import TeamAddonListResponse from '../model/TeamAddonListResponse';
 /**
 * TeamAddons service.
 * @module Everyday/GmodStore/Sdk/api/TeamAddonsApi
-* @version 1.2.2
+* @version 1.2.3
 */
 export default class TeamAddonsApi {
 

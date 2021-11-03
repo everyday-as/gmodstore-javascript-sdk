@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddonDownload model module.
  * @module Everyday/GmodStore/Sdk/model/AddonDownload
- * @version 1.2.2
+ * @version 1.2.3
  */
 class AddonDownload {
     /**

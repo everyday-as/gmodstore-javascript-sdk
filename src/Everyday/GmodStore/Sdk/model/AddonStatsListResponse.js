@@ -17,7 +17,7 @@ import AddonStats from './AddonStats';
 /**
  * The AddonStatsListResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsListResponse
- * @version 1.2.2
+ * @version 1.2.3
  */
 class AddonStatsListResponse {
     /**

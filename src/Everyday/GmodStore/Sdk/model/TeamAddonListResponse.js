@@ -17,7 +17,7 @@ import TeamAddon from './TeamAddon';
 /**
  * The TeamAddonListResponse model module.
  * @module Everyday/GmodStore/Sdk/model/TeamAddonListResponse
- * @version 1.2.2
+ * @version 1.2.3
  */
 class TeamAddonListResponse {
     /**

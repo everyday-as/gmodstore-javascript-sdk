@@ -17,7 +17,7 @@ import UserBan from './UserBan';
 /**
  * The UserBanListResponse model module.
  * @module Everyday/GmodStore/Sdk/model/UserBanListResponse
- * @version 1.2.2
+ * @version 1.2.3
  */
 class UserBanListResponse {
     /**

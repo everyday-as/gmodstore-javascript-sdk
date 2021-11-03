@@ -20,7 +20,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * AddonReviews service.
 * @module Everyday/GmodStore/Sdk/api/AddonReviewsApi
-* @version 1.2.2
+* @version 1.2.3
 */
 export default class AddonReviewsApi {
 

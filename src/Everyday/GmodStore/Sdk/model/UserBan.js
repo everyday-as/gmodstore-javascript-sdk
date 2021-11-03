@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The UserBan model module.
  * @module Everyday/GmodStore/Sdk/model/UserBan
- * @version 1.2.2
+ * @version 1.2.3
  */
 class UserBan {
     /**

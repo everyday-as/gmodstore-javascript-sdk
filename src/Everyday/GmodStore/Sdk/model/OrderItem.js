@@ -17,7 +17,7 @@ import Money from './Money';
 /**
  * The OrderItem model module.
  * @module Everyday/GmodStore/Sdk/model/OrderItem
- * @version 1.2.3
+ * @version 1.3.0
  */
 class OrderItem {
     /**

@@ -19,7 +19,7 @@ import TeamResponse from '../model/TeamResponse';
 /**
 * Teams service.
 * @module Everyday/GmodStore/Sdk/api/TeamsApi
-* @version 1.2.3
+* @version 1.3.0
 */
 export default class TeamsApi {
 

@@ -21,7 +21,7 @@ import Team from './Team';
 /**
  * The Addon model module.
  * @module Everyday/GmodStore/Sdk/model/Addon
- * @version 1.2.3
+ * @version 1.3.0
  */
 class Addon {
     /**

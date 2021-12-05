@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AdventCalendarStats model module.
  * @module Everyday/GmodStore/Sdk/model/AdventCalendarStats
- * @version 1.2.3
+ * @version 1.3.0
  */
 class AdventCalendarStats {
     /**

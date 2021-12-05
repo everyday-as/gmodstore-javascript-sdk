@@ -17,7 +17,7 @@ import AddonCoupon from './AddonCoupon';
 /**
  * The AddonCouponListResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AddonCouponListResponse
- * @version 1.2.3
+ * @version 1.3.0
  */
 class AddonCouponListResponse {
     /**

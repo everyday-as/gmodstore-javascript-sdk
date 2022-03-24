@@ -18,7 +18,7 @@ import AddonVersionReleaseType from './AddonVersionReleaseType';
 /**
  * The AddonVersion model module.
  * @module Everyday/GmodStore/Sdk/model/AddonVersion
- * @version 1.3.0
+ * @version 1.3.1
  */
 class AddonVersion {
     /**

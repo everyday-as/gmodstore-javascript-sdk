@@ -23,7 +23,7 @@ docs/AddonReviewResponse.md
 docs/AddonReviewsApi.md
 docs/AddonStats.md
 docs/AddonStatsApi.md
-docs/AddonStatsListResponse.md
+docs/AddonStatsResponse.md
 docs/AddonStatsRevenue.md
 docs/AddonStatsRevenueCurrent.md
 docs/AddonStatsSales.md
@@ -114,7 +114,7 @@ src/Everyday/GmodStore/Sdk/model/AddonReview.js
 src/Everyday/GmodStore/Sdk/model/AddonReviewListResponse.js
 src/Everyday/GmodStore/Sdk/model/AddonReviewResponse.js
 src/Everyday/GmodStore/Sdk/model/AddonStats.js
-src/Everyday/GmodStore/Sdk/model/AddonStatsListResponse.js
+src/Everyday/GmodStore/Sdk/model/AddonStatsResponse.js
 src/Everyday/GmodStore/Sdk/model/AddonStatsRevenue.js
 src/Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent.js
 src/Everyday/GmodStore/Sdk/model/AddonStatsSales.js
@@ -151,3 +151,4 @@ src/Everyday/GmodStore/Sdk/model/UserBadgeLegend.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanListResponse.js
 src/Everyday/GmodStore/Sdk/model/UserResponse.js
+test/Everyday/GmodStore/Sdk/model/AddonStatsResponse.spec.js

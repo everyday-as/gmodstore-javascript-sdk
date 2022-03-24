@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getAddonStats
 
-> AddonStatsListResponse getAddonStats(addonId)
+> AddonStatsResponse getAddonStats(addonId)
 
 Fetch all the stats for an addon
 
@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AddonStatsListResponse**](AddonStatsListResponse.md)
+[**AddonStatsResponse**](AddonStatsResponse.md)
 
 ### Authorization
 

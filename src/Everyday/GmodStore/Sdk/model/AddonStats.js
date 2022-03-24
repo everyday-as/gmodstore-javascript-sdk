@@ -19,7 +19,7 @@ import AddonStatsViews from './AddonStatsViews';
 /**
  * The AddonStats model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStats
- * @version 1.3.0
+ * @version 1.3.1
  */
 class AddonStats {
     /**

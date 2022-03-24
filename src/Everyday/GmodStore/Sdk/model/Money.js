@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Money model module.
  * @module Everyday/GmodStore/Sdk/model/Money
- * @version 1.3.0
+ * @version 1.3.1
  */
 class Money {
     /**

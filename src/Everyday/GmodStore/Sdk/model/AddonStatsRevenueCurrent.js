@@ -17,7 +17,7 @@ import Money from './Money';
 /**
  * The AddonStatsRevenueCurrent model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent
- * @version 1.3.0
+ * @version 1.3.1
  */
 class AddonStatsRevenueCurrent {
     /**

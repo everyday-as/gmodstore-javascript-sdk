@@ -30,7 +30,7 @@ import AddonReview from './model/AddonReview';
 import AddonReviewListResponse from './model/AddonReviewListResponse';
 import AddonReviewResponse from './model/AddonReviewResponse';
 import AddonStats from './model/AddonStats';
-import AddonStatsListResponse from './model/AddonStatsListResponse';
+import AddonStatsResponse from './model/AddonStatsResponse';
 import AddonStatsRevenue from './model/AddonStatsRevenue';
 import AddonStatsRevenueCurrent from './model/AddonStatsRevenueCurrent';
 import AddonStatsSales from './model/AddonStatsSales';
@@ -116,7 +116,7 @@ import UsersApi from './api/UsersApi';
 * </pre>
 * </p>
 * @module Everyday/GmodStore/Sdk/index
-* @version 1.3.0
+* @version 1.3.1
 */
 export {
     /**
@@ -228,10 +228,10 @@ export {
     AddonStats,
 
     /**
-     * The AddonStatsListResponse model constructor.
-     * @property {module:Everyday/GmodStore/Sdk/model/AddonStatsListResponse}
+     * The AddonStatsResponse model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/AddonStatsResponse}
      */
-    AddonStatsListResponse,
+    AddonStatsResponse,
 
     /**
      * The AddonStatsRevenue model constructor.

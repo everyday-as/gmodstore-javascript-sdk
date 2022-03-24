@@ -1,9 +1,9 @@
-# GmodstoreSdk.AddonStatsListResponse
+# GmodstoreSdk.AddonStatsResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[AddonStats]**](AddonStats.md) |  | [optional] 
+**data** | [**AddonStats**](AddonStats.md) |  | [optional] 
 
 

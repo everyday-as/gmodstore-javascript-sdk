@@ -12,21 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import AddonCoupon from './AddonCoupon';
+import AddonStats from './AddonStats';
 
 /**
- * The AddonCouponListResponse model module.
- * @module Everyday/GmodStore/Sdk/model/AddonCouponListResponse
+ * The AddonStatsResponse model module.
+ * @module Everyday/GmodStore/Sdk/model/AddonStatsResponse
  * @version 1.3.1
  */
-class AddonCouponListResponse {
+class AddonStatsResponse {
     /**
-     * Constructs a new <code>AddonCouponListResponse</code>.
-     * @alias module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse
+     * Constructs a new <code>AddonStatsResponse</code>.
+     * @alias module:Everyday/GmodStore/Sdk/model/AddonStatsResponse
      */
     constructor() { 
         
-        AddonCouponListResponse.initialize(this);
+        AddonStatsResponse.initialize(this);
     }
 
     /**
@@ -38,18 +38,18 @@ class AddonCouponListResponse {
     }
 
     /**
-     * Constructs a <code>AddonCouponListResponse</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>AddonStatsResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse} obj Optional instance to populate.
-     * @return {module:Everyday/GmodStore/Sdk/model/AddonCouponListResponse} The populated <code>AddonCouponListResponse</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsResponse} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/AddonStatsResponse} The populated <code>AddonStatsResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new AddonCouponListResponse();
+            obj = obj || new AddonStatsResponse();
 
             if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [AddonCoupon]);
+                obj['data'] = AddonStats.constructFromObject(data['data']);
             }
         }
         return obj;
@@ -59,14 +59,14 @@ class AddonCouponListResponse {
 }
 
 /**
- * @member {Array.<module:Everyday/GmodStore/Sdk/model/AddonCoupon>} data
+ * @member {module:Everyday/GmodStore/Sdk/model/AddonStats} data
  */
-AddonCouponListResponse.prototype['data'] = undefined;
+AddonStatsResponse.prototype['data'] = undefined;
 
 
 
 
 
 
-export default AddonCouponListResponse;
+export default AddonStatsResponse;
 

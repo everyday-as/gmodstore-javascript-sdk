@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddonImages model module.
  * @module Everyday/GmodStore/Sdk/model/AddonImages
- * @version 1.3.0
+ * @version 1.3.1
  */
 class AddonImages {
     /**

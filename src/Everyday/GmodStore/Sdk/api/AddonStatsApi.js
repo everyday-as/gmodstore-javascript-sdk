@@ -13,13 +13,13 @@
 
 
 import ApiClient from "../ApiClient";
-import AddonStatsListResponse from '../model/AddonStatsListResponse';
+import AddonStatsResponse from '../model/AddonStatsResponse';
 import ErrorResponse from '../model/ErrorResponse';
 
 /**
 * AddonStats service.
 * @module Everyday/GmodStore/Sdk/api/AddonStatsApi
-* @version 1.3.0
+* @version 1.3.1
 */
 export default class AddonStatsApi {
 
@@ -39,7 +39,7 @@ export default class AddonStatsApi {
      * Callback function to receive the result of the getAddonStats operation.
      * @callback module:Everyday/GmodStore/Sdk/api/AddonStatsApi~getAddonStatsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsListResponse} data The data returned by the service call.
+     * @param {module:Everyday/GmodStore/Sdk/model/AddonStatsResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -47,7 +47,7 @@ export default class AddonStatsApi {
      * Fetch all the stats for an addon
      * @param {Number} addonId Id of the addon
      * @param {module:Everyday/GmodStore/Sdk/api/AddonStatsApi~getAddonStatsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonStatsListResponse}
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/AddonStatsResponse}
      */
     getAddonStats(addonId, callback) {
       let postBody = null;
@@ -69,7 +69,7 @@ export default class AddonStatsApi {
       let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = AddonStatsListResponse;
+      let returnType = AddonStatsResponse;
       return this.apiClient.callApi(
         '/addons/{addon_id}/stats', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

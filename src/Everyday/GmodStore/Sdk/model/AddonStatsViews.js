@@ -17,7 +17,7 @@ import AddonStatsViewsCurrent from './AddonStatsViewsCurrent';
 /**
  * The AddonStatsViews model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsViews
- * @version 1.3.1
+ * @version 1.3.2
  */
 class AddonStatsViews {
     /**
@@ -54,6 +54,9 @@ class AddonStatsViews {
             if (data.hasOwnProperty('previous')) {
                 obj['previous'] = AddonStatsViewsCurrent.constructFromObject(data['previous']);
             }
+            if (data.hasOwnProperty('total')) {
+                obj['total'] = ApiClient.convertToType(data['total'], 'String');
+            }
         }
         return obj;
     }
@@ -70,6 +73,11 @@ AddonStatsViews.prototype['current'] = undefined;
  * @member {module:Everyday/GmodStore/Sdk/model/AddonStatsViewsCurrent} previous
  */
 AddonStatsViews.prototype['previous'] = undefined;
+
+/**
+ * @member {String} total
+ */
+AddonStatsViews.prototype['total'] = undefined;
 
 
 

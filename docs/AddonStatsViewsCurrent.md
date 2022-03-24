@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**day** | **Number** |  | [optional] 
-**month** | **Number** |  | [optional] 
+**day** | **String** |  | [optional] 
+**month** | **String** |  | [optional] 
 
 

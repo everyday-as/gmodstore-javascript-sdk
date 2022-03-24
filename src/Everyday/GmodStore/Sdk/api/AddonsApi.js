@@ -20,7 +20,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * Addons service.
 * @module Everyday/GmodStore/Sdk/api/AddonsApi
-* @version 1.3.1
+* @version 1.3.2
 */
 export default class AddonsApi {
 

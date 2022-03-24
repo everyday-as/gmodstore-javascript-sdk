@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**day** | **Number** |  | [optional] 
-**week** | **Number** |  | [optional] 
-**month** | **Number** |  | [optional] 
+**day** | **String** |  | [optional] 
+**week** | **String** |  | [optional] 
+**month** | **String** |  | [optional] 
 
 

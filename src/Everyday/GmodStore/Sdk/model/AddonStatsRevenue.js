@@ -13,12 +13,11 @@
 
 import ApiClient from '../ApiClient';
 import AddonStatsRevenueCurrent from './AddonStatsRevenueCurrent';
-import Money from './Money';
 
 /**
  * The AddonStatsRevenue model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsRevenue
- * @version 1.3.1
+ * @version 1.3.2
  */
 class AddonStatsRevenue {
     /**
@@ -56,7 +55,7 @@ class AddonStatsRevenue {
                 obj['previous'] = AddonStatsRevenueCurrent.constructFromObject(data['previous']);
             }
             if (data.hasOwnProperty('total')) {
-                obj['total'] = Money.constructFromObject(data['total']);
+                obj['total'] = ApiClient.convertToType(data['total'], 'String');
             }
         }
         return obj;
@@ -76,7 +75,7 @@ AddonStatsRevenue.prototype['current'] = undefined;
 AddonStatsRevenue.prototype['previous'] = undefined;
 
 /**
- * @member {module:Everyday/GmodStore/Sdk/model/Money} total
+ * @member {String} total
  */
 AddonStatsRevenue.prototype['total'] = undefined;
 

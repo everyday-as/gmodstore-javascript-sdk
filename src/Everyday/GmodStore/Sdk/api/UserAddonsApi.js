@@ -19,7 +19,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * UserAddons service.
 * @module Everyday/GmodStore/Sdk/api/UserAddonsApi
-* @version 1.3.1
+* @version 1.3.2
 */
 export default class UserAddonsApi {
 

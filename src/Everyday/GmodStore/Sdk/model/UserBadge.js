@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The UserBadge model module.
  * @module Everyday/GmodStore/Sdk/model/UserBadge
- * @version 1.3.1
+ * @version 1.3.2
  */
 class UserBadge {
     /**

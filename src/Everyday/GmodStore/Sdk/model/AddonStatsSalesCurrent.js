@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddonStatsSalesCurrent model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent
- * @version 1.3.1
+ * @version 1.3.2
  */
 class AddonStatsSalesCurrent {
     /**
@@ -48,13 +48,13 @@ class AddonStatsSalesCurrent {
             obj = obj || new AddonStatsSalesCurrent();
 
             if (data.hasOwnProperty('day')) {
-                obj['day'] = ApiClient.convertToType(data['day'], 'Number');
+                obj['day'] = ApiClient.convertToType(data['day'], 'String');
             }
             if (data.hasOwnProperty('week')) {
-                obj['week'] = ApiClient.convertToType(data['week'], 'Number');
+                obj['week'] = ApiClient.convertToType(data['week'], 'String');
             }
             if (data.hasOwnProperty('month')) {
-                obj['month'] = ApiClient.convertToType(data['month'], 'Number');
+                obj['month'] = ApiClient.convertToType(data['month'], 'String');
             }
         }
         return obj;
@@ -64,17 +64,17 @@ class AddonStatsSalesCurrent {
 }
 
 /**
- * @member {Number} day
+ * @member {String} day
  */
 AddonStatsSalesCurrent.prototype['day'] = undefined;
 
 /**
- * @member {Number} week
+ * @member {String} week
  */
 AddonStatsSalesCurrent.prototype['week'] = undefined;
 
 /**
- * @member {Number} month
+ * @member {String} month
  */
 AddonStatsSalesCurrent.prototype['month'] = undefined;
 

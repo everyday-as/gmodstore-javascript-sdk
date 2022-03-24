@@ -17,7 +17,7 @@ import querystring from "querystring";
 
 /**
 * @module Everyday/GmodStore/Sdk/ApiClient
-* @version 1.3.1
+* @version 1.3.2
 */
 
 /**
@@ -55,7 +55,7 @@ class ApiClient {
          * @default {}
          */
         this.defaultHeaders = {
-            'User-Agent': 'OpenAPI-Generator/1.3.1/Javascript'
+            'User-Agent': 'OpenAPI-Generator/1.3.2/Javascript'
         };
 
         /**

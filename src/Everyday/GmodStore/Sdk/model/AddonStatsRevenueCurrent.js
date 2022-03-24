@@ -12,12 +12,11 @@
  */
 
 import ApiClient from '../ApiClient';
-import Money from './Money';
 
 /**
  * The AddonStatsRevenueCurrent model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsRevenueCurrent
- * @version 1.3.1
+ * @version 1.3.2
  */
 class AddonStatsRevenueCurrent {
     /**
@@ -49,10 +48,10 @@ class AddonStatsRevenueCurrent {
             obj = obj || new AddonStatsRevenueCurrent();
 
             if (data.hasOwnProperty('day')) {
-                obj['day'] = Money.constructFromObject(data['day']);
+                obj['day'] = ApiClient.convertToType(data['day'], 'String');
             }
             if (data.hasOwnProperty('month')) {
-                obj['month'] = Money.constructFromObject(data['month']);
+                obj['month'] = ApiClient.convertToType(data['month'], 'String');
             }
         }
         return obj;
@@ -62,12 +61,12 @@ class AddonStatsRevenueCurrent {
 }
 
 /**
- * @member {module:Everyday/GmodStore/Sdk/model/Money} day
+ * @member {String} day
  */
 AddonStatsRevenueCurrent.prototype['day'] = undefined;
 
 /**
- * @member {module:Everyday/GmodStore/Sdk/model/Money} month
+ * @member {String} month
  */
 AddonStatsRevenueCurrent.prototype['month'] = undefined;
 

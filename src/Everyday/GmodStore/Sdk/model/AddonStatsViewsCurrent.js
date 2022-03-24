@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddonStatsViewsCurrent model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsViewsCurrent
- * @version 1.3.1
+ * @version 1.3.2
  */
 class AddonStatsViewsCurrent {
     /**
@@ -48,10 +48,10 @@ class AddonStatsViewsCurrent {
             obj = obj || new AddonStatsViewsCurrent();
 
             if (data.hasOwnProperty('day')) {
-                obj['day'] = ApiClient.convertToType(data['day'], 'Number');
+                obj['day'] = ApiClient.convertToType(data['day'], 'String');
             }
             if (data.hasOwnProperty('month')) {
-                obj['month'] = ApiClient.convertToType(data['month'], 'Number');
+                obj['month'] = ApiClient.convertToType(data['month'], 'String');
             }
         }
         return obj;
@@ -61,12 +61,12 @@ class AddonStatsViewsCurrent {
 }
 
 /**
- * @member {Number} day
+ * @member {String} day
  */
 AddonStatsViewsCurrent.prototype['day'] = undefined;
 
 /**
- * @member {Number} month
+ * @member {String} month
  */
 AddonStatsViewsCurrent.prototype['month'] = undefined;
 

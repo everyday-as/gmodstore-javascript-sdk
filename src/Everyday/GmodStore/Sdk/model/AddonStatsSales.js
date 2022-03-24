@@ -17,7 +17,7 @@ import AddonStatsSalesCurrent from './AddonStatsSalesCurrent';
 /**
  * The AddonStatsSales model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsSales
- * @version 1.3.1
+ * @version 1.3.2
  */
 class AddonStatsSales {
     /**
@@ -51,6 +51,9 @@ class AddonStatsSales {
             if (data.hasOwnProperty('current')) {
                 obj['current'] = AddonStatsSalesCurrent.constructFromObject(data['current']);
             }
+            if (data.hasOwnProperty('total')) {
+                obj['total'] = ApiClient.convertToType(data['total'], 'String');
+            }
         }
         return obj;
     }
@@ -62,6 +65,11 @@ class AddonStatsSales {
  * @member {module:Everyday/GmodStore/Sdk/model/AddonStatsSalesCurrent} current
  */
 AddonStatsSales.prototype['current'] = undefined;
+
+/**
+ * @member {String} total
+ */
+AddonStatsSales.prototype['total'] = undefined;
 
 
 

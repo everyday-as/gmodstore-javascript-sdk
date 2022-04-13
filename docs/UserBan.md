@@ -4,12 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userId** | **Number** |  | [optional] 
+**id** | **String** |  | 
+**userId** | **String** |  | 
 **reason** | **String** |  | [optional] 
+**bannerId** | **String** |  | [optional] 
+**unbanId** | **String** |  | [optional] 
 **unbanReason** | **String** |  | [optional] 
-**properties** | **[String]** |  | [optional] 
-**start** | **Date** |  | [optional] 
-**end** | **Date** |  | [optional] 
+**properties** | **[String]** |  | 
+**start** | **Date** |  | 
+**end** | **Date** |  | 
 
 
 
@@ -35,6 +38,8 @@ Name | Type | Description | Notes
 * `job.review` (value: `"job.review"`)
 
 * `job.comment` (value: `"job.comment"`)
+
+* `forum.post` (value: `"forum.post"`)
 
 * `ban.appeal` (value: `"ban.appeal"`)
 

@@ -1,34 +1,36 @@
 # GmodstoreSdk.UserBadgesApi
 
-All URIs are relative to *https://api.gmodstore.com/v2*
+All URIs are relative to *https://www.gmodstore.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createUserBadge**](UserBadgesApi.md#createUserBadge) | **POST** /users/{user_id}/badges | Give a user a badge
-[**deleteUserBadge**](UserBadgesApi.md#deleteUserBadge) | **DELETE** /users/{user_id}/badges/{badge_id} | Destroy a users&#39;s badge
-[**listUserBadges**](UserBadgesApi.md#listUserBadges) | **GET** /users/{user_id}/badges | Fetch all the badges a user has
+[**createUserBadge**](UserBadgesApi.md#createUserBadge) | **POST** /api/v3/users/{user}/badges | Attach a badge to a user
+[**deleteUserBadge**](UserBadgesApi.md#deleteUserBadge) | **DELETE** /api/v3/users/{user}/badges/{badge} | Detach a badge from a user
+[**listUserBadges**](UserBadgesApi.md#listUserBadges) | **GET** /api/v3/users/{user}/badges | List all the specified user&#39;s badges
 
 
 
 ## createUserBadge
 
-> BadgeResponse createUserBadge(userId, userBadge)
+> CreateUserBadgeResponse createUserBadge(user, opts)
 
-Give a user a badge
+Attach a badge to a user
 
 ### Example
 
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (API Key) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
+// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
+PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.UserBadgesApi();
-let userId = 789; // Number | Id of the user
-let userBadge = new GmodstoreSdk.UserBadge(); // UserBadge | 
-apiInstance.createUserBadge(userId, userBadge, (error, data, response) => {
+let user = "user_example"; // String | 
+let opts = {
+  'newUserBadgePayload': new GmodstoreSdk.NewUserBadgePayload() // NewUserBadgePayload | 
+};
+apiInstance.createUserBadge(user, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -42,16 +44,16 @@ apiInstance.createUserBadge(userId, userBadge, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**| Id of the user | 
- **userBadge** | [**UserBadge**](UserBadge.md)|  | 
+ **user** | **String**|  | 
+ **newUserBadgePayload** | [**NewUserBadgePayload**](NewUserBadgePayload.md)|  | [optional] 
 
 ### Return type
 
-[**BadgeResponse**](BadgeResponse.md)
+[**CreateUserBadgeResponse**](CreateUserBadgeResponse.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[PersonalAccessToken](../README.md#PersonalAccessToken)
 
 ### HTTP request headers
 
@@ -61,71 +63,23 @@ Name | Type | Description  | Notes
 
 ## deleteUserBadge
 
-> deleteUserBadge(userId, badgeId)
+> DeleteUserBadgeResponse deleteUserBadge(user, badge)
 
-Destroy a users&#39;s badge
-
-### Example
-
-```javascript
-import GmodstoreSdk from 'gmodstore-sdk';
-let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (API Key) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new GmodstoreSdk.UserBadgesApi();
-let userId = 789; // Number | Id of the user
-let badgeId = "badgeId_example"; // String | Id of the badge
-apiInstance.deleteUserBadge(userId, badgeId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userId** | **Number**| Id of the user | 
- **badgeId** | **String**| Id of the badge | 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[bearerAuth](../README.md#bearerAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## listUserBadges
-
-> BadgeListResponse listUserBadges(userId)
-
-Fetch all the badges a user has
+Detach a badge from a user
 
 ### Example
 
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (API Key) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
+// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
+PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.UserBadgesApi();
-let userId = 789; // Number | Id of the user
-apiInstance.listUserBadges(userId, (error, data, response) => {
+let user = "user_example"; // String | 
+let badge = "badge_example"; // String | 
+apiInstance.deleteUserBadge(user, badge, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -139,15 +93,69 @@ apiInstance.listUserBadges(userId, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**| Id of the user | 
+ **user** | **String**|  | 
+ **badge** | **String**|  | 
 
 ### Return type
 
-[**BadgeListResponse**](BadgeListResponse.md)
+[**DeleteUserBadgeResponse**](DeleteUserBadgeResponse.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[PersonalAccessToken](../README.md#PersonalAccessToken)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## listUserBadges
+
+> Object listUserBadges(user, opts)
+
+List all the specified user&#39;s badges
+
+### Example
+
+```javascript
+import GmodstoreSdk from 'gmodstore-sdk';
+let defaultClient = GmodstoreSdk.ApiClient.instance;
+// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
+PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new GmodstoreSdk.UserBadgesApi();
+let user = "user_example"; // String | 
+let opts = {
+  'perPage': 24, // Number | 
+  'cursor': "cursor_example" // String | The cursor from which to return paginated results starting after
+};
+apiInstance.listUserBadges(user, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **user** | **String**|  | 
+ **perPage** | **Number**|  | [optional] [default to 24]
+ **cursor** | **String**| The cursor from which to return paginated results starting after | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[PersonalAccessToken](../README.md#PersonalAccessToken)
 
 ### HTTP request headers
 

@@ -1,34 +1,35 @@
 # GmodstoreSdk.UserTeamsApi
 
-All URIs are relative to *https://api.gmodstore.com/v2*
+All URIs are relative to *https://www.gmodstore.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listUserTeams**](UserTeamsApi.md#listUserTeams) | **GET** /users/{user_id}/teams | Fetch all the teams of a user
+[**listUserTeams**](UserTeamsApi.md#listUserTeams) | **GET** /api/v3/users/{user}/teams | List all the specified user&#39;s teams
 
 
 
 ## listUserTeams
 
-> TeamListResponse listUserTeams(userId, opts)
+> Object listUserTeams(user, opts)
 
-Fetch all the teams of a user
+List all the specified user&#39;s teams
 
 ### Example
 
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (API Key) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
+// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
+PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.UserTeamsApi();
-let userId = 789; // Number | Id of the user
+let user = "user_example"; // String | 
 let opts = {
-  '_with': ["null"] // [String] | The relations you want to fetch with the `Team`
+  'perPage': 24, // Number | 
+  'cursor': "cursor_example" // String | The cursor from which to return paginated results starting after
 };
-apiInstance.listUserTeams(userId, opts, (error, data, response) => {
+apiInstance.listUserTeams(user, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -42,16 +43,17 @@ apiInstance.listUserTeams(userId, opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**| Id of the user | 
- **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;Team&#x60; | [optional] 
+ **user** | **String**|  | 
+ **perPage** | **Number**|  | [optional] [default to 24]
+ **cursor** | **String**| The cursor from which to return paginated results starting after | [optional] 
 
 ### Return type
 
-[**TeamListResponse**](TeamListResponse.md)
+**Object**
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[PersonalAccessToken](../README.md#PersonalAccessToken)
 
 ### HTTP request headers
 

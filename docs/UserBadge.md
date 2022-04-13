@@ -4,6 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**badge** | **String** |  | 
+**id** | **String** |  | 
+**name** | **String** |  | 
+**description** | **String** |  | 
+**extension** | **String** |  | 
 
 

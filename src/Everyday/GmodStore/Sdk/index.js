@@ -71,6 +71,7 @@ import ProductVersion from './model/ProductVersion';
 import ProductVersionFilter from './model/ProductVersionFilter';
 import Team from './model/Team';
 import TeamUser from './model/TeamUser';
+import TwoFactorNonce from './model/TwoFactorNonce';
 import UpdatePermissionGroupPayload from './model/UpdatePermissionGroupPayload';
 import UpdatePermissionGroupResponse from './model/UpdatePermissionGroupResponse';
 import UpdatePersonalAccessTokenResponse from './model/UpdatePersonalAccessTokenResponse';
@@ -86,6 +87,7 @@ import User from './model/User';
 import UserBadge from './model/UserBadge';
 import UserBan from './model/UserBan';
 import UserBanFilter from './model/UserBanFilter';
+import UserFilter from './model/UserFilter';
 import ValidationErrors from './model/ValidationErrors';
 import DefaultApi from './api/DefaultApi';
 import PermissionGroupsApi from './api/PermissionGroupsApi';
@@ -492,6 +494,12 @@ export {
     TeamUser,
 
     /**
+     * The TwoFactorNonce model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/TwoFactorNonce}
+     */
+    TwoFactorNonce,
+
+    /**
      * The UpdatePermissionGroupPayload model constructor.
      * @property {module:Everyday/GmodStore/Sdk/model/UpdatePermissionGroupPayload}
      */
@@ -580,6 +588,12 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/UserBanFilter}
      */
     UserBanFilter,
+
+    /**
+     * The UserFilter model constructor.
+     * @property {module:Everyday/GmodStore/Sdk/model/UserFilter}
+     */
+    UserFilter,
 
     /**
      * The ValidationErrors model constructor.

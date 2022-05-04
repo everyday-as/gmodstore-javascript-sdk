@@ -70,6 +70,7 @@ docs/Team.md
 docs/TeamUser.md
 docs/TeamUsersApi.md
 docs/TeamsApi.md
+docs/TwoFactorNonce.md
 docs/UpdatePermissionGroupPayload.md
 docs/UpdatePermissionGroupResponse.md
 docs/UpdatePersonalAccessTokenResponse.md
@@ -87,6 +88,7 @@ docs/UserBadgesApi.md
 docs/UserBan.md
 docs/UserBanFilter.md
 docs/UserBansApi.md
+docs/UserFilter.md
 docs/UserProductPurchasesApi.md
 docs/UserProductsApi.md
 docs/UserTeamsApi.md
@@ -171,6 +173,7 @@ src/Everyday/GmodStore/Sdk/model/ProductVersion.js
 src/Everyday/GmodStore/Sdk/model/ProductVersionFilter.js
 src/Everyday/GmodStore/Sdk/model/Team.js
 src/Everyday/GmodStore/Sdk/model/TeamUser.js
+src/Everyday/GmodStore/Sdk/model/TwoFactorNonce.js
 src/Everyday/GmodStore/Sdk/model/UpdatePermissionGroupPayload.js
 src/Everyday/GmodStore/Sdk/model/UpdatePermissionGroupResponse.js
 src/Everyday/GmodStore/Sdk/model/UpdatePersonalAccessTokenResponse.js
@@ -186,4 +189,7 @@ src/Everyday/GmodStore/Sdk/model/User.js
 src/Everyday/GmodStore/Sdk/model/UserBadge.js
 src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanFilter.js
+src/Everyday/GmodStore/Sdk/model/UserFilter.js
 src/Everyday/GmodStore/Sdk/model/ValidationErrors.js
+test/Everyday/GmodStore/Sdk/model/TwoFactorNonce.spec.js
+test/Everyday/GmodStore/Sdk/model/UserFilter.spec.js

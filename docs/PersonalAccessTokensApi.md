@@ -23,7 +23,7 @@ Create a new personal access token for the current user
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -72,7 +72,7 @@ Delete the specified personal access token
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -119,7 +119,7 @@ Get a personal access token belonging to the current user
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -166,7 +166,7 @@ List all the current user&#39;s personal access tokens
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -217,7 +217,7 @@ Update a personal access token
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 

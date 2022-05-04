@@ -106,6 +106,18 @@ NewPersonalAccessTokenPayload['AbilitiesEnum'] = {
     "permission-groups:write": "permission-groups:write",
 
     /**
+     * value: "personal-access-tokens:read"
+     * @const
+     */
+    "personal-access-tokens:read": "personal-access-tokens:read",
+
+    /**
+     * value: "personal-access-tokens:write"
+     * @const
+     */
+    "personal-access-tokens:write": "personal-access-tokens:write",
+
+    /**
      * value: "teams:read"
      * @const
      */

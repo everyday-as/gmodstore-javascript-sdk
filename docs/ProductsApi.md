@@ -22,7 +22,7 @@ Get the specified product
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -73,7 +73,7 @@ Get a batch of products by id
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -124,7 +124,7 @@ List all products for a team
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -179,7 +179,7 @@ Update the specified product
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 

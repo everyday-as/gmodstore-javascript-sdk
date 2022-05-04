@@ -20,7 +20,7 @@ Show the specified review for a product
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -73,7 +73,7 @@ List all reviews for a product
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 

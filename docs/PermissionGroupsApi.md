@@ -23,7 +23,7 @@ Create a permission group
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -72,7 +72,7 @@ Delete the specified permission group
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -119,7 +119,7 @@ Show the specified permission group
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -166,7 +166,7 @@ List all permission groups
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -217,7 +217,7 @@ Update the specified permission group
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 

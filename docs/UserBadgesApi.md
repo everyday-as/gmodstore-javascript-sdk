@@ -21,7 +21,7 @@ Attach a badge to a user
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -72,7 +72,7 @@ Detach a badge from a user
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -121,7 +121,7 @@ List all the specified user&#39;s badges
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 

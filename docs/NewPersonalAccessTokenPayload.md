@@ -17,6 +17,10 @@ Name | Type | Description | Notes
 
 * `permission-groups:write` (value: `"permission-groups:write"`)
 
+* `personal-access-tokens:read` (value: `"personal-access-tokens:read"`)
+
+* `personal-access-tokens:write` (value: `"personal-access-tokens:write"`)
+
 * `teams:read` (value: `"teams:read"`)
 
 * `teams:write` (value: `"teams:write"`)

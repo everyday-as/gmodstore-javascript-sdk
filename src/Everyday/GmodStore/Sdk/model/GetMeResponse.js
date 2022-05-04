@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import Me from './Me';
 
 /**
  * The GetMeResponse model module.
@@ -22,10 +23,11 @@ class GetMeResponse {
     /**
      * Constructs a new <code>GetMeResponse</code>.
      * @alias module:Everyday/GmodStore/Sdk/model/GetMeResponse
+     * @param data {module:Everyday/GmodStore/Sdk/model/Me} 
      */
-    constructor() { 
+    constructor(data) { 
         
-        GetMeResponse.initialize(this);
+        GetMeResponse.initialize(this, data);
     }
 
     /**
@@ -33,7 +35,8 @@ class GetMeResponse {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, data) { 
+        obj['data'] = data;
     }
 
     /**
@@ -47,8 +50,8 @@ class GetMeResponse {
         if (data) {
             obj = obj || new GetMeResponse();
 
-            if (data.hasOwnProperty('')) {
-                obj[''] = GetMeResponse.constructFromObject(data['']);
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = Me.constructFromObject(data['data']);
             }
         }
         return obj;
@@ -58,9 +61,9 @@ class GetMeResponse {
 }
 
 /**
- * @member {module:Everyday/GmodStore/Sdk/model/GetMeResponse} 
+ * @member {module:Everyday/GmodStore/Sdk/model/Me} data
  */
-GetMeResponse.prototype[''] = undefined;
+GetMeResponse.prototype['data'] = undefined;
 
 
 

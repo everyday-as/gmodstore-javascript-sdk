@@ -1,9 +1,9 @@
-# GmodstoreSdk.GetMeResponse
+# GmodstoreSdk.UserFilter
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**Me**](Me.md) |  | 
+**steamId** | **Number** |  | [optional] 
 
 

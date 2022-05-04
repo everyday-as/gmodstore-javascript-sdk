@@ -46,7 +46,7 @@ class ApiClient {
          * @type {Array.<String>}
          */
         this.authentications = {
-            'PersonalAccessToken': {type: 'bearer'} // Personal Access Token
+            'PersonalAccessToken': {type: 'bearer'}
         }
 
         /**

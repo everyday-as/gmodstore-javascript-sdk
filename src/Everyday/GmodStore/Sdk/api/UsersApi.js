@@ -17,6 +17,7 @@ import Error from '../model/Error';
 import GetMeResponse from '../model/GetMeResponse';
 import GetUserResponse from '../model/GetUserResponse';
 import GetUsersResponse from '../model/GetUsersResponse';
+import UserFilter from '../model/UserFilter';
 
 /**
 * Users service.
@@ -62,7 +63,7 @@ export default class UsersApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['PersonalAccessToken'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = GetMeResponse;
@@ -84,10 +85,13 @@ export default class UsersApi {
     /**
      * Fetch the specified user
      * @param {String} user 
+     * @param {Object} opts Optional parameters
+     * @param {module:Everyday/GmodStore/Sdk/model/UserFilter} opts.filter Filter the results
      * @param {module:Everyday/GmodStore/Sdk/api/UsersApi~getUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:Everyday/GmodStore/Sdk/model/GetUserResponse}
      */
-    getUser(user, callback) {
+    getUser(user, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'user' is set
       if (user === undefined || user === null) {
@@ -98,6 +102,7 @@ export default class UsersApi {
         'user': user
       };
       let queryParams = {
+        'filter': opts['filter']
       };
       let headerParams = {
       };
@@ -126,10 +131,13 @@ export default class UsersApi {
     /**
      * Fetch a batch of users by id
      * @param {Array.<String>} ids 
+     * @param {Object} opts Optional parameters
+     * @param {module:Everyday/GmodStore/Sdk/model/UserFilter} opts.filter Filter the results
      * @param {module:Everyday/GmodStore/Sdk/api/UsersApi~getUsersCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:Everyday/GmodStore/Sdk/model/GetUsersResponse}
      */
-    getUsers(ids, callback) {
+    getUsers(ids, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'ids' is set
       if (ids === undefined || ids === null) {
@@ -139,7 +147,8 @@ export default class UsersApi {
       let pathParams = {
       };
       let queryParams = {
-        'ids[]': this.apiClient.buildCollectionParam(ids, 'multi')
+        'ids[]': this.apiClient.buildCollectionParam(ids, 'multi'),
+        'filter': opts['filter']
       };
       let headerParams = {
       };
@@ -152,6 +161,50 @@ export default class UsersApi {
       let returnType = GetUsersResponse;
       return this.apiClient.callApi(
         '/api/v3/users/batch', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the listUsers operation.
+     * @callback module:Everyday/GmodStore/Sdk/api/UsersApi~listUsersCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List all users
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.perPage  (default to 24)
+     * @param {String} opts.cursor The cursor from which to return paginated results starting after
+     * @param {module:Everyday/GmodStore/Sdk/model/UserFilter} opts.filter Filter the results
+     * @param {module:Everyday/GmodStore/Sdk/api/UsersApi~listUsersCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    listUsers(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'perPage': opts['perPage'],
+        'cursor': opts['cursor'],
+        'filter': opts['filter']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['PersonalAccessToken'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v3/users', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The ProductPurchaseFilter model module.
- * @module Everyday/GmodStore/Sdk/model/ProductPurchaseFilter
+ * The UserFilter model module.
+ * @module Everyday/GmodStore/Sdk/model/UserFilter
  * @version 3.0.0
  */
-class ProductPurchaseFilter {
+class UserFilter {
     /**
-     * Constructs a new <code>ProductPurchaseFilter</code>.
-     * @alias module:Everyday/GmodStore/Sdk/model/ProductPurchaseFilter
+     * Constructs a new <code>UserFilter</code>.
+     * @alias module:Everyday/GmodStore/Sdk/model/UserFilter
      */
     constructor() { 
         
-        ProductPurchaseFilter.initialize(this);
+        UserFilter.initialize(this);
     }
 
     /**
@@ -37,24 +37,18 @@ class ProductPurchaseFilter {
     }
 
     /**
-     * Constructs a <code>ProductPurchaseFilter</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>UserFilter</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:Everyday/GmodStore/Sdk/model/ProductPurchaseFilter} obj Optional instance to populate.
-     * @return {module:Everyday/GmodStore/Sdk/model/ProductPurchaseFilter} The populated <code>ProductPurchaseFilter</code> instance.
+     * @param {module:Everyday/GmodStore/Sdk/model/UserFilter} obj Optional instance to populate.
+     * @return {module:Everyday/GmodStore/Sdk/model/UserFilter} The populated <code>UserFilter</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new ProductPurchaseFilter();
+            obj = obj || new UserFilter();
 
-            if (data.hasOwnProperty('revoked')) {
-                obj['revoked'] = ApiClient.convertToType(data['revoked'], 'Boolean');
-            }
-            if (data.hasOwnProperty('userId')) {
-                obj['userId'] = ApiClient.convertToType(data['userId'], 'String');
-            }
-            if (data.hasOwnProperty('productId')) {
-                obj['productId'] = ApiClient.convertToType(data['productId'], 'String');
+            if (data.hasOwnProperty('steamId')) {
+                obj['steamId'] = ApiClient.convertToType(data['steamId'], 'Number');
             }
         }
         return obj;
@@ -64,24 +58,14 @@ class ProductPurchaseFilter {
 }
 
 /**
- * @member {Boolean} revoked
+ * @member {Number} steamId
  */
-ProductPurchaseFilter.prototype['revoked'] = undefined;
-
-/**
- * @member {String} userId
- */
-ProductPurchaseFilter.prototype['userId'] = undefined;
-
-/**
- * @member {String} productId
- */
-ProductPurchaseFilter.prototype['productId'] = undefined;
+UserFilter.prototype['steamId'] = undefined;
 
 
 
 
 
 
-export default ProductPurchaseFilter;
+export default UserFilter;
 

@@ -73,7 +73,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 var GmodstoreSdk = require('gmodstore-sdk');
 
 var defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer (Personal Access Token) access token for authorization: PersonalAccessToken
+// Configure Bearer access token for authorization: PersonalAccessToken
 var PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
 PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
 
@@ -146,6 +146,7 @@ Class | Method | HTTP request | Description
 *GmodstoreSdk.UsersApi* | [**getMe**](docs/UsersApi.md#getMe) | **GET** /api/v3/me | Fetch the current authenticated user and their access token
 *GmodstoreSdk.UsersApi* | [**getUser**](docs/UsersApi.md#getUser) | **GET** /api/v3/users/{user} | Fetch the specified user
 *GmodstoreSdk.UsersApi* | [**getUsers**](docs/UsersApi.md#getUsers) | **GET** /api/v3/users/batch | Fetch a batch of users by id
+*GmodstoreSdk.UsersApi* | [**listUsers**](docs/UsersApi.md#listUsers) | **GET** /api/v3/users | List all users
 
 
 ## Documentation for Models
@@ -208,6 +209,7 @@ Class | Method | HTTP request | Description
  - [GmodstoreSdk.ProductVersionFilter](docs/ProductVersionFilter.md)
  - [GmodstoreSdk.Team](docs/Team.md)
  - [GmodstoreSdk.TeamUser](docs/TeamUser.md)
+ - [GmodstoreSdk.TwoFactorNonce](docs/TwoFactorNonce.md)
  - [GmodstoreSdk.UpdatePermissionGroupPayload](docs/UpdatePermissionGroupPayload.md)
  - [GmodstoreSdk.UpdatePermissionGroupResponse](docs/UpdatePermissionGroupResponse.md)
  - [GmodstoreSdk.UpdatePersonalAccessTokenResponse](docs/UpdatePersonalAccessTokenResponse.md)
@@ -223,6 +225,7 @@ Class | Method | HTTP request | Description
  - [GmodstoreSdk.UserBadge](docs/UserBadge.md)
  - [GmodstoreSdk.UserBan](docs/UserBan.md)
  - [GmodstoreSdk.UserBanFilter](docs/UserBanFilter.md)
+ - [GmodstoreSdk.UserFilter](docs/UserFilter.md)
  - [GmodstoreSdk.ValidationErrors](docs/ValidationErrors.md)
 
 
@@ -233,5 +236,5 @@ Class | Method | HTTP request | Description
 ### PersonalAccessToken
 
 
-- **Type**: Bearer authentication (Personal Access Token)
+- **Type**: Bearer authentication
 

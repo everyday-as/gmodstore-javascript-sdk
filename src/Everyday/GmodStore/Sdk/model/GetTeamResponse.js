@@ -17,7 +17,7 @@ import Team from './Team';
 /**
  * The GetTeamResponse model module.
  * @module Everyday/GmodStore/Sdk/model/GetTeamResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class GetTeamResponse {
     /**

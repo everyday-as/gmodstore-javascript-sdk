@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ProductReviewVotes model module.
  * @module Everyday/GmodStore/Sdk/model/ProductReviewVotes
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ProductReviewVotes {
     /**

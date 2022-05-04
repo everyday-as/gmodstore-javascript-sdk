@@ -11,7 +11,6 @@ docs/CreateProductPurchaseResponse.md
 docs/CreateProductVersionResponse.md
 docs/CreateTeamResponse.md
 docs/CreateUserBadgeResponse.md
-docs/DefaultApi.md
 docs/DeletePermissionGroupResponse.md
 docs/DeleteProductCouponResponse.md
 docs/DeleteProductVersionResponse.md
@@ -98,7 +97,6 @@ git_push.sh
 mocha.opts
 package.json
 src/Everyday/GmodStore/Sdk/ApiClient.js
-src/Everyday/GmodStore/Sdk/api/DefaultApi.js
 src/Everyday/GmodStore/Sdk/api/PermissionGroupsApi.js
 src/Everyday/GmodStore/Sdk/api/PersonalAccessTokensApi.js
 src/Everyday/GmodStore/Sdk/api/ProductCouponsApi.js

@@ -17,7 +17,7 @@ import Money from './Money';
 /**
  * The ProductPrice model module.
  * @module Everyday/GmodStore/Sdk/model/ProductPrice
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ProductPrice {
     /**

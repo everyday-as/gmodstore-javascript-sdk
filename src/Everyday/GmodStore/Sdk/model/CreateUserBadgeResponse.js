@@ -17,7 +17,7 @@ import UserBadge from './UserBadge';
 /**
  * The CreateUserBadgeResponse model module.
  * @module Everyday/GmodStore/Sdk/model/CreateUserBadgeResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class CreateUserBadgeResponse {
     /**

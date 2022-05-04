@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The UpdateProductCouponPayload model module.
  * @module Everyday/GmodStore/Sdk/model/UpdateProductCouponPayload
- * @version 3.0.0
+ * @version 3.1.0
  */
 class UpdateProductCouponPayload {
     /**

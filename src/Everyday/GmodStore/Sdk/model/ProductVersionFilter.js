@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ProductVersionFilter model module.
  * @module Everyday/GmodStore/Sdk/model/ProductVersionFilter
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ProductVersionFilter {
     /**

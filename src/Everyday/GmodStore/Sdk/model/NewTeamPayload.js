@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewTeamPayload model module.
  * @module Everyday/GmodStore/Sdk/model/NewTeamPayload
- * @version 3.0.0
+ * @version 3.1.0
  */
 class NewTeamPayload {
     /**

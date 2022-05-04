@@ -17,7 +17,7 @@ import PersonalAccessToken from './PersonalAccessToken';
 /**
  * The GetPersonalAccessTokenResponse model module.
  * @module Everyday/GmodStore/Sdk/model/GetPersonalAccessTokenResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class GetPersonalAccessTokenResponse {
     /**

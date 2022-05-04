@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewPermissionGroupPayload model module.
  * @module Everyday/GmodStore/Sdk/model/NewPermissionGroupPayload
- * @version 3.0.0
+ * @version 3.1.0
  */
 class NewPermissionGroupPayload {
     /**

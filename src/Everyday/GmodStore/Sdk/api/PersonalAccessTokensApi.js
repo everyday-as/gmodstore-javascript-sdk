@@ -23,7 +23,7 @@ import UpdatePersonalAccessTokenResponse from '../model/UpdatePersonalAccessToke
 /**
 * PersonalAccessTokens service.
 * @module Everyday/GmodStore/Sdk/api/PersonalAccessTokensApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class PersonalAccessTokensApi {
 

@@ -18,7 +18,7 @@ import User from './User';
 /**
  * The Me model module.
  * @module Everyday/GmodStore/Sdk/model/Me
- * @version 3.0.0
+ * @version 3.1.0
  */
 class Me {
     /**

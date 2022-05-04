@@ -17,7 +17,7 @@ import InlineResponse201Data from './InlineResponse201Data';
 /**
  * The InlineResponse201 model module.
  * @module Everyday/GmodStore/Sdk/model/InlineResponse201
- * @version 3.0.0
+ * @version 3.1.0
  */
 class InlineResponse201 {
     /**

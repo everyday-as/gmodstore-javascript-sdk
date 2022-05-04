@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ConnectionPaginatedCursors model module.
  * @module Everyday/GmodStore/Sdk/model/ConnectionPaginatedCursors
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ConnectionPaginatedCursors {
     /**

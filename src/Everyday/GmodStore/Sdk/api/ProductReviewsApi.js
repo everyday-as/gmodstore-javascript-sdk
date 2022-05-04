@@ -20,7 +20,7 @@ import ProductReviewFilter from '../model/ProductReviewFilter';
 /**
 * ProductReviews service.
 * @module Everyday/GmodStore/Sdk/api/ProductReviewsApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class ProductReviewsApi {
 

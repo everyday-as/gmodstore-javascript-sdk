@@ -89,7 +89,6 @@ import UserBan from './model/UserBan';
 import UserBanFilter from './model/UserBanFilter';
 import UserFilter from './model/UserFilter';
 import ValidationErrors from './model/ValidationErrors';
-import DefaultApi from './api/DefaultApi';
 import PermissionGroupsApi from './api/PermissionGroupsApi';
 import PersonalAccessTokensApi from './api/PersonalAccessTokensApi';
 import ProductCouponsApi from './api/ProductCouponsApi';
@@ -136,7 +135,7 @@ import UsersApi from './api/UsersApi';
 * </pre>
 * </p>
 * @module Everyday/GmodStore/Sdk/index
-* @version 3.0.0
+* @version 3.1.0
 */
 export {
     /**
@@ -600,12 +599,6 @@ export {
      * @property {module:Everyday/GmodStore/Sdk/model/ValidationErrors}
      */
     ValidationErrors,
-
-    /**
-    * The DefaultApi service constructor.
-    * @property {module:Everyday/GmodStore/Sdk/api/DefaultApi}
-    */
-    DefaultApi,
 
     /**
     * The PermissionGroupsApi service constructor.

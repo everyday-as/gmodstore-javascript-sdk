@@ -17,7 +17,7 @@ import ProductVersion from './ProductVersion';
 /**
  * The CreateProductVersionResponse model module.
  * @module Everyday/GmodStore/Sdk/model/CreateProductVersionResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class CreateProductVersionResponse {
     /**

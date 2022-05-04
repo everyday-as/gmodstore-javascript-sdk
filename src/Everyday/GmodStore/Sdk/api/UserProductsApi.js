@@ -19,7 +19,7 @@ import ProductFilter from '../model/ProductFilter';
 /**
 * UserProducts service.
 * @module Everyday/GmodStore/Sdk/api/UserProductsApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class UserProductsApi {
 

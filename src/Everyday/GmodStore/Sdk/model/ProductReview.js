@@ -17,7 +17,7 @@ import ProductReviewVotes from './ProductReviewVotes';
 /**
  * The ProductReview model module.
  * @module Everyday/GmodStore/Sdk/model/ProductReview
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ProductReview {
     /**

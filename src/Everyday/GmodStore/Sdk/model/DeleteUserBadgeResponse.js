@@ -17,7 +17,7 @@ import UserBadge from './UserBadge';
 /**
  * The DeleteUserBadgeResponse model module.
  * @module Everyday/GmodStore/Sdk/model/DeleteUserBadgeResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class DeleteUserBadgeResponse {
     /**

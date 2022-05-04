@@ -17,7 +17,7 @@ import ProductCoupon from './ProductCoupon';
 /**
  * The CreateProductCouponResponse model module.
  * @module Everyday/GmodStore/Sdk/model/CreateProductCouponResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class CreateProductCouponResponse {
     /**

@@ -24,7 +24,7 @@ import UpdateProductPurchaseResponse from '../model/UpdateProductPurchaseRespons
 /**
 * ProductPurchases service.
 * @module Everyday/GmodStore/Sdk/api/ProductPurchasesApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class ProductPurchasesApi {
 

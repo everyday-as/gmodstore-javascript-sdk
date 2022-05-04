@@ -17,7 +17,7 @@ import PermissionGroup from './PermissionGroup';
 /**
  * The DeletePermissionGroupResponse model module.
  * @module Everyday/GmodStore/Sdk/model/DeletePermissionGroupResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class DeletePermissionGroupResponse {
     /**

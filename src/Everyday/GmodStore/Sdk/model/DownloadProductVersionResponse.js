@@ -17,7 +17,7 @@ import DownloadProductVersionResponseData from './DownloadProductVersionResponse
 /**
  * The DownloadProductVersionResponse model module.
  * @module Everyday/GmodStore/Sdk/model/DownloadProductVersionResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class DownloadProductVersionResponse {
     /**

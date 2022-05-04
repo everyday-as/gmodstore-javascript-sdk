@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ProductReviewFilter model module.
  * @module Everyday/GmodStore/Sdk/model/ProductReviewFilter
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ProductReviewFilter {
     /**

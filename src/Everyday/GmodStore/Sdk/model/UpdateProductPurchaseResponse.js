@@ -17,7 +17,7 @@ import ProductPurchase from './ProductPurchase';
 /**
  * The UpdateProductPurchaseResponse model module.
  * @module Everyday/GmodStore/Sdk/model/UpdateProductPurchaseResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class UpdateProductPurchaseResponse {
     /**

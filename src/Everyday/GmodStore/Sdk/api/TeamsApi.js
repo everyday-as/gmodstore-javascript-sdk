@@ -25,7 +25,7 @@ import UpdateTeamResponse from '../model/UpdateTeamResponse';
 /**
 * Teams service.
 * @module Everyday/GmodStore/Sdk/api/TeamsApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class TeamsApi {
 

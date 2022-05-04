@@ -17,7 +17,7 @@ import PersonalAccessToken from './PersonalAccessToken';
 /**
  * The InlineResponse201Data model module.
  * @module Everyday/GmodStore/Sdk/model/InlineResponse201Data
- * @version 3.0.0
+ * @version 3.1.0
  */
 class InlineResponse201Data {
     /**

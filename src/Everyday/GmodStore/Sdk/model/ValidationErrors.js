@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ValidationErrors model module.
  * @module Everyday/GmodStore/Sdk/model/ValidationErrors
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ValidationErrors {
     /**

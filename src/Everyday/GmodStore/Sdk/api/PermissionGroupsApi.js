@@ -24,7 +24,7 @@ import UpdatePermissionGroupResponse from '../model/UpdatePermissionGroupRespons
 /**
 * PermissionGroups service.
 * @module Everyday/GmodStore/Sdk/api/PermissionGroupsApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class PermissionGroupsApi {
 

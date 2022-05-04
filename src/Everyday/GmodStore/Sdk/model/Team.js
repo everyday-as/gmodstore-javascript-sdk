@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Team model module.
  * @module Everyday/GmodStore/Sdk/model/Team
- * @version 3.0.0
+ * @version 3.1.0
  */
 class Team {
     /**

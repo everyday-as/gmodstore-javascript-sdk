@@ -17,7 +17,7 @@ import ProductCoupon from './ProductCoupon';
 /**
  * The DeleteProductCouponResponse model module.
  * @module Everyday/GmodStore/Sdk/model/DeleteProductCouponResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class DeleteProductCouponResponse {
     /**

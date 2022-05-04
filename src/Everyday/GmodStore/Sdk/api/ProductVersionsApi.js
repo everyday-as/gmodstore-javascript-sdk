@@ -14,6 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import CreateProductVersionResponse from '../model/CreateProductVersionResponse';
+import DeleteProductVersionResponse from '../model/DeleteProductVersionResponse';
 import DownloadProductVersionResponse from '../model/DownloadProductVersionResponse';
 import Error from '../model/Error';
 import GetProductVersionResponse from '../model/GetProductVersionResponse';
@@ -24,7 +25,7 @@ import UpdateProductVersionResponse from '../model/UpdateProductVersionResponse'
 /**
 * ProductVersions service.
 * @module Everyday/GmodStore/Sdk/api/ProductVersionsApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class ProductVersionsApi {
 
@@ -101,6 +102,54 @@ export default class ProductVersionsApi {
       let returnType = CreateProductVersionResponse;
       return this.apiClient.callApi(
         '/api/v3/products/{product}/versions', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the deleteProductVersion operation.
+     * @callback module:Everyday/GmodStore/Sdk/api/ProductVersionsApi~deleteProductVersionCallback
+     * @param {String} error Error message, if any.
+     * @param {module:Everyday/GmodStore/Sdk/model/DeleteProductVersionResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Delete the specified version for a product
+     * @param {String} product 
+     * @param {String} version 
+     * @param {module:Everyday/GmodStore/Sdk/api/ProductVersionsApi~deleteProductVersionCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:Everyday/GmodStore/Sdk/model/DeleteProductVersionResponse}
+     */
+    deleteProductVersion(product, version, callback) {
+      let postBody = null;
+      // verify the required parameter 'product' is set
+      if (product === undefined || product === null) {
+        throw new Error("Missing the required parameter 'product' when calling deleteProductVersion");
+      }
+      // verify the required parameter 'version' is set
+      if (version === undefined || version === null) {
+        throw new Error("Missing the required parameter 'version' when calling deleteProductVersion");
+      }
+
+      let pathParams = {
+        'product': product,
+        'version': version
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['PersonalAccessToken'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = DeleteProductVersionResponse;
+      return this.apiClient.callApi(
+        '/api/v3/products/{product}/versions/{version}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

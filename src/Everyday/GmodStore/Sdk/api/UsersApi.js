@@ -22,7 +22,7 @@ import UserFilter from '../model/UserFilter';
 /**
 * Users service.
 * @module Everyday/GmodStore/Sdk/api/UsersApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class UsersApi {
 

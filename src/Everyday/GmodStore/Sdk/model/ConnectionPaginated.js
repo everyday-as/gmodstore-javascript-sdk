@@ -18,7 +18,7 @@ import ConnectionPaginatedMeta from './ConnectionPaginatedMeta';
 /**
  * The ConnectionPaginated model module.
  * @module Everyday/GmodStore/Sdk/model/ConnectionPaginated
- * @version 3.0.0
+ * @version 3.1.0
  */
 class ConnectionPaginated {
     /**

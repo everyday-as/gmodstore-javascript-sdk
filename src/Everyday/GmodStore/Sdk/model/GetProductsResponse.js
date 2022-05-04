@@ -17,7 +17,7 @@ import Product from './Product';
 /**
  * The GetProductsResponse model module.
  * @module Everyday/GmodStore/Sdk/model/GetProductsResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class GetProductsResponse {
     /**

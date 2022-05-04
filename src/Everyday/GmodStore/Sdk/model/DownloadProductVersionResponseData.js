@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DownloadProductVersionResponseData model module.
  * @module Everyday/GmodStore/Sdk/model/DownloadProductVersionResponseData
- * @version 3.0.0
+ * @version 3.1.0
  */
 class DownloadProductVersionResponseData {
     /**

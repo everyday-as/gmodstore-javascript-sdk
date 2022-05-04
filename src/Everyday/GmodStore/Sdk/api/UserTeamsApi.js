@@ -18,7 +18,7 @@ import Error from '../model/Error';
 /**
 * UserTeams service.
 * @module Everyday/GmodStore/Sdk/api/UserTeamsApi
-* @version 3.0.0
+* @version 3.1.0
 */
 export default class UserTeamsApi {
 

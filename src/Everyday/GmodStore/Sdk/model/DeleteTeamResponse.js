@@ -17,7 +17,7 @@ import Team from './Team';
 /**
  * The DeleteTeamResponse model module.
  * @module Everyday/GmodStore/Sdk/model/DeleteTeamResponse
- * @version 3.0.0
+ * @version 3.1.0
  */
 class DeleteTeamResponse {
     /**

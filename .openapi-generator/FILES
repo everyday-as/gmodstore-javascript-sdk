@@ -191,5 +191,3 @@ src/Everyday/GmodStore/Sdk/model/UserBan.js
 src/Everyday/GmodStore/Sdk/model/UserBanFilter.js
 src/Everyday/GmodStore/Sdk/model/UserFilter.js
 src/Everyday/GmodStore/Sdk/model/ValidationErrors.js
-test/Everyday/GmodStore/Sdk/model/TwoFactorNonce.spec.js
-test/Everyday/GmodStore/Sdk/model/UserFilter.spec.js

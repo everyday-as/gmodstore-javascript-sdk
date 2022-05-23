@@ -19,7 +19,7 @@ import User from './User';
 /**
  * The AddonPurchase model module.
  * @module Everyday/GmodStore/Sdk/model/AddonPurchase
- * @version 1.3.2
+ * @version 3.1.0
  */
 class AddonPurchase {
     /**

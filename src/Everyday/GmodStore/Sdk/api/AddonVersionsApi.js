@@ -23,7 +23,7 @@ import NewAddonVersion from '../model/NewAddonVersion';
 /**
 * AddonVersions service.
 * @module Everyday/GmodStore/Sdk/api/AddonVersionsApi
-* @version 1.3.2
+* @version 3.1.0
 */
 export default class AddonVersionsApi {
 

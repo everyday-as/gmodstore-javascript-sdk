@@ -4,13 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | 
-**name** | **String** |  | 
-**description** | **String** |  | 
-**settings** | **String** |  | [optional] 
-**createdAt** | **Date** |  | 
-**updatedAt** | **Date** |  | 
-**productsCount** | **Number** |  | 
-**usersCount** | **Number** |  | 
+**id** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
+**createdAt** | **Date** |  | [optional] 
+**updatedAt** | **Date** |  | [optional] [readonly] 
+**primaryAuthor** | [**TeamUser**](TeamUser.md) |  | [optional] 
 
 

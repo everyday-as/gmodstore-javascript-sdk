@@ -19,7 +19,7 @@ import ErrorResponse from '../model/ErrorResponse';
 /**
 * AddonStats service.
 * @module Everyday/GmodStore/Sdk/api/AddonStatsApi
-* @version 1.3.2
+* @version 3.1.0
 */
 export default class AddonStatsApi {
 

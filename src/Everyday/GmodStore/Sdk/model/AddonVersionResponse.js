@@ -17,7 +17,7 @@ import AddonVersion from './AddonVersion';
 /**
  * The AddonVersionResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AddonVersionResponse
- * @version 1.3.2
+ * @version 3.1.0
  */
 class AddonVersionResponse {
     /**

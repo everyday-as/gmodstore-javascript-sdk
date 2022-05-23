@@ -22,7 +22,7 @@ import NewAddonPurchase from '../model/NewAddonPurchase';
 /**
 * AddonPurchases service.
 * @module Everyday/GmodStore/Sdk/api/AddonPurchasesApi
-* @version 1.3.2
+* @version 3.1.0
 */
 export default class AddonPurchasesApi {
 

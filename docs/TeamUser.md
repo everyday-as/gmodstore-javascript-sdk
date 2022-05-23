@@ -4,10 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**teamId** | **String** |  | 
-**userId** | **String** |  | 
-**primary** | **Boolean** |  | 
+**teamId** | **Number** |  | [optional] 
+**primary** | **Boolean** |  | [optional] 
 **percentage** | **Number** |  | [optional] 
-**access** | **String** |  | [optional] 
+**user** | [**User**](User.md) |  | [optional] 
 
 

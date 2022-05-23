@@ -1,36 +1,31 @@
 # GmodstoreSdk.UserBansApi
 
-All URIs are relative to *https://www.gmodstore.com*
+All URIs are relative to *https://api.gmodstore.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listUserBans**](UserBansApi.md#listUserBans) | **GET** /api/v3/users/{user}/bans | List all the specified user&#39;s bans
+[**listUserBans**](UserBansApi.md#listUserBans) | **GET** /users/{user_id}/bans | Fetch all active bans associated with this user
 
 
 
 ## listUserBans
 
-> Object listUserBans(user, opts)
+> UserBanListResponse listUserBans(userId)
 
-List all the specified user&#39;s bans
+Fetch all active bans associated with this user
 
 ### Example
 
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer access token for authorization: PersonalAccessToken
-let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
-PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
+// Configure Bearer (API Key) access token for authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.UserBansApi();
-let user = "user_example"; // String | 
-let opts = {
-  'perPage': 24, // Number | 
-  'cursor': "cursor_example", // String | The cursor from which to return paginated results starting after
-  'filter': new GmodstoreSdk.UserBanFilter() // UserBanFilter | Filter the results
-};
-apiInstance.listUserBans(user, opts, (error, data, response) => {
+let userId = 789; // Number | Id of the user
+apiInstance.listUserBans(userId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -44,18 +39,15 @@ apiInstance.listUserBans(user, opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user** | **String**|  | 
- **perPage** | **Number**|  | [optional] [default to 24]
- **cursor** | **String**| The cursor from which to return paginated results starting after | [optional] 
- **filter** | [**UserBanFilter**](.md)| Filter the results | [optional] 
+ **userId** | **Number**| Id of the user | 
 
 ### Return type
 
-**Object**
+[**UserBanListResponse**](UserBanListResponse.md)
 
 ### Authorization
 
-[PersonalAccessToken](../README.md#PersonalAccessToken)
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 

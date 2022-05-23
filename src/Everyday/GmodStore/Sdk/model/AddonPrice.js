@@ -17,7 +17,7 @@ import Money from './Money';
 /**
  * The AddonPrice model module.
  * @module Everyday/GmodStore/Sdk/model/AddonPrice
- * @version 1.3.2
+ * @version 3.1.0
  */
 class AddonPrice {
     /**

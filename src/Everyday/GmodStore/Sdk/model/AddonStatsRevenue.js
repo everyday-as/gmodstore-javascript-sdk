@@ -17,7 +17,7 @@ import AddonStatsRevenueCurrent from './AddonStatsRevenueCurrent';
 /**
  * The AddonStatsRevenue model module.
  * @module Everyday/GmodStore/Sdk/model/AddonStatsRevenue
- * @version 1.3.2
+ * @version 3.1.0
  */
 class AddonStatsRevenue {
     /**

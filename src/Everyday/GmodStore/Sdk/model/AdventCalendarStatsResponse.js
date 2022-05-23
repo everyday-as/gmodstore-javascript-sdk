@@ -17,7 +17,7 @@ import AdventCalendarStats from './AdventCalendarStats';
 /**
  * The AdventCalendarStatsResponse model module.
  * @module Everyday/GmodStore/Sdk/model/AdventCalendarStatsResponse
- * @version 1.3.2
+ * @version 3.1.0
  */
 class AdventCalendarStatsResponse {
     /**

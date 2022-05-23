@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | 
-**price** | [**Money**](Money.md) |  | 
-**reversedAt** | **Date** |  | 
+**id** | **String** |  | [optional] 
+**price** | [**Money**](Money.md) |  | [optional] 
+**reversedAt** | **Date** |  | [optional] 
 
 

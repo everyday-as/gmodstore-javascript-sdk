@@ -1,33 +1,34 @@
 # GmodstoreSdk.UsersApi
 
-All URIs are relative to *https://www.gmodstore.com*
+All URIs are relative to *https://api.gmodstore.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getMe**](UsersApi.md#getMe) | **GET** /api/v3/me | Fetch the current authenticated user and their access token
-[**getUser**](UsersApi.md#getUser) | **GET** /api/v3/users/{user} | Fetch the specified user
-[**getUsers**](UsersApi.md#getUsers) | **GET** /api/v3/users/batch | Fetch a batch of users by id
-[**listUsers**](UsersApi.md#listUsers) | **GET** /api/v3/users | List all users
+[**getSelfUser**](UsersApi.md#getSelfUser) | **GET** /users/me | Fetches the current user (API Key Owner)
+[**getUser**](UsersApi.md#getUser) | **GET** /users/{user_id} | Fetch a single user
 
 
 
-## getMe
+## getSelfUser
 
-> GetMeResponse getMe()
+> UserResponse getSelfUser(opts)
 
-Fetch the current authenticated user and their access token
+Fetches the current user (API Key Owner)
 
 ### Example
 
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer access token for authorization: PersonalAccessToken
-let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
-PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
+// Configure Bearer (API Key) access token for authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.UsersApi();
-apiInstance.getMe((error, data, response) => {
+let opts = {
+  '_with': ["null"] // [String] | The relations you want to fetch with the `User`
+};
+apiInstance.getSelfUser(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -38,15 +39,18 @@ apiInstance.getMe((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;User&#x60; | [optional] 
 
 ### Return type
 
-[**GetMeResponse**](GetMeResponse.md)
+[**UserResponse**](UserResponse.md)
 
 ### Authorization
 
-[PersonalAccessToken](../README.md#PersonalAccessToken)
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -56,25 +60,25 @@ This endpoint does not need any parameter.
 
 ## getUser
 
-> GetUserResponse getUser(user, opts)
+> UserResponse getUser(userId, opts)
 
-Fetch the specified user
+Fetch a single user
 
 ### Example
 
 ```javascript
 import GmodstoreSdk from 'gmodstore-sdk';
 let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer access token for authorization: PersonalAccessToken
-let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
-PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
+// Configure Bearer (API Key) access token for authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GmodstoreSdk.UsersApi();
-let user = "user_example"; // String | 
+let userId = 789; // Number | Id of the user
 let opts = {
-  'filter': new GmodstoreSdk.UserFilter() // UserFilter | Filter the results
+  '_with': ["null"] // [String] | The relations you want to fetch with the `User`
 };
-apiInstance.getUser(user, opts, (error, data, response) => {
+apiInstance.getUser(userId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -88,120 +92,16 @@ apiInstance.getUser(user, opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user** | **String**|  | 
- **filter** | [**UserFilter**](.md)| Filter the results | [optional] 
+ **userId** | **Number**| Id of the user | 
+ **_with** | [**[String]**](String.md)| The relations you want to fetch with the &#x60;User&#x60; | [optional] 
 
 ### Return type
 
-[**GetUserResponse**](GetUserResponse.md)
+[**UserResponse**](UserResponse.md)
 
 ### Authorization
 
-[PersonalAccessToken](../README.md#PersonalAccessToken)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getUsers
-
-> GetUsersResponse getUsers(ids, opts)
-
-Fetch a batch of users by id
-
-### Example
-
-```javascript
-import GmodstoreSdk from 'gmodstore-sdk';
-let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer access token for authorization: PersonalAccessToken
-let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
-PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new GmodstoreSdk.UsersApi();
-let ids = ["null"]; // [String] | 
-let opts = {
-  'filter': new GmodstoreSdk.UserFilter() // UserFilter | Filter the results
-};
-apiInstance.getUsers(ids, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ids** | [**[String]**](String.md)|  | 
- **filter** | [**UserFilter**](.md)| Filter the results | [optional] 
-
-### Return type
-
-[**GetUsersResponse**](GetUsersResponse.md)
-
-### Authorization
-
-[PersonalAccessToken](../README.md#PersonalAccessToken)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## listUsers
-
-> Object listUsers(opts)
-
-List all users
-
-### Example
-
-```javascript
-import GmodstoreSdk from 'gmodstore-sdk';
-let defaultClient = GmodstoreSdk.ApiClient.instance;
-// Configure Bearer access token for authorization: PersonalAccessToken
-let PersonalAccessToken = defaultClient.authentications['PersonalAccessToken'];
-PersonalAccessToken.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new GmodstoreSdk.UsersApi();
-let opts = {
-  'perPage': 24, // Number | 
-  'cursor': "cursor_example", // String | The cursor from which to return paginated results starting after
-  'filter': new GmodstoreSdk.UserFilter() // UserFilter | Filter the results
-};
-apiInstance.listUsers(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **perPage** | **Number**|  | [optional] [default to 24]
- **cursor** | **String**| The cursor from which to return paginated results starting after | [optional] 
- **filter** | [**UserFilter**](.md)| Filter the results | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-[PersonalAccessToken](../README.md#PersonalAccessToken)
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
